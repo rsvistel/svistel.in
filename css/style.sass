@@ -1,0 +1,966 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One')
+@import url('https://fonts.googleapis.com/css?family=Bangers')
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin')
+body
+  margin: 0
+  padding: 0
+  background-color: #161616!important
+  color: #cdcdcd
+  font-family: "Avenir Next", "Avenir", sans-serif
+
+
+#menuToggle
+  display: block
+  top: 50px
+  z-index: 1
+  -webkit-user-select: none
+  user-select: none
+  position: fixed
+  right: 20px
+
+.menu_right
+  height: 100vh
+  position: fixed
+  z-index: 1
+  top: -10px
+  -webkit-user-select: none
+  user-select: none
+  right: 20px
+  display: flex
+  align-items: flex-end
+.plane
+  display: flex
+  margin-bottom: 20px
+  embed
+    width: 40px
+    pointer-events: none
+    cursor: pointer
+
+#menuToggle input
+  display: block
+  width: 40px
+  height: 32px
+  position: absolute
+  top: -7px
+  left: -5px
+  cursor: pointer
+  opacity: 0
+  z-index: 2
+  -webkit-touch-callout: none
+#menuToggle span
+  display: block
+  width: 33px
+  height: 4px
+  margin-bottom: 5px
+  position: relative
+  background: #ffcd00
+  border-radius: 3px
+  z-index: 1
+  transform-origin: 4px 0px
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+  background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+  opacity: 0.55s ease
+
+#menuToggle span:first-child
+  transform-origin: 0% 0%
+
+#menuToggle span:nth-last-child(2)
+  transform-origin: 0% 100%
+
+#menuToggle input:checked ~ span
+  opacity: 1
+  transform: rotate(45deg) translate(-2px, -1px)
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+  opacity: 0
+  transform: rotate(0deg) scale(0.2, 0.2)
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+  transform: rotate(-45deg) translate(0, -1px)
+
+#menu
+  position: absolute
+  width: 300px
+  margin: -100px 0 0 -200px
+  padding: 50px 50px 0 50px
+  padding-top: 125px
+  background: #000000
+  list-style-type: none
+  -webkit-font-smoothing: antialiased
+  transform-origin: 0% 0%
+  transform: translate(100%, 0)
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
+  border: 2px #ffcd00 solid
+  border-bottom: none
+  a
+    color: snow
+    font-family: "Fjalla One", sans-serif
+  a:hover
+    color: #ffcd00
+  embed
+    width: 40px
+
+#menu li
+  padding: 10px 0
+  font-size: 22px
+
+#menuToggle input:checked ~ ul
+  transform: none
+
+#menu_left
+  position: fixed
+  width: 70px
+  height: 100vh
+  background: #000000
+  padding-top: 20px
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  a
+    color: snow
+  a:hover
+    text-decoration: none
+  embed
+    width: 30px
+  ul
+    padding: 0
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    li
+      padding: 15px 0
+      font-family: 'Bangers', cursive
+      font-size: 24px
+  .bottomline
+    width: 3px
+    height: 60px
+    background: #ffcd00
+    margin: 0 auto
+  .logo_bee embed
+    pointer-events: none
+    cursor: pointer
+
+
+.block_information
+  background: #161616
+  background-size: cover
+  height: 100vh
+  min-height: 700px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .row
+    margin: 0
+  .icon_block_information
+    float: left
+    display: flex
+    flex-direction: column
+    align-items: center
+    svg
+      width: 52px
+      float: left
+      margin-right: 15px
+    p
+      font-size: 47px
+      margin: 0
+      color: snow
+      font-family: 'Fjalla One', sans-serif
+    h3
+      font-family: 'Fjalla One', sans-serif
+      color: snow
+      font-size: 22px
+  .second_icon_block_information svg
+    width: 49px
+  .first_row, .second_row
+    display: flex
+    justify-content: space-around
+  .first_row
+    margin-bottom: 60px
+    margin-left: 45px
+  .second_row
+    margin-left: 20px
+  .third_icon_block_information svg
+    width: 57px
+    margin-top: -10px
+  .svg_text
+    display: flex
+    flex-direction: row
+    align-items: center
+
+
+
+$step: 100px
+#icons_block
+  background: #161616
+  background-size: cover
+  overflow-y: hidden
+  padding: 0 20px 0 20px
+  display: flex
+  align-items: center
+  height: 100vh
+  min-height: 700px
+  .all_rows
+    margin: 0 auto
+    width: 80%
+    height: 600px
+  .container
+    padding: 0 47px 0 53px
+    display: flex
+    align-items: center
+  .row
+    position: relative
+    margin-bottom: 10px
+    &:nth-child(2)
+      bottom: $step
+    &:nth-child(3)
+      bottom: $step*2
+    &:last-child
+      bottom: $step*3
+    embed
+      transition: 0.3s
+      margin-bottom: 20px
+    embed:hover
+      transform: scale(1.3)
+
+.photo_team
+  height: 100vh
+  min-height: 700px
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  background-image: linear-gradient(#0f0f0f, #161616 50%, #0f0f0f 80%)
+  z-index: 1
+  .image-team embed
+    width: 100%
+    z-index: 0
+    margin-bottom: -6px
+  h2
+    font-family: "Fjalla One", sans-serif
+    color: snow
+    margin-top: -75px
+    margin-left: 33px
+  h4
+    font-family: "Fjalla One", sans-serif
+    color: yellow
+    margin-left: 33px
+
+.section_banner
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 700px
+  height: 100vh
+
+
+.line-menu
+  border-radius: 5px
+  width: 30px
+  height: 4px
+  background-color: #fbc800
+  margin: 3px 0
+
+.menu
+  display: grid
+  justify-content: flex-end
+  text-align: end
+  margin-top: 20px
+  margin-right: 35px
+
+.top-text-style
+  font-size: 63px
+  color: white
+  font-family: 'Bangers', cursive
+  margin-top: 175px
+
+.top-girl-photo img
+  width: 390px
+
+.top-girl-photo
+  margin-top: 150px
+  text-align: center
+
+.top-button
+  background-color: #fbc800
+  border: none
+  color: white
+  padding: 10px 20px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 18px
+  margin: 4px 2px
+  -webkit-transition-duration: 0.4s
+  transition-duration: 0.4s
+  cursor: pointer
+
+.button1
+  background-color: #161616
+  color: white
+  border: 5px solid #fbc800
+  font-family: 'Libre Franklin', sans-serif
+  font-style: italic
+  font-weight: bolder
+  margin-top: 150px
+  border-radius: 10px
+
+.button1:hover
+  background-color: #fbc800
+  color: #161616
+
+.top-text-style p
+  margin-bottom: 0
+  margin-top: -10px
+
+//about
+
+.blocks-about
+  background-color: #111111
+  width: 400px
+  height: 400px
+  border-radius: 70px
+  display: flex
+  justify-content: center
+  transition: 0.3s
+  cursor: pointer
+//align-items: center
+
+.blocks-about:hover
+  transform: scale(1.1)
+  -webkit-transition: 0.3s
+  box-shadow: 0 0 111px rgba(255, 250, 250, 0.3)
+
+
+.block-in-center
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+
+.about-photo-in-block
+  width: 200px
+  height: 200px
+  opacity: 1
+  margin-top: 50px
+  display: grid
+  justify-items: center
+  embed
+    pointer-events: none
+
+.text-style-in-about-block
+  font-size: 37px
+  font-family: 'Fjalla One', sans-serif
+  color: white
+  display: flex
+  justify-content: center
+  margin-top: 50px
+
+//feedback
+
+.width100
+  width: 100%
+
+.feedback-top-text-style
+  font-family: 'Fjalla One', sans-serif
+  font-size: 30px
+  color: white
+  margin-bottom: 3px
+  margin-top: 25px
+
+.feedback-underline-text-3
+  width: 220px
+  height: 4px
+  background-color: #2149f4
+  border-radius: 10px
+  margin-bottom: 30px
+  -webkit-transition: 0.1s
+  transition: 0.1s
+
+.feedback-underline-text-3:hover
+  box-shadow: 0 0 25px rgba(255, 208, 0, 1)
+
+.feedback-underline-text-1
+  width: 220px
+  height: 4px
+  background-color: #2149f4
+  border-radius: 10px
+  margin-bottom: 30px
+  -webkit-transition: 0.1s
+  transition: 0.1s
+
+.feedback-underline-text-1:hover
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.9)
+
+.col-xs-4 embed
+  -webkit-transition: 0.3s
+  transition: 0.3s
+
+.col-xs-4 embed:hover
+  transform: scale(1.1)
+  -webkit-transition: 0.3s
+  transition: 0.3s
+
+.feedback-bottom-text-style
+  font-family: 'Fjalla One', sans-serif
+  font-size: 14px
+  color: white
+
+.feedback-bottom-text-style2
+  font-family: 'Fjalla One', sans-serif
+  font-size: 14px
+  color: white
+
+.feedback-underline-text-2
+  width: 220px
+  height: 4px
+  background-color: #2149f4
+  border-radius: 10px
+  margin-bottom: 30px
+
+.feedback-underline-text-1
+  width: 115px
+  height: 4px
+  background-color: #2149f4
+  border-radius: 10px
+  margin-bottom: 30px
+
+.feedback-underline-text-2:hover
+  -webkit-transition: 0.1s
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.9)
+
+.centom
+  display: flex
+  text-align: center
+  align-items: center
+  justify-content: center
+
+.marg25
+  margin-right: 25px
+  margin-left: 25px
+
+.feedback-top-text-style-2
+  font-family: 'Fjalla One', sans-serif
+  font-size: 30px
+  color: white
+  margin-bottom: 3px
+  margin-top: 50px
+
+.grid
+  display: grid
+  justify-items: center
+
+.teacher-block
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 250px
+
+
+.teacher-block img
+  width: 700px
+
+.teacher-bottom-block
+  background-color: white
+  width: 620px
+  height: 330px
+  border-radius: 35px
+  margin-top: -150px
+  padding: 10px
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9)
+  display: flex
+  justify-content: flex-end
+
+
+.cir
+  height: 90px
+  width: 90px
+  background-color: #ffd000
+  border-radius: 50%
+  margin-top: -55px
+  box-shadow: 0px 0px 50px 0px rgba(255, 208, 0, 1)
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: 0.2s
+
+.hobby-teaching-text-style
+  font-family: 'Fjalla One', sans-serif
+  font-size: 39px
+  color: #161616
+  margin-top: 35px
+
+.hobby-teaching-bottom-text-style
+  font-family: 'Fjalla One', sans-serif
+  font-size: 24px
+  color: #161616
+  margin-top: 10px
+  margin-left: 20px
+  margin-right: 20px
+  text-align: center
+
+.activity-traveling-text-style
+  font-family: 'Fjalla One', sans-serif
+  font-size: 38px
+  color: #161616
+  margin-top: 35px
+
+.mouse-svg
+  display: grid
+  justify-content: center
+  margin-top: 15px
+
+.feedback-sec
+  height: 100vh
+  min-height: 700px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+#hobby_activity
+  display: flex
+  align-items: center
+  height: 100vh
+  min-height: 700px
+.cir:hover
+  transform: scale(1.1)
+  -webkit-transition: 0.3s
+
+div.ex3
+  width: 530px
+  height: 135px
+  overflow: auto
+  display: flex
+  justify-content: center
+
+a.svg
+  position: relative
+  display: inline-block
+
+.cir embed
+  pointer-events: none
+
+
+.photo-map
+  margin-top: -15px
+
+.photo-map img
+  margin-left: -255px
+  margin-top: -300px
+  transition: 0.3s
+
+.photo-map img:hover
+  transform: scale(1.5)
+  -webkit-transition: 0.3s
+
+
+
+//Media Query
+@media (min-width: 768px) and (max-width: 1023px)
+  .block_information
+    //padding-top: 150px
+    .icon_block_information
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      svg
+        height: 60px
+        margin-bottom: 10px
+      h3
+        margin-top: 5px
+
+  #icons_block
+    overflow: auto
+    height: auto
+    .row
+      overflow: auto
+      bottom: 0!important
+      text-align: center
+      embed
+        margin-bottom: 10px
+        width: 250px
+
+  ._team
+    padding: 75px 15px 0 55px
+
+@media (min-width: 1023px) and (max-width: 1113px)
+  .block_information .top-butto
+    width: 50px!important
+
+  .block_information .icon_block_information p
+    font-size: 30px
+    padding-top: 10px
+
+  .photo_team
+    padding: 75px 15px 0 55px
+
+
+@media only screen and (max-width: 600px)
+  .icons_second_row
+    margin-top: 15px
+    position: relative
+  .icons_block_tab
+    margin-top: -50px
+  //.block_information
+  //  padding-top: 15px
+  //  display: flex
+  //  justify-content: center
+  //  .first_row, .second_row
+  //    flex-direction: row
+  //    float: left
+  //    margin: 0
+  //    padding: 0
+  //  .first_row
+  //    margin-top: 7px
+  //  .icon_block_information
+  //    margin: 0 0 40px 0
+  //    padding: 0 10px
+  //    svg
+  //      width: 30px
+  //    p
+  //      font-size: 30px
+  //    h3
+  //      font-size: 10px
+  //      margin-top: 10px
+  //  .third_icon_block_information svg
+  //    width: 35px!important
+  //  .second_icon_block_information svg
+  //    width: 30px
+
+  .act-cent
+  display: flex
+  justify-content: center
+
+@media (max-width: 450px)
+  .button1
+    margin-top: 50px!important
+
+  #icons_block
+    padding: 50px 19px 10px 32px
+    .container
+      padding: 0
+      margin: 0
+    embed
+      width: 134px
+
+  .photo_team h2
+    margin-top: -5px
+    font-size: 13px
+
+  .photo_team h4
+    font-size: 12px
+
+  .section_banner
+    text-align: center
+    .container
+      padding-left: 50px
+
+  .act-cent
+  display: flex
+  justify-content: center
+
+@media (max-width: 320px)
+  #icons_block embed
+    width: 105px
+    //margin-right: 100px
+    .row
+      margin-bottom: 0
+
+  .top-text-style
+    font-size: 36px!important
+
+  .icons_block_tab
+    padding-right: 0!important
+    margin-top: -35px
+
+  .icons_second_row
+    margin-top: 15px
+    padding-left: 0!important
+    position: relative
+@media (min-width: 450px) and (max-width: 768px)
+  .photo_team h2
+    margin-top: -15px
+    font-size: 23px
+
+  .section_banner
+    display: flex
+
+  //.block_information .icon_block_information
+  //  display: flex
+  //  flex-direction: column
+  //  justify-content: center
+  //  align-items: center
+  //  text-align: center
+  //  margin: 0 0 0 25px
+
+@media (min-width: 600px) and (max-width: 768px)
+  .block_information .first_row
+    padding-top: 130px
+
+  #icons_block .container
+    padding: 0 150px
+    embed
+      width: 158px
+  #icons_block
+    .icons_second_row
+      margin-top: 5px
+    .icons_block_tab
+      margin-top: -70px
+
+
+
+
+
+@media (min-width: 1500px)
+  .block_information .first_row, .block_information .second_row
+    justify-content: center
+
+
+
+@media (max-width: 768px) and (orientation: landscape)
+  #icons_block .container
+    width: 100%
+    padding: 0 85px
+    .icons_second_row
+      margin-top: 0
+    embed
+      width: 130px
+
+  #menu_left
+    padding-top: 10px
+    ul li
+      font-size: 15px
+      padding: 4px 0
+
+  #menu
+    padding-top: 80px
+    li
+      padding: 5px 0
+
+  .logo_bee
+    padding: 0!important
+
+  .section_banner
+    display: flex
+
+
+@media (max-width: 768px)
+  #icons_block
+    overflow: hidden
+    .row
+      bottom: 0!important
+      text-align: center
+      embed
+        margin-bottom: 0
+  #menu_left
+    width: 45px
+    height: 100%
+  .menu_right
+    height: 100%
+    right: 5px
+    #menuToggle
+      right: 5px
+      top: 30px
+
+  .photo_team
+    padding: 75px 15px 0 35px
+
+  #menu_left .logo_bee
+    padding-bottom: 0
+
+  #icons_block .container
+    width: 100%
+    .row embed:hover
+      transform: none
+
+  .top-text-style
+    font-size: 40px
+    margin-top: 20px
+
+  .button1
+    margin-top: 50px
+
+
+  .top-girl-photo img
+    width: 250px
+
+  .top-girl-photo
+    margin-top: 0px
+
+  .about-photo-in-block embed
+    width: 65%
+
+  .feedback-bottom-text-style2
+    font-family: "Fjalla One", sans-serif
+    font-size: 11px
+    color: white
+
+  .feedback-top-text-style-2
+    font-family: "Fjalla One", sans-serif
+    font-size: 22px
+    color: white
+    margin-bottom: 3px
+    margin-top: 30px
+
+  .feedback-underline-text-2
+    width: 220px
+    height: 4px
+    background-color: #ffd000
+    border-radius: 10px
+    margin-bottom: 30px
+
+  .marg25
+    margin-right: 0px
+    margin-left: 0px
+
+  .feedback-top-text-style
+    font-family: "Fjalla One", sans-serif
+    font-size: 21px
+    color: white
+    margin-bottom: 3px
+    margin-top: 25px
+
+  .feedback-underline-text-3
+    width: 220px
+    height: 4px
+    background-color: #ffd000
+    border-radius: 10px
+    margin-bottom: 30px
+    -webkit-transition: 0.1s
+    transition: 0.1s
+
+  .feedback-underline-text-1
+    width: 115px
+    height: 4px
+    background-color: #ffd000
+    border-radius: 10px
+    margin-bottom: 30px
+
+  .blocks-about
+    background-color: #111111
+    width: 250px
+    height: 250px
+    border-radius: 60px
+    display: flex
+    justify-content: center
+    margin-bottom: 50px
+
+  .about-photo-in-block
+    width: 200px
+    height: 200px
+    opacity: 1
+    margin-top: 35px
+    display: grid
+    justify-items: center
+
+  .text-style-in-about-block
+    font-size: 30px
+    font-family: "Fjalla One", sans-serif
+    color: white
+    display: flex
+    justify-content: center
+    margin-top: 15px
+
+  .teacher-block img
+    width: 300px
+
+  .teacher-bottom-block
+    width: 300px
+
+  .centom
+    display: flex
+    text-align: center
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+  .row.centom
+    margin-right: 30px
+    margin-left: 30px
+
+  .feedback-sec#section_vidhuku.container.row
+    margin-right: 25px
+    margin-left: 25px
+
+  .feedback-sec
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-left: 40px
+    margin-right: 40px
+
+  .teacher-block img
+    width: 275px
+
+  .cir
+    height: 60px
+    width: 60px
+    background-color: #ffd000
+    border-radius: 50%
+    margin-top: -116px
+    margin-left: 140px
+    box-shadow: 0px 0px 50px 0px #ffd000
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.2s
+
+  div.ex3
+    width: 169px
+    height: 85px
+    overflow: auto
+    display: flex
+    justify-content: center
+
+  .mouse-svg
+    display: grid
+    justify-content: center
+    margin-top: 15px
+
+  .teacher-bottom-block
+    background-color: white
+    width: 261px
+    height: 235px
+    border-radius: 35px
+    margin-top: -60px
+    padding: 10px
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9)
+    display: flex
+    justify-content: flex-end
+
+  .activity-traveling-text-style
+    font-family: "Fjalla One", sans-serif
+    font-size: 30px
+    color: #161616
+    margin-top: 17px
+
+  .hobby-teaching-bottom-text-style
+    font-family: "Fjalla One", sans-serif
+    font-size: 15px
+    color: #161616
+    margin-top: 52px
+    margin-left: 20px
+    margin-right: 20px
+    text-align: center
+
+  .hobby-teaching-text-style
+    font-family: "Fjalla One", sans-serif
+    font-size: 30px
+    color: #161616
+    margin-top: 35px
+
+  .photo-map img
+    margin-left: -400px
+    margin-top: -300px
+    transition: 0.3s
+
+
+
+//Height
+@media (min-height: 550px)
+  #menu_left
+    display: none
