@@ -147,7 +147,7 @@ body {
   background: #161616;
   background-size: cover;
   height: 100vh;
-  min-height: 700px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -223,17 +223,16 @@ body {
 
 .photo_team {
   height: 100vh;
-  min-height: 700px;
+  min-height: 400px;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   background-image: linear-gradient(#0f0f0f, #161616 50%, #0f0f0f 80%);
   z-index: 1; }
-  .photo_team .image-team embed {
+  .photo_team embed {
     width: 100%;
-    z-index: 0;
-    margin-bottom: -6px; }
+    z-index: 0; }
   .photo_team h2 {
     font-family: "Fjalla One", sans-serif;
     color: snow;
@@ -248,8 +247,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 700px;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .line-menu {
   border-radius: 5px;
@@ -500,8 +498,7 @@ body {
   margin-top: 15px; }
 
 .feedback-sec {
-  height: 100vh;
-  min-height: 700px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -540,7 +537,53 @@ a.svg {
 
 .photo-map img:hover {
   transform: scale(1.5);
+  -webkit-transition: 0.3; }
+
+.portfolio-web {
   -webkit-transition: 0.3s; }
+
+.portfolio-web:hover {
+  transform: scale(1.1); }
+
+.portfolio-top-text {
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s; }
+
+.portfolio-top-text:hover {
+  background-size: 100% 100%;
+  background-position: 0 -0.1em;
+  color: #161616; }
+
+.portfolio-web {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.portfolio-web img {
+  width: 700px;
+  border-radius: 20px;
+  margin-top: 20px; }
+
+.portfolio-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column; }
+
+.portfolio-section a:hover {
+  text-decoration: none; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .block_information .icon_block_information {
@@ -624,7 +667,7 @@ a.svg {
 
   .icons_block_tab {
     padding-right: 0 !important;
-    margin-top: -35px; }
+    margin-top: -30px; }
 
   .icons_second_row {
     margin-top: 15px;
@@ -636,7 +679,13 @@ a.svg {
     font-size: 23px; }
 
   .section_banner {
-    display: flex; } }
+    display: flex; }
+
+  .top-text-style {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
     padding-top: 130px; }
@@ -879,17 +928,28 @@ a.svg {
     margin-right: 20px;
     text-align: center; }
 
+  .photo-map img {
+    margin-left: -400px;
+    margin-top: -300px;
+    transition: 0.3s; }
+
   .hobby-teaching-text-style {
     font-family: "Fjalla One", sans-serif;
     font-size: 30px;
     color: #161616;
-    margin-top: 35px; }
+    margin-top: 21px; }
 
-  .photo-map img {
-    margin-left: -400px;
-    margin-top: -300px;
-    transition: 0.3s; } }
-@media (min-height: 550px) {
+  .teacher-bottom-block {
+    background-color: white;
+    width: 261px;
+    height: 235px;
+    border-radius: 35px;
+    margin-top: -100px;
+    padding: 10px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: flex-end; } }
+@media (max-height: 400px) {
   #menu_left {
     display: none; } }
 
