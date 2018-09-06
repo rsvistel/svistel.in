@@ -558,7 +558,8 @@ a.svg {
   background-position: 0 1.2em;
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: background 0.5s; }
+  transition: background 0.5s;
+  margin-top: 40px; }
 
 .portfolio-top-text:hover {
   background-size: 100% 100%;
@@ -584,6 +585,76 @@ a.svg {
 
 .portfolio-section a:hover {
   text-decoration: none; }
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  margin-top: 30px; }
+
+.glyphicon:hover {
+  color: #ffcd00; }
+
+.portfolio-bottom-text {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  margin-top: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s; }
+
+.portfolio-bottom-text:hover {
+  background-size: 100% 100%;
+  background-position: 0 -0.1em;
+  color: #161616;
+  font-weight: bolder; }
+
+.portfolio-sl-text {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  margin-top: 40px; }
+
+.carousel-indicators {
+  bottom: -50px; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .block_information .icon_block_information {
@@ -932,6 +1003,9 @@ a.svg {
     margin-left: -400px;
     margin-top: -300px;
     transition: 0.3s; }
+
+  .carousel-indicators {
+    bottom: -50px; }
 
   .hobby-teaching-text-style {
     font-family: "Fjalla One", sans-serif;
