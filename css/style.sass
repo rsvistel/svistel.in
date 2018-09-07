@@ -431,7 +431,6 @@ $step: 100px
 .centom
   display: flex
   text-align: center
-  align-items: center
   justify-content: center
 
 .marg25
@@ -448,6 +447,7 @@ $step: 100px
 .grid
   display: grid
   justify-items: center
+
 
 .teacher-block
   display: flex
@@ -672,8 +672,17 @@ a.svg
 
 //Media Query
 @media (min-width: 768px) and (max-width: 1023px)
+  .section_banner
+    text-align: center
+    .top-text-style
+      margin-top: 100px
+    .button1
+      margin-top: 50px
+    .top-girl-photo
+      margin-top: 30px
   .block_information
-    //padding-top: 150px
+    .second_row
+      margin-left: 50px
     .icon_block_information
       display: flex
       flex-direction: column
@@ -684,20 +693,61 @@ a.svg
         margin-bottom: 10px
       h3
         margin-top: 5px
+      .second_row .icon_block_information
+        margin-left: 20px
+  .icons_block_tab embed
+    margin-top: -115px
+  #icons_block .row embed
+    width: 170px
+    margin-bottom: 100px
+  #icons_block .row embed:hover
+    transform: scale(1.1)
 
-  #icons_block
+  .blocks-about
+    margin-bottom: 50px
+
+
+  #icons_block.row
     overflow: auto
-    height: auto
-    .row
-      overflow: auto
-      bottom: 0!important
-      text-align: center
-      embed
-        margin-bottom: 10px
-        width: 250px
+    bottom: 0!important
+    text-align: center
+    embed
+      margin-bottom: 0
 
   ._team
     padding: 75px 15px 0 55px
+
+  .feedback-sec .row
+    display: flex
+    justify-content: center
+    padding-left: 25px
+    padding-right: 20px
+
+  .photo-map img
+    margin-left: -160px
+
+  .photo-map img:hover
+    transform: scale(1.2)
+
+
+@media (min-width: 769px) and (max-width: 992px)
+  .centom
+    padding-left: 70px!important
+
+  .photo_team h2
+    font-size: 23px
+
+  .photo_team .image-team embed
+    margin-bottom: -16px
+
+  #icons_block .container
+    padding: 0 110px 0 130px
+
+  .feedback-underline-text-2
+    width: 205px
+
+  .marg25
+    margin-left: 
 
 @media (min-width: 1023px) and (max-width: 1113px)
   .block_information .top-butto
@@ -717,35 +767,18 @@ a.svg
     position: relative
   .icons_block_tab
     margin-top: -50px
-  //.block_information
-  //  padding-top: 15px
-  //  display: flex
-  //  justify-content: center
-  //  .first_row, .second_row
-  //    flex-direction: row
-  //    float: left
-  //    margin: 0
-  //    padding: 0
-  //  .first_row
-  //    margin-top: 7px
-  //  .icon_block_information
-  //    margin: 0 0 40px 0
-  //    padding: 0 10px
-  //    svg
-  //      width: 30px
-  //    p
-  //      font-size: 30px
-  //    h3
-  //      font-size: 10px
-  //      margin-top: 10px
-  //  .third_icon_block_information svg
-  //    width: 35px!important
-  //  .second_icon_block_information svg
-  //    width: 30px
 
   .act-cent
-  display: flex
-  justify-content: center
+    display: flex
+    justify-content: center
+
+  .centom .grid
+    padding-right: 0
+    padding-left: 20px
+
+  .cent
+    flex-direction: column
+
 
 @media (max-width: 450px)
   .button1
@@ -795,8 +828,9 @@ a.svg
     position: relative
 @media (min-width: 450px) and (max-width: 768px)
   .photo_team h2
-    margin-top: -15px
-    font-size: 23px
+    font-size: 21px
+  .photo_team h4
+    font-size: 14px
 
   .section_banner
     display: flex
@@ -807,28 +841,54 @@ a.svg
     justify-content: center
     align-items: center
 
-  //.block_information .icon_block_information
-  //  display: flex
-  //  flex-direction: column
-  //  justify-content: center
-  //  align-items: center
-  //  text-align: center
-  //  margin: 0 0 0 25px
+@media (min-width: 450px) and (max-width: 600px)
+  .block_information
+    .icon_block_information p
+      font-size: 38px
+    .icon_block_information svg
+      width: 47px
+    .second_icon_block_information svg
+      width: 40px
+    .second_row
+      margin-left: 40px
 
+@media (min-width: 450px) and (max-width: 600px)
+  .block_information
+    .icon_block_information p
+      font-size: 38px
+    .icon_block_information svg
+      width: 47px
+    .second_icon_block_information svg
+      width: 40px
+    .second_row
+      margin-left: 40px
+      
 @media (min-width: 600px) and (max-width: 768px)
   .block_information .first_row
     padding-top: 130px
+    margin-left: 0
 
-  #icons_block .container
-    padding: 0 150px
-    embed
-      width: 158px
+  #icons_block .container embed
+    width: 158px
+
   #icons_block
     .icons_second_row
       margin-top: 5px
     .icons_block_tab
       margin-top: -70px
 
+  .feedback-sec .row
+    display: flex
+    flex-direction: row
+
+  .empty_div
+    display: none
+
+  .grid_second .feedback-top-text-style-2
+    margin-top: 15px
+
+  .feedback-underline-text-2
+    width: 170px!important
 
 
 
@@ -996,10 +1056,6 @@ a.svg
     justify-content: center
     flex-direction: column
 
-  .row.centom
-    margin-right: 30px
-    margin-left: 30px
-
   .feedback-sec#section_vidhuku.container.row
     margin-right: 25px
     margin-left: 25px
@@ -1102,9 +1158,19 @@ a.svg
     display: flex
     justify-content: flex-end
 
+  .cent
+    display: flex
+
+@media (min-width: 1024px) and (max-width: 1112px)
+  #icons_block .row embed
+    margin-bottom: 45px
+
+  .block_information .second_row
+    margin-left: 40px
+
 
 
 //Height
-@media (max-height: 400px)
+@media (max-height: 550px)
   #menu_left
     display: none

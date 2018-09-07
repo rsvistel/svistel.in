@@ -757,6 +757,15 @@ a.svg {
     flex-flow: column;
     justify-content: center;
     align-items: center; } }
+@media (min-width: 450px) and (max-width: 600px) {
+  .block_information .icon_block_information p {
+    font-size: 38px; }
+  .block_information .icon_block_information svg {
+    width: 47px; }
+  .block_information .second_icon_block_information svg {
+    width: 40px; }
+  .block_information .second_row {
+    margin-left: 40px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
     padding-top: 130px; }
@@ -1023,7 +1032,7 @@ a.svg {
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: flex-end; } }
-@media (max-height: 400px) {
+@media (max-height: 550px) {
   #menu_left {
     display: none; } }
 
