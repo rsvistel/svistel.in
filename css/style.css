@@ -1,52 +1,1039 @@
-/*
-Error: Invalid property: "margin-left:" (no value).
-        on line 637 of /Users/nazarii/Documents/GitHub/svistel.in/css/style.sass
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161616 !important;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif; }
 
-632: 
-633:   .feedback-underline-text-2
-634:     width: 205px
-635: 
-636:   .marg25
-637:     margin-left: 
-638: 
-639: @media (min-width: 1023px) and (max-width: 1113px)
-640:   .block_information .top-butto
-641:     width: 50px!important
-642: 
+#menuToggle {
+  display: block;
+  top: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  right: 20px; }
 
-Backtrace:
-/Users/nazarii/Documents/GitHub/svistel.in/css/style.sass:637
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:759:in `parse_property'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid property: \"margin-left:\" (no value).\A         on line 637 of /Users/nazarii/Documents/GitHub/svistel.in/css/style.sass\A \A 632: \A 633:   .feedback-underline-text-2\A 634:     width: 205px\A 635: \A 636:   .marg25\A 637:     margin-left: \A 638: \A 639: @media (min-width: 1023px) and (max-width: 1113px)\A 640:   .block_information .top-butto\A 641:     width: 50px!important\A 642: "; }
+.menu_right {
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: -10px;
+  -webkit-user-select: none;
+  user-select: none;
+  right: 20px;
+  display: flex;
+  align-items: flex-end; }
+
+.plane {
+  display: flex;
+  margin-bottom: 20px; }
+  .plane embed {
+    width: 40px;
+    pointer-events: none;
+    cursor: pointer; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none; }
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffcd00;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity: 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px); }
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -200px;
+  padding: 50px 50px 0 50px;
+  padding-top: 125px;
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border: 2px #ffcd00 solid;
+  border-bottom: none; }
+  #menu a {
+    color: snow;
+    font-family: "Fjalla One", sans-serif; }
+  #menu a:hover {
+    color: #ffcd00; }
+  #menu embed {
+    width: 40px; }
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px; }
+
+#menuToggle input:checked ~ ul {
+  transform: none; }
+
+#menu_left {
+  position: fixed;
+  width: 70px;
+  height: 100vh;
+  background: #000000;
+  padding-top: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #menu_left a {
+    color: snow; }
+  #menu_left a:hover {
+    text-decoration: none; }
+  #menu_left embed {
+    width: 30px; }
+  #menu_left ul {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #menu_left ul li {
+      padding: 15px 0;
+      font-family: "Bangers", cursive;
+      font-size: 24px; }
+  #menu_left .bottomline {
+    width: 3px;
+    height: 60px;
+    background: #ffcd00;
+    margin: 0 auto; }
+  #menu_left .logo_bee embed {
+    pointer-events: none;
+    cursor: pointer; }
+
+.block_information {
+  background: #161616;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .block_information .row {
+    margin: 0; }
+  .block_information .icon_block_information {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .block_information .icon_block_information svg {
+      width: 52px;
+      float: left;
+      margin-right: 15px; }
+    .block_information .icon_block_information p {
+      font-size: 47px;
+      margin: 0;
+      color: snow;
+      font-family: "Fjalla One", sans-serif; }
+    .block_information .icon_block_information h3 {
+      font-family: "Fjalla One", sans-serif;
+      color: snow;
+      font-size: 22px; }
+  .block_information .second_icon_block_information svg {
+    width: 49px; }
+  .block_information .first_row, .block_information .second_row {
+    display: flex;
+    justify-content: space-around; }
+  .block_information .first_row {
+    margin-bottom: 60px;
+    margin-left: 45px; }
+  .block_information .second_row {
+    margin-left: 20px; }
+  .block_information .third_icon_block_information svg {
+    width: 57px;
+    margin-top: -10px; }
+  .block_information .svg_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+#icons_block {
+  background: #161616;
+  background-size: cover;
+  overflow-y: hidden;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 700px; }
+  #icons_block .all_rows {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px; }
+  #icons_block .container {
+    padding: 0 47px 0 53px;
+    display: flex;
+    align-items: center; }
+  #icons_block .row {
+    position: relative;
+    margin-bottom: 10px; }
+    #icons_block .row:nth-child(2) {
+      bottom: 100px; }
+    #icons_block .row:nth-child(3) {
+      bottom: 200px; }
+    #icons_block .row:last-child {
+      bottom: 300px; }
+    #icons_block .row embed {
+      transition: 0.3s;
+      margin-bottom: 20px; }
+    #icons_block .row embed:hover {
+      transform: scale(1.3); }
+
+.photo_team {
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: linear-gradient(#0f0f0f, #161616 50%, #0f0f0f 80%);
+  z-index: 1; }
+  .photo_team embed {
+    width: 100%;
+    z-index: 0; }
+  .photo_team h2 {
+    font-family: "Fjalla One", sans-serif;
+    color: snow;
+    margin-top: -75px;
+    margin-left: 33px; }
+  .photo_team h4 {
+    font-family: "Fjalla One", sans-serif;
+    color: yellow;
+    margin-left: 33px; }
+
+.section_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+.line-menu {
+  border-radius: 5px;
+  width: 30px;
+  height: 4px;
+  background-color: #fbc800;
+  margin: 3px 0; }
+
+.menu {
+  display: grid;
+  justify-content: flex-end;
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 35px; }
+
+.top-text-style {
+  font-size: 63px;
+  color: white;
+  font-family: "Bangers", cursive;
+  margin-top: 175px; }
+
+.top-girl-photo img {
+  width: 390px; }
+
+.top-girl-photo {
+  margin-top: 150px;
+  text-align: center; }
+
+.top-button {
+  background-color: #fbc800;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.button1 {
+  background-color: #161616;
+  color: white;
+  border: 5px solid #fbc800;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  margin-top: 150px;
+  border-radius: 10px; }
+
+.button1:hover {
+  background-color: #fbc800;
+  color: #161616; }
+
+.top-text-style p {
+  margin-bottom: 0;
+  margin-top: -10px; }
+
+.blocks-about {
+  background-color: #111111;
+  width: 400px;
+  height: 400px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer; }
+
+.blocks-about:hover {
+  transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  box-shadow: 0 0 111px rgba(255, 250, 250, 0.3); }
+
+.block-in-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.about-photo-in-block {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  margin-top: 50px;
+  display: grid;
+  justify-items: center; }
+  .about-photo-in-block embed {
+    pointer-events: none; }
+
+.text-style-in-about-block {
+  font-size: 37px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.width100 {
+  width: 100%; }
+
+.feedback-top-text-style {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 3px;
+  margin-top: 25px; }
+
+.feedback-underline-text-3 {
+  width: 220px;
+  height: 4px;
+  background-color: #2149f4;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+
+.feedback-underline-text-3:hover {
+  box-shadow: 0 0 25px #ffd000; }
+
+.feedback-underline-text-1 {
+  width: 220px;
+  height: 4px;
+  background-color: #2149f4;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+
+.feedback-underline-text-1:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.9); }
+
+.col-xs-4 embed {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.col-xs-4 embed:hover {
+  transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.feedback-bottom-text-style {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.feedback-bottom-text-style2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.feedback-underline-text-2 {
+  width: 220px;
+  height: 4px;
+  background-color: #2149f4;
+  border-radius: 10px;
+  margin-bottom: 30px; }
+
+.feedback-underline-text-1 {
+  width: 115px;
+  height: 4px;
+  background-color: #2149f4;
+  border-radius: 10px;
+  margin-bottom: 30px; }
+
+.feedback-underline-text-2:hover {
+  -webkit-transition: 0.1s;
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.9); }
+
+.centom {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.marg25 {
+  margin-right: 25px;
+  margin-left: 25px; }
+
+.feedback-top-text-style-2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 3px;
+  margin-top: 50px; }
+
+.grid {
+  display: grid;
+  justify-items: center; }
+
+.teacher-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px; }
+
+.teacher-block img {
+  width: 700px; }
+
+.teacher-bottom-block {
+  background-color: white;
+  width: 620px;
+  height: 330px;
+  border-radius: 35px;
+  margin-top: -150px;
+  padding: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: flex-end; }
+
+.cir {
+  height: 90px;
+  width: 90px;
+  background-color: #ffd000;
+  border-radius: 50%;
+  margin-top: -55px;
+  box-shadow: 0px 0px 50px 0px #ffd000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s; }
+
+.hobby-teaching-text-style {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 39px;
+  color: #161616;
+  margin-top: 35px; }
+
+.hobby-teaching-bottom-text-style {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24px;
+  color: #161616;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center; }
+
+.activity-traveling-text-style {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 38px;
+  color: #161616;
+  margin-top: 35px; }
+
+.mouse-svg {
+  display: grid;
+  justify-content: center;
+  margin-top: 15px; }
+
+.feedback-sec {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#hobby_activity {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 700px; }
+
+.cir:hover {
+  transform: scale(1.1);
+  -webkit-transition: 0.3s; }
+
+div.ex3 {
+  width: 530px;
+  height: 135px;
+  overflow: auto;
+  display: flex;
+  justify-content: center; }
+
+a.svg {
+  position: relative;
+  display: inline-block; }
+
+.cir embed {
+  pointer-events: none; }
+
+.photo-map {
+  margin-top: -15px; }
+
+.photo-map img {
+  margin-left: -255px;
+  margin-top: -300px;
+  transition: 0.3s; }
+
+.photo-map img:hover {
+  transform: scale(1.5);
+  -webkit-transition: 0.3; }
+
+.portfolio-web {
+  -webkit-transition: 0.3s; }
+
+.portfolio-web:hover {
+  transform: scale(1.1); }
+
+.portfolio-top-text {
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  margin-top: 40px; }
+
+.portfolio-top-text:hover {
+  background-size: 100% 100%;
+  background-position: 0 -0.1em;
+  color: #161616; }
+
+.portfolio-web {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.portfolio-web img {
+  width: 700px;
+  border-radius: 20px;
+  margin-top: 20px; }
+
+.portfolio-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column; }
+
+.portfolio-section a:hover {
+  text-decoration: none; }
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  margin-top: 30px; }
+
+.glyphicon:hover {
+  color: #ffcd00; }
+
+.portfolio-bottom-text {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  margin-top: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s; }
+
+.portfolio-bottom-text:hover {
+  background-size: 100% 100%;
+  background-position: 0 -0.1em;
+  color: #161616;
+  font-weight: bolder; }
+
+.portfolio-sl-text {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  margin-top: 40px; }
+
+.carousel-indicators {
+  bottom: -50px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .block_information .icon_block_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .block_information .icon_block_information svg {
+      height: 60px;
+      margin-bottom: 10px; }
+    .block_information .icon_block_information h3 {
+      margin-top: 5px; }
+
+  #icons_block {
+    overflow: auto;
+    height: auto; }
+    #icons_block .row {
+      overflow: auto;
+      bottom: 0 !important;
+      text-align: center; }
+      #icons_block .row embed {
+        margin-bottom: 10px;
+        width: 250px; }
+
+  ._team {
+    padding: 75px 15px 0 55px; } }
+@media (min-width: 1023px) and (max-width: 1113px) {
+  .block_information .top-butto {
+    width: 50px !important; }
+
+  .block_information .icon_block_information p {
+    font-size: 30px;
+    padding-top: 10px; }
+
+  .photo_team {
+    padding: 75px 15px 0 55px; } }
+@media only screen and (max-width: 600px) {
+  .icons_second_row {
+    margin-top: 15px;
+    position: relative; }
+
+  .icons_block_tab {
+    margin-top: -50px; }
+
+  display: flex;
+  justify-content: center; }
+@media (max-width: 450px) {
+  .button1 {
+    margin-top: 50px !important; }
+
+  #icons_block {
+    padding: 50px 19px 10px 32px; }
+    #icons_block .container {
+      padding: 0;
+      margin: 0; }
+    #icons_block embed {
+      width: 134px; }
+
+  .photo_team h2 {
+    margin-top: -5px;
+    font-size: 13px; }
+
+  .photo_team h4 {
+    font-size: 12px; }
+
+  .section_banner {
+    text-align: center; }
+    .section_banner .container {
+      padding-left: 50px; }
+
+  display: flex;
+  justify-content: center; }
+@media (max-width: 320px) {
+  #icons_block embed {
+    width: 105px; }
+    #icons_block embed .row {
+      margin-bottom: 0; }
+
+  .top-text-style {
+    font-size: 36px !important; }
+
+  .icons_block_tab {
+    padding-right: 0 !important;
+    margin-top: -30px; }
+
+  .icons_second_row {
+    margin-top: 15px;
+    padding-left: 0 !important;
+    position: relative; } }
+@media (min-width: 450px) and (max-width: 768px) {
+  .photo_team h2 {
+    margin-top: -15px;
+    font-size: 23px; }
+
+  .section_banner {
+    display: flex; }
+
+  .top-text-style {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; } }
+@media (min-width: 450px) and (max-width: 600px) {
+  .block_information .icon_block_information p {
+    font-size: 38px; }
+  .block_information .icon_block_information svg {
+    width: 47px; }
+  .block_information .second_icon_block_information svg {
+    width: 40px; }
+  .block_information .second_row {
+    margin-left: 40px; } }
+@media (min-width: 600px) and (max-width: 768px) {
+  .block_information .first_row {
+    padding-top: 130px; }
+
+  #icons_block .container {
+    padding: 0 150px; }
+    #icons_block .container embed {
+      width: 158px; }
+
+  #icons_block .icons_second_row {
+    margin-top: 5px; }
+  #icons_block .icons_block_tab {
+    margin-top: -70px; } }
+@media (min-width: 1500px) {
+  .block_information .first_row, .block_information .second_row {
+    justify-content: center; } }
+@media (max-width: 768px) and (orientation: landscape) {
+  #icons_block .container {
+    width: 100%;
+    padding: 0 85px; }
+    #icons_block .container .icons_second_row {
+      margin-top: 0; }
+    #icons_block .container embed {
+      width: 130px; }
+
+  #menu_left {
+    padding-top: 10px; }
+    #menu_left ul li {
+      font-size: 15px;
+      padding: 4px 0; }
+
+  #menu {
+    padding-top: 80px; }
+    #menu li {
+      padding: 5px 0; }
+
+  .logo_bee {
+    padding: 0 !important; }
+
+  .section_banner {
+    display: flex; } }
+@media (max-width: 768px) {
+  #icons_block {
+    overflow: hidden; }
+    #icons_block .row {
+      bottom: 0 !important;
+      text-align: center; }
+      #icons_block .row embed {
+        margin-bottom: 0; }
+
+  #menu_left {
+    width: 45px;
+    height: 100%; }
+
+  .menu_right {
+    height: 100%;
+    right: 5px; }
+    .menu_right #menuToggle {
+      right: 5px;
+      top: 30px; }
+
+  .photo_team {
+    padding: 75px 15px 0 35px; }
+
+  #menu_left .logo_bee {
+    padding-bottom: 0; }
+
+  #icons_block .container {
+    width: 100%; }
+    #icons_block .container .row embed:hover {
+      transform: none; }
+
+  .top-text-style {
+    font-size: 40px;
+    margin-top: 20px; }
+
+  .button1 {
+    margin-top: 50px; }
+
+  .top-girl-photo img {
+    width: 250px; }
+
+  .top-girl-photo {
+    margin-top: 0px; }
+
+  .about-photo-in-block embed {
+    width: 65%; }
+
+  .feedback-bottom-text-style2 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 11px;
+    color: white; }
+
+  .feedback-top-text-style-2 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 3px;
+    margin-top: 30px; }
+
+  .feedback-underline-text-2 {
+    width: 220px;
+    height: 4px;
+    background-color: #ffd000;
+    border-radius: 10px;
+    margin-bottom: 30px; }
+
+  .marg25 {
+    margin-right: 0px;
+    margin-left: 0px; }
+
+  .feedback-top-text-style {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 3px;
+    margin-top: 25px; }
+
+  .feedback-underline-text-3 {
+    width: 220px;
+    height: 4px;
+    background-color: #ffd000;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s; }
+
+  .feedback-underline-text-1 {
+    width: 115px;
+    height: 4px;
+    background-color: #ffd000;
+    border-radius: 10px;
+    margin-bottom: 30px; }
+
+  .blocks-about {
+    background-color: #111111;
+    width: 250px;
+    height: 250px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+
+  .about-photo-in-block {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    margin-top: 35px;
+    display: grid;
+    justify-items: center; }
+
+  .text-style-in-about-block {
+    font-size: 30px;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; }
+
+  .teacher-block img {
+    width: 300px; }
+
+  .teacher-bottom-block {
+    width: 300px; }
+
+  .centom {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+
+  .row.centom {
+    margin-right: 30px;
+    margin-left: 30px; }
+
+  .feedback-sec#section_vidhuku.container.row {
+    margin-right: 25px;
+    margin-left: 25px; }
+
+  .feedback-sec {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px; }
+
+  .teacher-block img {
+    width: 275px; }
+
+  .cir {
+    height: 60px;
+    width: 60px;
+    background-color: #ffd000;
+    border-radius: 50%;
+    margin-top: -116px;
+    margin-left: 140px;
+    box-shadow: 0px 0px 50px 0px #ffd000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s; }
+
+  div.ex3 {
+    width: 169px;
+    height: 85px;
+    overflow: auto;
+    display: flex;
+    justify-content: center; }
+
+  .mouse-svg {
+    display: grid;
+    justify-content: center;
+    margin-top: 15px; }
+
+  .teacher-bottom-block {
+    background-color: white;
+    width: 261px;
+    height: 235px;
+    border-radius: 35px;
+    margin-top: -60px;
+    padding: 10px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: flex-end; }
+
+  .activity-traveling-text-style {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 30px;
+    color: #161616;
+    margin-top: 17px; }
+
+  .hobby-teaching-bottom-text-style {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 15px;
+    color: #161616;
+    margin-top: 52px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center; }
+
+  .photo-map img {
+    margin-left: -400px;
+    margin-top: -300px;
+    transition: 0.3s; }
+
+  .carousel-indicators {
+    bottom: -50px; }
+
+  .hobby-teaching-text-style {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 30px;
+    color: #161616;
+    margin-top: 21px; }
+
+  .teacher-bottom-block {
+    background-color: white;
+    width: 261px;
+    height: 235px;
+    border-radius: 35px;
+    margin-top: -100px;
+    padding: 10px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: flex-end; } }
+@media (max-height: 550px) {
+  #menu_left {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
