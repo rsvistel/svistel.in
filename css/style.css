@@ -232,7 +232,8 @@ body {
   z-index: 1; }
   .photo_team embed {
     width: 100%;
-    z-index: 0; }
+    z-index: 0;
+    margin-bottom: -6px; }
   .photo_team h2 {
     font-family: "Fjalla One", sans-serif;
     color: snow;
@@ -421,7 +422,6 @@ body {
 .centom {
   display: flex;
   text-align: center;
-  align-items: center;
   justify-content: center; }
 
 .marg25 {
@@ -542,9 +542,6 @@ a.svg {
 .portfolio-web {
   -webkit-transition: 0.3s; }
 
-.portfolio-web:hover {
-  transform: scale(1.1); }
-
 .portfolio-top-text {
   font-size: 30px;
   font-family: "Fjalla One", sans-serif;
@@ -655,8 +652,79 @@ a.svg {
 
 .carousel-indicators {
   bottom: -50px; }
+  .carousel-indicators li {
+    background: snow; }
+  .carousel-indicators .active {
+    background: #ffd000;
+    border-color: #ffd000; }
+
+.carousel-inner {
+  z-index: 0; }
+
+.yellow_circle {
+  background: #ffd000;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: -350px; }
+  .yellow_circle a {
+    font-size: 25px; }
+
+.left_circle {
+  margin-right: 650px; }
+
+.glyphicon {
+  margin-top: 0;
+  font-size: 27px;
+  top: 3px; }
+
+.glyphicon:hover {
+  color: #161616; }
+
+.button_portfolio {
+  height: 45px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s;
+  margin: 50px 0 0 50px; }
+
+.button_right_portfolio {
+  width: 185px;
+  background: #ffd000; }
+
+.button_right_portfolio:hover {
+  background: snow; }
+
+.button_left_portfolio {
+  width: 145px;
+  background: snow; }
+
+.button_left_portfolio:hover {
+  background: #ffcd00; }
+
+#section_vidhuku .row {
+  display: flex;
+  justify-content: center; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .section_banner {
+    text-align: center; }
+    .section_banner .top-text-style {
+      margin-top: 100px; }
+    .section_banner .button1 {
+      margin-top: 50px; }
+    .section_banner .top-girl-photo {
+      margin-top: 30px; }
+
+  .block_information .second_row {
+    margin-left: 50px; }
   .block_information .icon_block_information {
     display: flex;
     flex-direction: column;
@@ -667,20 +735,83 @@ a.svg {
       margin-bottom: 10px; }
     .block_information .icon_block_information h3 {
       margin-top: 5px; }
+    .block_information .icon_block_information .second_row .icon_block_information {
+      margin-left: 20px; }
 
-  #icons_block {
+  #icons_block .row embed {
+    width: 170px;
+    margin-bottom: 50px; }
+
+  #icons_block .row embed:hover {
+    transform: scale(1.1); }
+
+  .blocks-about {
+    margin-bottom: 50px; }
+
+  #icons_block.row {
     overflow: auto;
-    height: auto; }
-    #icons_block .row {
-      overflow: auto;
-      bottom: 0 !important;
-      text-align: center; }
-      #icons_block .row embed {
-        margin-bottom: 10px;
-        width: 250px; }
+    bottom: 0 !important;
+    text-align: center; }
+    #icons_block.row embed {
+      margin-bottom: 0; }
 
   ._team {
-    padding: 75px 15px 0 55px; } }
+    padding: 75px 15px 0 55px; }
+
+  .feedback-sec .row {
+    display: flex;
+    justify-content: center; }
+
+  .photo-map img {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 981px) {
+  .icons_block_tab embed {
+    margin-top: -105px; }
+
+  #icons_block .row embed {
+    margin-bottom: 100px; }
+
+  .hobby-teaching-text-style {
+    margin-left: 90px; } }
+@media (min-width: 769px) and (max-width: 992px) {
+  .centom {
+    padding-left: 70px !important; }
+
+  .photo_team h2 {
+    font-size: 21px; }
+
+  .photo_team .image-team embed {
+    margin-bottom: -16px; }
+
+  #icons_block .container {
+    padding: 0 110px 0 130px; }
+
+  .feedback-underline-text-2 {
+    width: 205px; }
+
+  .marg25 {
+    margin-left: 20px; }
+
+  .teacher-block img {
+    width: 620px; }
+
+  .teacher-bottom-block {
+    width: 600px; }
+
+  .grid_second .feedback-top-text-style-2 {
+    margin-top: 41px; }
+
+  .image-team {
+    text-align: center; }
+
+  .photo_team h2, h4 {
+    margin-left: 45px !important; }
+
+  .portfolio-web img {
+    width: 550px; }
+
+  .left_circle {
+    margin-right: 500px; } }
 @media (min-width: 1023px) and (max-width: 1113px) {
   .block_information .top-butto {
     width: 50px !important; }
@@ -690,7 +821,16 @@ a.svg {
     padding-top: 10px; }
 
   .photo_team {
-    padding: 75px 15px 0 55px; } }
+    padding: 75px 15px 0 55px; }
+
+  .photo-map {
+    display: none; }
+
+  .block_information .third_icon_block_information svg {
+    margin-top: -5px; }
+
+  .empty_div {
+    display: none; } }
 @media only screen and (max-width: 600px) {
   .icons_second_row {
     margin-top: 15px;
@@ -699,8 +839,47 @@ a.svg {
   .icons_block_tab {
     margin-top: -50px; }
 
-  display: flex;
-  justify-content: center; }
+  .act-cent {
+    display: flex;
+    justify-content: center; }
+
+  .centom .grid {
+    padding-right: 0;
+    padding-left: 20px; }
+
+  .cent {
+    flex-direction: column; }
+
+  .teacher-block img {
+    width: 380px; }
+
+  .teacher-bottom-block {
+    width: 350px;
+    height: 280px; }
+
+  .cir {
+    margin-top: -104px;
+    margin-left: 166px; }
+
+  .empty_div {
+    display: none; }
+
+  .block_information {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .block_information .icon_block_information {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: baseline; }
+    .block_information .first_row, .block_information .second_row {
+      margin-bottom: 0;
+      float: left;
+      display: flex;
+      flex-direction: column; }
+
+  #section_vidhuku .row {
+    display: block; } }
 @media (max-width: 450px) {
   .button1 {
     margin-top: 50px !important; }
@@ -718,15 +897,90 @@ a.svg {
     font-size: 13px; }
 
   .photo_team h4 {
-    font-size: 12px; }
+    font-size: 9px; }
 
   .section_banner {
     text-align: center; }
     .section_banner .container {
       padding-left: 50px; }
 
-  display: flex;
-  justify-content: center; }
+  .act-cent {
+    display: flex;
+    justify-content: center; }
+
+  .teacher-block img {
+    width: 270px; }
+
+  .blocks-about {
+    width: 230px; }
+
+  .centom .grid {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+  .feedback-underline-text-2 {
+    width: 317px !important; }
+
+  #section_vidhuku {
+    height: 950px; }
+
+  .feedback-underline-text-3 {
+    width: 180px !important; }
+
+  .block_information {
+    margin-left: 35px; }
+    .block_information .first_row, .block_information .second_row {
+      margin-left: 0; }
+    .block_information .second_row {
+      margin-top: -10px; }
+    .block_information .icon_block_information p {
+      font-size: 30px; }
+    .block_information .icon_block_information svg {
+      width: 40px; }
+    .block_information .second_icon_block_information svg {
+      width: 37px; }
+    .block_information .third_icon_block_information svg {
+      width: 38px;
+      margin-top: -5px; }
+    .block_information .icon_block_information h3 {
+      font-size: 14px; }
+
+  .blocks-about:hover {
+    transform: none; }
+
+  .teacher-bottom-block {
+    width: 270px;
+    height: 235px; }
+
+  .teacher-block {
+    margin-left: 30px; }
+
+  .cir {
+    width: 50px !important;
+    height: 50px !important; }
+    .cir embed {
+      width: 35px !important; }
+
+  .portfolio-section {
+    padding-left: 35px; }
+
+  .portfolio-web img {
+    width: 290px; }
+
+  .left_circle {
+    margin-right: 235px; }
+
+  .yellow_circle {
+    width: 40px;
+    height: 40px;
+    margin-top: -150px; }
+
+  .button_right_portfolio {
+    width: 150px; }
+
+  .button_portfolio {
+    font-size: 14px;
+    margin: 50px 0 0 5px; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -743,11 +997,80 @@ a.svg {
   .icons_second_row {
     margin-top: 15px;
     padding-left: 0 !important;
-    position: relative; } }
+    position: relative; }
+
+  .teacher-block img {
+    width: 210px; }
+
+  #section_vidhuku {
+    height: 950px; }
+
+  .feedback-underline-text-3 {
+    width: 130px !important; }
+
+  .feedback-underline-text-2 {
+    width: 260px !important; }
+
+  .photo_team h2 {
+    margin-left: 0; }
+
+  .teacher-bottom-block {
+    width: 250px;
+    height: 215px;
+    margin-top: -180px !important; }
+    .teacher-bottom-block .container {
+      padding: 0; }
+
+  .activity-traveling-text-style {
+    font-size: 24px !important;
+    text-align: center; }
+
+  .hobby-teaching-text-style {
+    font-size: 23px !important;
+    text-align: center; }
+
+  .photo_team h4 {
+    margin-left: 0;
+    font-size: 9px; }
+
+  .block_information {
+    margin-left: 35px; }
+    .block_information .second_row {
+      margin-top: -10px; }
+    .block_information .icon_block_information p {
+      font-size: 30px; }
+    .block_information .icon_block_information svg {
+      width: 40px; }
+    .block_information .second_icon_block_information svg {
+      width: 25px; }
+    .block_information .third_icon_block_information svg {
+      width: 38px;
+      margin-top: -5px; }
+    .block_information .icon_block_information h3 {
+      font-size: 14px; }
+
+  .portfolio-web img {
+    width: 235px; }
+
+  .button_right_portfolio {
+    width: 125px; }
+
+  .button_portfolio {
+    font-size: 12px; }
+
+  .button_left_portfolio {
+    width: 100px; }
+
+  .left_circle {
+    margin-right: 185px; } }
 @media (min-width: 450px) and (max-width: 768px) {
   .photo_team h2 {
-    margin-top: -15px;
-    font-size: 23px; }
+    font-size: 17px;
+    margin-left: 10px; }
+
+  .photo_team h4 {
+    font-size: 13px;
+    margin-left: 5px; }
 
   .section_banner {
     display: flex; }
@@ -756,7 +1079,10 @@ a.svg {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+
+  .portfolio-section {
+    padding-left: 25px; } }
 @media (min-width: 450px) and (max-width: 600px) {
   .block_information .icon_block_information p {
     font-size: 38px; }
@@ -765,20 +1091,77 @@ a.svg {
   .block_information .second_icon_block_information svg {
     width: 40px; }
   .block_information .second_row {
-    margin-left: 40px; } }
+    margin-left: 40px;
+    margin-top: -20px; }
+
+  .photo_team embed {
+    margin-bottom: -14px; }
+
+  .text_col-xs {
+    width: 59%; }
+
+  .left_circle {
+    margin-right: 270px; }
+
+  .yellow_circle {
+    margin-top: -190px; }
+
+  .portfolio-web img {
+    width: 350px; }
+
+  .button_left_portfolio {
+    margin-left: 10px; } }
+@media (min-width: 600px) and (max-width: 767px) {
+  .icons_block_tab {
+    margin-top: -70px; }
+
+  div.ex3 {
+    width: 330px !important; }
+
+  .activity-traveling-text-style {
+    margin-left: 110px; }
+
+  .hobby-teaching-text-style {
+    margin-left: 95px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
-    padding-top: 130px; }
+    margin-left: 0; }
 
-  #icons_block .container {
-    padding: 0 150px; }
-    #icons_block .container embed {
-      width: 158px; }
+  #icons_block .container embed {
+    width: 158px; }
 
   #icons_block .icons_second_row {
     margin-top: 5px; }
-  #icons_block .icons_block_tab {
-    margin-top: -70px; } }
+
+  .feedback-sec .row {
+    display: flex;
+    flex-direction: row; }
+
+  .empty_div {
+    display: none; }
+
+  .feedback-underline-text-2 {
+    width: 170px !important; }
+
+  .teacher-block img {
+    width: 520px; }
+
+  .cir {
+    margin-top: -30px;
+    margin-left: 0; }
+
+  .teacher-bottom-block {
+    width: 450px;
+    height: 300px; }
+
+  .portfolio-web img {
+    width: 500px; }
+
+  .left_circle {
+    margin-right: 450px; }
+
+  .yellow_circle {
+    margin-top: -250px; } }
 @media (min-width: 1500px) {
   .block_information .first_row, .block_information .second_row {
     justify-content: center; } }
@@ -790,6 +1173,9 @@ a.svg {
       margin-top: 0; }
     #icons_block .container embed {
       width: 130px; }
+
+  #icons_block {
+    height: 800px; }
 
   #menu_left {
     padding-top: 10px; }
@@ -806,7 +1192,13 @@ a.svg {
     padding: 0 !important; }
 
   .section_banner {
-    display: flex; } }
+    display: flex; }
+
+  .button_portfolio {
+    margin-top: 150px; }
+
+  .yellow_circle {
+    margin-top: -90px; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
@@ -925,12 +1317,6 @@ a.svg {
     justify-content: center;
     margin-top: 15px; }
 
-  .teacher-block img {
-    width: 300px; }
-
-  .teacher-bottom-block {
-    width: 300px; }
-
   .centom {
     display: flex;
     text-align: center;
@@ -938,32 +1324,22 @@ a.svg {
     justify-content: center;
     flex-direction: column; }
 
-  .row.centom {
-    margin-right: 30px;
-    margin-left: 30px; }
-
   .feedback-sec#section_vidhuku.container.row {
     margin-right: 25px;
     margin-left: 25px; }
 
   .feedback-sec {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 40px;
     margin-right: 40px; }
 
-  .teacher-block img {
-    width: 275px; }
-
   .cir {
     height: 60px;
     width: 60px;
     background-color: #ffd000;
     border-radius: 50%;
-    margin-top: -116px;
-    margin-left: 140px;
     box-shadow: 0px 0px 50px 0px #ffd000;
     display: flex;
     justify-content: center;
@@ -984,8 +1360,6 @@ a.svg {
 
   .teacher-bottom-block {
     background-color: white;
-    width: 261px;
-    height: 235px;
     border-radius: 35px;
     margin-top: -60px;
     padding: 10px;
@@ -1024,14 +1398,38 @@ a.svg {
 
   .teacher-bottom-block {
     background-color: white;
-    width: 261px;
-    height: 235px;
     border-radius: 35px;
     margin-top: -100px;
     padding: 10px;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9);
     display: flex;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  .cent {
+    display: flex; }
+
+  .photo-map img {
+    display: none; } }
+@media (min-width: 1024px) and (max-width: 1112px) {
+  #icons_block .row embed {
+    margin-bottom: 45px; }
+
+  .block_information .icon_block_information h3 {
+    font-size: 19px; }
+
+  .block_information .second_row {
+    margin-left: 30px; }
+
+  .photo_team h4 {
+    font-size: 17px; }
+  .photo_team h2 {
+    font-size: 22px; }
+
+  .teacher-bottom-block {
+    height: 400px; } }
+@media (max-width: 568px) and (orientation: landscape) {
+  .feedback-sec .col-xs-4 {
+    width: 28%; } }
 @media (max-height: 550px) {
   #menu_left {
     display: none; } }
