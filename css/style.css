@@ -772,8 +772,8 @@ a.svg {
   #icons_block .row embed {
     margin-bottom: 115px; }
 
-  .hobby-teaching-text-style {
-    margin-left: 90px; } }
+  .hobby-teaching-text-style, .activity-traveling-text-style {
+    margin-left: 35px; } }
 @media (min-width: 769px) and (max-width: 992px) {
   .centom {
     padding-left: 70px !important; }
@@ -835,7 +835,16 @@ a.svg {
     font-size: 16px; }
 
   .plane {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  #section_vidhuku .empty_div {
+    display: none; }
+
+  .centom {
+    margin-left: 20px; }
+
+  .feedback-top-text-style {
+    font-size: 28px; } }
 @media only screen and (max-width: 600px) {
   .icons_second_row {
     margin-top: 15px;
@@ -1335,6 +1344,9 @@ a.svg {
     margin-left: 40px;
     margin-right: 40px; }
 
+  #hobby_activity {
+    margin-left: 0; }
+
   .cir {
     height: 60px;
     width: 60px;
@@ -1345,6 +1357,8 @@ a.svg {
     justify-content: center;
     align-items: center;
     transition: 0.2s; }
+    .cir embed {
+      width: 25px !important; }
 
   div.ex3 {
     height: 85px;
