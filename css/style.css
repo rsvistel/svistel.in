@@ -927,14 +927,14 @@ a.svg {
     width: 270px; }
 
   .blocks-about {
-    width: 230px; }
+    width: 230px !important; }
 
   .centom .grid {
     padding-right: 10px;
     padding-left: 10px; }
 
   .feedback-underline-text-2 {
-    width: 317px !important; }
+    width: 295px !important; }
 
   #section_vidhuku {
     height: 950px; }
@@ -972,13 +972,13 @@ a.svg {
       width: 25px !important; }
 
   .portfolio-section {
-    padding-right: 20px; }
+    padding-right: 25px; }
 
   .portfolio-web img {
-    width: 290px; }
+    width: 250px; }
 
   .left_circle {
-    margin-right: 235px; }
+    margin-right: 205px; }
 
   .yellow_circle {
     width: 40px;
@@ -986,7 +986,7 @@ a.svg {
     margin-top: -150px; }
 
   .button_right_portfolio {
-    width: 150px; }
+    width: 135px; }
 
   .button_portfolio {
     font-size: 12px;
@@ -1030,13 +1030,13 @@ a.svg {
     width: 130px !important; }
 
   .feedback-underline-text-2 {
-    width: 260px !important; }
+    width: 225px !important; }
 
   .photo_team h2 {
     margin-left: 0; }
 
   .teacher-bottom-block {
-    width: 250px;
+    width: 230px;
     height: 215px;
     margin-top: -180px !important; }
     .teacher-bottom-block .container {
@@ -1054,6 +1054,8 @@ a.svg {
     margin-left: 0;
     font-size: 9px; }
 
+  .block_information .first_row .icon_block_information {
+    padding-left: 0; }
   .block_information .second_row {
     margin-top: -10px; }
   .block_information .icon_block_information p {
@@ -1069,7 +1071,7 @@ a.svg {
     font-size: 12px; }
 
   .portfolio-web img {
-    width: 235px; }
+    width: 200px; }
 
   .button_right_portfolio {
     width: 125px; }
@@ -1081,7 +1083,12 @@ a.svg {
     width: 100px; }
 
   .left_circle {
-    margin-right: 185px; } }
+    margin-right: 165px; }
+
+  .yellow_circle {
+    width: 35px;
+    height: 35px;
+    margin-top: -115px; } }
 @media (min-width: 450px) and (max-width: 768px) {
   .photo_team h2 {
     font-size: 17px;
