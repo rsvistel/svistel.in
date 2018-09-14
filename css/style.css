@@ -873,7 +873,10 @@ a.svg {
 
   .cir {
     margin-top: -104px;
-    margin-left: 166px; }
+    margin-left: 235px; }
+
+  .activity-traveling-text-style, .hobby-teaching-text-style {
+    text-align: center; }
 
   .empty_div {
     display: none; }
@@ -993,8 +996,13 @@ a.svg {
     width: 150px; }
 
   .button_portfolio {
-    font-size: 14px;
-    margin: 50px 0 0 5px; } }
+    font-size: 12px;
+    margin: 50px 0 0 5px; }
+
+  .teacher-bottom-block .container {
+    width: 255px; }
+    .teacher-bottom-block .container .cir {
+      margin-left: 165px; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1341,7 +1349,7 @@ a.svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 33px;
     margin-right: 40px; }
 
   #hobby_activity {
