@@ -902,7 +902,7 @@ a.svg {
     margin-top: 50px !important; }
 
   #icons_block {
-    padding: 50px 19px 10px 32px; }
+    padding: 50px 19px 10px 2px; }
     #icons_block .container {
       padding: 0;
       margin: 0; }
@@ -918,8 +918,6 @@ a.svg {
 
   .section_banner {
     text-align: center; }
-    .section_banner .container {
-      padding-left: 50px; }
 
   .act-cent {
     display: flex;
@@ -944,23 +942,21 @@ a.svg {
   .feedback-underline-text-3 {
     width: 180px !important; }
 
-  .block_information {
-    margin-left: 35px; }
-    .block_information .first_row, .block_information .second_row {
-      margin-left: 0; }
-    .block_information .second_row {
-      margin-top: -10px; }
-    .block_information .icon_block_information p {
-      font-size: 30px; }
-    .block_information .icon_block_information svg {
-      width: 40px; }
-    .block_information .second_icon_block_information svg {
-      width: 37px; }
-    .block_information .third_icon_block_information svg {
-      width: 38px;
-      margin-top: -5px; }
-    .block_information .icon_block_information h3 {
-      font-size: 14px; }
+  .block_information .first_row, .block_information .second_row {
+    margin-left: 0; }
+  .block_information .second_row {
+    margin-top: -10px; }
+  .block_information .icon_block_information p {
+    font-size: 30px; }
+  .block_information .icon_block_information svg {
+    width: 40px; }
+  .block_information .second_icon_block_information svg {
+    width: 37px; }
+  .block_information .third_icon_block_information svg {
+    width: 38px;
+    margin-top: -5px; }
+  .block_information .icon_block_information h3 {
+    font-size: 14px; }
 
   .blocks-about:hover {
     transform: none; }
@@ -969,9 +965,6 @@ a.svg {
     width: 270px;
     height: 235px; }
 
-  .teacher-block {
-    margin-left: 30px; }
-
   .cir {
     width: 50px !important;
     height: 50px !important; }
@@ -979,7 +972,7 @@ a.svg {
       width: 25px !important; }
 
   .portfolio-section {
-    padding-left: 35px; }
+    padding-right: 20px; }
 
   .portfolio-web img {
     width: 290px; }
@@ -1002,7 +995,13 @@ a.svg {
   .teacher-bottom-block .container {
     width: 255px; }
     .teacher-bottom-block .container .cir {
-      margin-left: 165px; } }
+      margin-left: 165px; }
+
+  #menu_left {
+    display: none; }
+
+  .feedback-sec {
+    margin-left: 10px !important; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1055,21 +1054,19 @@ a.svg {
     margin-left: 0;
     font-size: 9px; }
 
-  .block_information {
-    margin-left: 35px; }
-    .block_information .second_row {
-      margin-top: -10px; }
-    .block_information .icon_block_information p {
-      font-size: 30px; }
-    .block_information .icon_block_information svg {
-      width: 40px; }
-    .block_information .second_icon_block_information svg {
-      width: 25px; }
-    .block_information .third_icon_block_information svg {
-      width: 38px;
-      margin-top: -5px; }
-    .block_information .icon_block_information h3 {
-      font-size: 14px; }
+  .block_information .second_row {
+    margin-top: -10px; }
+  .block_information .icon_block_information p {
+    font-size: 28px; }
+  .block_information .icon_block_information svg {
+    width: 30px; }
+  .block_information .second_icon_block_information svg {
+    width: 25px; }
+  .block_information .third_icon_block_information svg {
+    width: 30px;
+    margin-top: -5px; }
+  .block_information .icon_block_information h3 {
+    font-size: 12px; }
 
   .portfolio-web img {
     width: 235px; }
