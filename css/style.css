@@ -514,7 +514,6 @@ body {
   -webkit-transition: 0.3s; }
 
 div.ex3 {
-  width: 530px;
   height: 135px;
   overflow: auto;
   display: flex;
@@ -1140,9 +1139,6 @@ a.svg {
     display: flex;
     flex-direction: row; }
 
-  .empty_div {
-    display: none; }
-
   .feedback-underline-text-2 {
     width: 170px !important; }
 
@@ -1219,10 +1215,8 @@ a.svg {
     height: 100%; }
 
   .menu_right {
-    height: 100%;
-    right: 5px; }
+    height: 100%; }
     .menu_right #menuToggle {
-      right: 5px;
       top: 30px; }
 
   .photo_team {
@@ -1397,7 +1391,7 @@ a.svg {
 
   .hobby-teaching-text-style {
     font-family: "Fjalla One", sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     color: #161616;
     margin-top: 21px; }
 
