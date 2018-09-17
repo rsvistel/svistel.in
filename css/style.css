@@ -225,24 +225,27 @@ body {
   height: 100vh;
   min-height: 400px;
   background-size: cover;
+  background-image: linear-gradient(#0f0f0f, #161616 50%, #0f0f0f 80%);
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  background-image: linear-gradient(#0f0f0f, #161616 50%, #0f0f0f 80%);
-  z-index: 1; }
-  .photo_team embed {
-    width: 100%;
-    z-index: 0;
-    margin-bottom: -6px; }
-  .photo_team h2 {
+  align-items: center; }
+  .photo_team img {
+    height: 200px;
+    border-radius: 20px;
+    transition: 0.2s; }
+  .photo_team h3 {
     font-family: "Fjalla One", sans-serif;
-    color: snow;
-    margin-top: -75px;
-    margin-left: 33px; }
-  .photo_team h4 {
-    font-family: "Fjalla One", sans-serif;
-    color: yellow;
-    margin-left: 33px; }
+    color: snow; }
+  .photo_team h5 {
+    font-family: "Fjalla One", sans-serif; }
+  .photo_team .photo_block {
+    text-align: center; }
+  .photo_team .row {
+    display: flex;
+    justify-content: center; }
+  .photo_team .feedback-underline-text-3 {
+    margin: 0 auto;
+    width: 165px; }
 
 .section_banner {
   display: flex;
@@ -710,6 +713,9 @@ a.svg {
   display: flex;
   justify-content: center; }
 
+#portfolio img {
+  width: 97%; }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .section_banner {
     text-align: center; }
@@ -778,12 +784,6 @@ a.svg {
   .centom {
     padding-left: 70px !important; }
 
-  .photo_team h2 {
-    font-size: 21px; }
-
-  .photo_team .image-team embed {
-    margin-bottom: -16px; }
-
   #icons_block .container {
     padding: 0 180px 0 170px; }
 
@@ -805,9 +805,6 @@ a.svg {
   .image-team {
     text-align: center; }
 
-  .photo_team h2, h4 {
-    margin-left: 45px !important; }
-
   .portfolio-web img {
     width: 550px; }
 
@@ -820,9 +817,6 @@ a.svg {
   .block_information .icon_block_information p {
     font-size: 30px;
     padding-top: 10px; }
-
-  .photo_team {
-    padding: 75px 15px 0 55px; }
 
   .photo-map {
     display: none; }
@@ -908,13 +902,6 @@ a.svg {
       margin: 0; }
     #icons_block embed {
       width: 134px; }
-
-  .photo_team h2 {
-    margin-top: -5px;
-    font-size: 13px; }
-
-  .photo_team h4 {
-    font-size: 9px; }
 
   .section_banner {
     text-align: center; }
@@ -1007,7 +994,14 @@ a.svg {
     margin-bottom: 10px; }
 
   body {
-    padding-right: 15px; } }
+    padding-right: 15px; }
+
+  .photo_team {
+    min-height: 1000px; }
+    .photo_team .row {
+      flex-direction: column; }
+    .photo_team .photo_block {
+      margin-bottom: 20px; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1038,9 +1032,6 @@ a.svg {
   .feedback-underline-text-2 {
     width: 225px !important; }
 
-  .photo_team h2 {
-    margin-left: 0; }
-
   .teacher-bottom-block {
     width: 230px;
     height: 215px;
@@ -1055,10 +1046,6 @@ a.svg {
   .hobby-teaching-text-style {
     font-size: 23px !important;
     text-align: center; }
-
-  .photo_team h4 {
-    margin-left: 0;
-    font-size: 9px; }
 
   .block_information .first_row .icon_block_information {
     padding-left: 0; }
@@ -1096,14 +1083,6 @@ a.svg {
     height: 35px;
     margin-top: -115px; } }
 @media (min-width: 450px) and (max-width: 768px) {
-  .photo_team h2 {
-    font-size: 17px;
-    margin-left: 10px; }
-
-  .photo_team h4 {
-    font-size: 13px;
-    margin-left: 5px; }
-
   .section_banner {
     display: flex; }
 
@@ -1126,9 +1105,6 @@ a.svg {
     margin-left: 40px;
     margin-top: -20px; }
 
-  .photo_team embed {
-    margin-bottom: -14px; }
-
   .text_col-xs {
     width: 59%; }
 
@@ -1139,7 +1115,14 @@ a.svg {
     margin-top: -190px; }
 
   .portfolio-web img {
-    width: 350px; } }
+    width: 350px; }
+
+  .photo_team {
+    min-height: 1000px; }
+    .photo_team .row {
+      flex-direction: column; }
+    .photo_team .photo_block {
+      margin-bottom: 20px; } }
 @media (min-width: 600px) and (max-width: 767px) {
   .icons_block_tab {
     margin-top: -70px; }
@@ -1197,17 +1180,27 @@ a.svg {
     margin-left: 0; }
 
   .feedback-underline-text-3 {
-    width: 160px !important; }
+    width: 115px !important; }
 
   #section_vidhuku .empty_div {
-    display: none; } }
+    display: none; }
+
+  .photo_team h3 {
+    font-size: 17px; }
+  .photo_team h5 {
+    font-size: 11px; }
+  .photo_team img {
+    height: 120px; } }
 @media (min-width: 1500px) {
   .block_information .first_row, .block_information .second_row {
     justify-content: center; } }
 @media (max-width: 768px) and (orientation: landscape) {
+  body {
+    padding-right: 35px; }
+
   #icons_block .container {
     width: 100%;
-    padding: 0 85px; }
+    padding: 0 185px; }
     #icons_block .container .icons_second_row {
       margin-top: 0; }
     #icons_block .container embed {
@@ -1237,7 +1230,13 @@ a.svg {
     margin-top: 150px; }
 
   .yellow_circle {
-    margin-top: -90px; } }
+    margin-top: -90px; }
+
+  #section_vidhuku {
+    height: 550px; }
+
+  #section_vidhuku .col-xs-4 embed {
+    width: 120px !important; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
@@ -1257,9 +1256,6 @@ a.svg {
     .menu_right #menuToggle {
       top: 30px;
       right: 7px; }
-
-  .photo_team {
-    padding: 75px 15px 0 35px; }
 
   #menu_left .logo_bee {
     padding-bottom: 0; }
@@ -1372,7 +1368,7 @@ a.svg {
     flex-direction: column;
     justify-content: center;
     margin-left: 33px;
-    margin-right: 40px; }
+    margin-right: 25px; }
 
   #hobby_activity {
     margin-left: 0; }
@@ -1455,7 +1451,11 @@ a.svg {
     display: none; }
 
   .grid_second .feedback-top-text-style-2 {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  #photo_team {
+    display: flex;
+    flex-direction: column; } }
 @media (min-width: 1024px) and (max-width: 1112px) {
   #icons_block .row embed {
     margin-bottom: 45px; }
@@ -1466,16 +1466,29 @@ a.svg {
   .block_information .second_row {
     margin-left: 30px; }
 
-  .photo_team h4 {
-    font-size: 17px; }
-  .photo_team h2 {
-    font-size: 22px; }
-
   .teacher-bottom-block {
     height: 400px; } }
 @media (max-width: 568px) and (orientation: landscape) {
   .feedback-sec .col-xs-4 {
-    width: 28%; } }
+    width: 28%; }
+
+  #icons_block .container {
+    padding: 0 100px !important; }
+
+  #section_vidhuku {
+    height: 768px; }
+
+  .yellow_circle {
+    margin-top: 0; } }
+@media (max-width: 667px) and (orientation: landscape) {
+  #icons_block .container {
+    padding: 0 158px; }
+
+  #section_vidhuku .col-xs-4 embed {
+    width: 100px !important; }
+
+  .hobby-teaching-text-style, .activity-traveling-text-style {
+    margin-left: 50px; } }
 @media (max-height: 550px) {
   #menu_left {
     display: none; } }
