@@ -1001,7 +1001,13 @@ a.svg {
     display: none; }
 
   .feedback-sec {
-    margin-left: 10px !important; } }
+    margin-left: 10px !important; }
+
+  .plane {
+    margin-bottom: 10px; }
+
+  body {
+    padding-right: 15px; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
