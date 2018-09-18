@@ -13,26 +13,36 @@ $(document).ready(function() {
         var delta = e.originalEvent.deltaY;
         if (delta > 0) scroll('down');
         else scroll('up');
-        scroll();
     });
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
         $(this).toggleClass('open');
     });
+    $("#navigation li").click(function () {
+        scroll(parseInt($(this).attr('id')))
+    });
 });
-function scroll(direction) {
+function scroll(param) {
     var speed = 2000;
-    if (direction === 'down' && activeSection < sections.length-1) {
+    if (param === 'down' && activeSection < sections.length-1) {
         activeSection++;
-        start()
-    } else if (direction === 'up' && activeSection > 0) {
+        start(activeSection)
+    } else if (param === 'up' && activeSection > 0) {
         activeSection--;
-        start()
+        start(activeSection)
+    } else {
+        activeSection = param;
+        start(param);
     }
-    function start() {
+    function start(i) {
         $('html, body').animate({
-            scrollTop: sections[activeSection].offset().top
+            scrollTop: sections[i].offset().top
         }, speed);
         $(document).unbind('wheel');
+        var line = '<li id="bottomline" style="padding: 0"><div class="bottomline"></div></li>';
+        $('#bottomline .bottomline').animate({
+            height: 0
+        },1000);
+        $('#'+activeSection).after(line);
         setTimeout(function () {
             $(document).bind('wheel', function (e) {
                 var delta = e.originalEvent.deltaY;
