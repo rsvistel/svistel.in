@@ -1,19 +1,10 @@
 var sections = [];
 var activeSection = 0;
 $(document).ready(function() {
-    var banner = $('#section_banner');
-    var stats = $('#block_information');
-    var skills = $('#icons_block');
-    var team = $('#photo_team');
-    var feedback = $('#section_vidhuku');
-    var activities = $('#hobby_activity');
-    var portfolio = $('#portfolio-section');
-    sections = [banner, stats, skills, team, feedback, activities, portfolio];
-    $(document).bind('wheel', function (e) {
-        var delta = e.originalEvent.deltaY;
-        if (delta > 0) scroll('down');
-        else scroll('up');
+    $('.section').each(function () {
+       sections.push($(this));
     });
+    bindScroll();
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
         $(this).toggleClass('open');
     });
@@ -29,7 +20,7 @@ function scroll(param) {
     } else if (param === 'up' && activeSection > 0) {
         activeSection--;
         start(activeSection)
-    } else {
+    } else if (param !== null && activeSection > 0 && activeSection < sections.length-1) {
         activeSection = param;
         start(param);
     }
@@ -42,13 +33,16 @@ function scroll(param) {
         $('#bottomline .bottomline').animate({
             height: 0
         },1000);
-        $('#'+activeSection).after(line);
+        $('#' + activeSection).after(line);
         setTimeout(function () {
-            $(document).bind('wheel', function (e) {
-                var delta = e.originalEvent.deltaY;
-                if (delta > 0) scroll('down');
-                else scroll('up');
-            });
+            bindScroll()
         }, speed);
     }
+}
+function bindScroll() {
+    $(document).bind('wheel', function (e) {
+        var delta = e.originalEvent.deltaY;
+        if (delta > 0) scroll('down');
+        else scroll('up');
+    });
 }
