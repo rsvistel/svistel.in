@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers')
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin')
 
+body, html
+  overflow: hidden
 
 body
+  overflow: hidden
   margin: 0
   padding: 0
   background-color: #161616!important
@@ -14,9 +17,6 @@ body
   font-family: "Fjalla One", sans-serif
   text-align: center
   padding-top: 35px
-
-
-
 
 #menuToggle
   display: block
@@ -147,6 +147,10 @@ body
     height: 60px
     background: #ffcd00
     margin: 0 auto
+    animation: append 1s
+    @keyframes append
+      from
+        height: 0
   .logo_bee embed
     pointer-events: none
     cursor: pointer
@@ -1210,9 +1214,6 @@ label
     img
       margin-bottom: 15px
       width: 88%
-
-
-
 
 
 

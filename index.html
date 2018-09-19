@@ -12,29 +12,47 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Roman</title>
 </head>
 <body>
 
-    <div id="menu_left">
-        <a href="#">
-        <div class="logo_bee"><embed src="img/menu/logo.svg"></div>
+<div id="menu_left">
+    <a href="#">
+        <div class="logo_bee">
+            <embed src="img/menu/logo.svg">
+        </div>
+    </a>
+    <ul id="navigation" type="none">
+        <a>
+            <li id="0"><span style="color: #ffcd00">0</span>1</li>
         </a>
-            <ul type="none">
-                <a href="#section_banner"><li><span style="color: #ffcd00">0</span>1</li></a>
-                <li style="padding: 0"><div class="bottomline"></div></li>
-                <a href="#block_information"><li><span style="color: #ffcd00">0</span>2</li></a>
-                    <a href="#icons_block"><li><span style="color: #ffcd00">0</span>3</li></a>
-                    <a href="#photo_team"><li><span style="color: #ffcd00">0</span>4</li></a>
-                    <a href="#section_feedbacks"><li><span style="color: #ffcd00">0</span>5</li></a>
-                    <a href="#hobby_activity"><li><span style="color: #ffcd00">0</span>6</li></a>
-                    <a href="#section_banner"><li><span style="color: #ffcd00">0</span>7</li></a>
-            </ul>
-    </div>
+        <li id="bottomline" style="padding: 0">
+            <div class="bottomline"></div>
+        </li>
+        <a>
+            <li id="1"><span style="color: #ffcd00">0</span>2</li>
+        </a>
+        <a>
+            <li id="2"><span style="color: #ffcd00">0</span>3</li>
+        </a>
+        <a>
+            <li id="3"><span style="color: #ffcd00">0</span>4</li>
+        </a>
+        <a>
+            <li id="4"><span style="color: #ffcd00">0</span>5</li>
+        </a>
+        <a>
+            <li id="5"><span style="color: #ffcd00">0</span>6</li>
+        </a>
+        <a>
+            <li id="6"><span style="color: #ffcd00">0</span>7</li>
+        </a>
+    </ul>
+</div>
 
-  <div class="section_banner" id="section_banner">
+<div class="section_banner section" id="section_banner">
     <div class="container">
         <div class="row">
             <div class="col-md-1"></div>
@@ -60,27 +78,41 @@
             <div class="menu_right">
                 <nav role="navigation">
                     <div id="menuToggle">
-                        <input type="checkbox" />
+                        <input type="checkbox"/>
                         <span></span>
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <a href="#"><li>Home</li></a>
-                            <a href="#"><li>About</li></a>
-                            <a href="#"><li>Info</li></a>
-                            <a href="#"><li>Contact</li></a>
-                            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                            <li style="text-align: center"><embed src="img/menu/logo.svg"></li>
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About</li>
+                            </a>
+                            <a href="#">
+                                <li>Info</li>
+                            </a>
+                            <a href="#">
+                                <li>Contact</li>
+                            </a>
+                            <a href="https://erikterwan.com/" target="_blank">
+                                <li>Show me more</li>
+                            </a>
+                            <li style="text-align: center">
+                                <embed src="img/menu/logo.svg">
+                            </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="plane">
-                    <a href="#"><embed src="img/menu/plane.svg"></a>
+                    <a href="#">
+                        <embed src="img/menu/plane.svg">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
 
     <div class="block_information" id="block_information">
@@ -386,202 +418,195 @@
     </div>
 
 
-    <div class="photo_team" id="photo_team">
-        <h1 class="heading">Our Team</h1>
-          <div class="photo_team_container">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-md-3 photo_block">
-                         <img src="img/team/svist.jpg">
-                         <h3>Roman Svistel</h3>
-                         <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
-                         <h5>Frontend/Backend Developer</h5>
-                     </div>
+<div class="photo_team section" id="photo_team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 photo_block">
+                <img src="img/svist.jpg">
+                <h3>Roman Svistel</h3>
+                <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
+                <h5>Frontend/Backend Developer</h5>
+            </div>
 
-                     <div class="col-md-3 photo_block">
-                         <img src="img/team/orko.jpeg">
-                         <h3>Orest lysiuk</h3>
-                         <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
-                         <h5>Frontend Developer/Designer</h5>
-                     </div>
+            <div class="col-md-3 photo_block">
+                <img src="img/orko.jpeg">
+                <h3>Orest lysiuk</h3>
+                <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
+                <h5>Frontend Developer/Designer</h5>
+            </div>
 
-                     <div class="col-md-3 photo_block">
-                         <img src="img/team/nazar.jpg">
-                         <h3>Nazar Ogorodnyk</h3>
-                         <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
-                         <h5>Frontend developer</h5>
-                     </div>
-                 </div>
-             </div>
-          </div>
+            <div class="col-md-3 photo_block">
+                <img src="img/nazar.jpg">
+                <h3>Nazar Ogorodnyk</h3>
+                <div class="feedback-underline-text-2 feedback-underline-text-3"></div>
+                <h5>Frontend developer</h5>
+            </div>
+        </div>
     </div>
+</div>
 
-
-    <div class="feedbacks" id="section_feedbacks">
-        <h1 class="heading">Feedbacks</h1>
-        <div class="feedback-sec" id="section_vidhuku">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1 empty_div"></div>
-                        <div class="col-md-2 col-xs-4">
-                            <embed src="img/J.svg" style="width: 100%">
-                        </div>
-                        <div class="col-md-3 col-xs-8 text_col-xs">
-                            <p class="feedback-top-text-style">Matthew, Australia</p>
-                            <div class="feedback-underline-text-3"></div>
-                            <p class="feedback-bottom-text-style">
-                                Great Freelancer that is dedicated to achieving
-                                customer satisfaction and quality products.
-                            </p>
-                        </div>
-                        <div class="col-md-1 empty_div"></div>
-                        <div class="col-md-2 col-xs-4">
-                            <embed src="img/T.svg" style="width: 100%">
-                        </div>
-                        <div class="col-md-3 col-xs-8 text_col-xs">
-                            <p class="feedback-top-text-style">Belal, UAE</p>
-                            <div class="feedback-underline-text-1"></div>
-                            <p class="feedback-bottom-text-style">
-                                Very professional. Amazing design ideas and
-                                perfect quality of work. always available to
-                                answer any questions. <span style="color: gray; font-size: 11px">more</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row centom">
-                        <div class="col-md-4 col-xs-12 grid grid_first">
-                            <p class="feedback-top-text-style-2">Marcus, Singapore</p>
-                            <div class="feedback-underline-text-2"></div>
-                            <p class="feedback-bottom-text-style2 marg25">
-                                Very helpful designer, good quality of work,
-                                and doesn't stop until I was satisfied.
-                                Also went the extra mile in helping me.
-                                Will definitely recommend Roman to others,
-                                and will definitely engage his services again.
-                                Thank you!
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 grid grid_second">
-                            <p class="feedback-top-text-style-2">Thomas, Denmark</p>
-                            <div class="feedback-underline-text-2"></div>
-                            <p class="feedback-bottom-text-style2 marg25">
-                                Roman was very professional. He was quick at
-                                understanding all the communicated needs. The needed
-                                changes were done with a blink of an eye.
-                                I highly recommend him for such tasks.
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 grid">
-                            <p class="feedback-top-text-style-2">Marcus, Singapore</p>
-                            <div class="feedback-underline-text-2"></div>
-                            <p class="feedback-bottom-text-style2 marg25">
-                                Very helpful designer, good quality of work,
-                                and doesn't stop until I was satisfied.
-                                Also went the extra mile in helping me.
-                                Will definitely recommend Roman to others,
-                                and will definitely engage his services again.
-                                Thank you!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<div class="feedback-sec section" id="section_vidhuku">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 empty_div"></div>
+            <div class="col-md-2 col-xs-4">
+                <embed src="img/J.svg" style="width: 100%">
+            </div>
+            <div class="col-md-3 col-xs-8 text_col-xs">
+                <p class="feedback-top-text-style">Matthew, Australia</p>
+                <div class="feedback-underline-text-3"></div>
+                <p class="feedback-bottom-text-style">
+                    Great Freelancer that is dedicated to achieving
+                    customer satisfaction and quality products.
+                </p>
+            </div>
+            <div class="col-md-1 empty_div"></div>
+            <div class="col-md-2 col-xs-4">
+                <embed src="img/T.svg" style="width: 100%">
+            </div>
+            <div class="col-md-3 col-xs-8 text_col-xs">
+                <p class="feedback-top-text-style">Belal, UAE</p>
+                <div class="feedback-underline-text-1"></div>
+                <p class="feedback-bottom-text-style">
+                    Very professional. Amazing design ideas and
+                    perfect quality of work. always available to
+                    answer any questions. <span style="color: gray; font-size: 11px">more</span>
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="feedback-sec" id="hobby_activity">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 empty_div"></div>
-                <div class="cent">
-                    <div class="col-md-5 block-in-center">
+    <div class="container">
+        <div class="row centom">
+            <div class="col-md-4 col-xs-12 grid grid_first">
+                <p class="feedback-top-text-style-2">Marcus, Singapore</p>
+                <div class="feedback-underline-text-2"></div>
+                <p class="feedback-bottom-text-style2 marg25">
+                    Very helpful designer, good quality of work,
+                    and doesn't stop until I was satisfied.
+                    Also went the extra mile in helping me.
+                    Will definitely recommend Roman to others,
+                    and will definitely engage his services again.
+                    Thank you!
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-12 grid grid_second">
+                <p class="feedback-top-text-style-2">Thomas, Denmark</p>
+                <div class="feedback-underline-text-2"></div>
+                <p class="feedback-bottom-text-style2 marg25">
+                    Roman was very professional. He was quick at
+                    understanding all the communicated needs. The needed
+                    changes were done with a blink of an eye.
+                    I highly recommend him for such tasks.
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-12 grid">
+                <p class="feedback-top-text-style-2">Marcus, Singapore</p>
+                <div class="feedback-underline-text-2"></div>
+                <p class="feedback-bottom-text-style2 marg25">
+                    Very helpful designer, good quality of work,
+                    and doesn't stop until I was satisfied.
+                    Also went the extra mile in helping me.
+                    Will definitely recommend Roman to others,
+                    and will definitely engage his services again.
+                    Thank you!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="feedback-sec section" id="hobby_activity">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 empty_div"></div>
+            <div class="cent">
+                <div class="col-md-5 block-in-center">
+                    <div class="blocks-about">
+                        <div class="about-photo-in-block">
+                            <embed src="img/activities/HOBBY.svg">
+                                <p class="text-style-in-about-block">HOBBY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="act-cent">
+                    <div class="col-md-5">
                         <div class="blocks-about">
                             <div class="about-photo-in-block">
-                                <embed src="img/activities/HOBBY.svg">
-                                <p class="text-style-in-about-block">HOBBY</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="act-cent">
-                        <div class="col-md-5">
-                            <div class="blocks-about">
-                                <div class="about-photo-in-block">
-                                    <embed src="img/activities/ACTIVITY.svg">
+                                <embed src="img/activities/ACTIVITY.svg">
                                     <p class="text-style-in-about-block">ACTIVITY</p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-1">
-            </div>
+        </div>
+        <div class="col-md-1">
         </div>
     </div>
+</div>
 
-    <div class="feedback-sec">
-        <div class="teacher-block">
-            <img src="img/tourism/TR5.JPG" style="border-radius: 30px">
-        </div>
-        <div class="teacher-block">
-            <div class="teacher-bottom-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 empty_div">
+<div class="feedback-sec">
+    <div class="teacher-block">
+        <img src="img/tourism/TR5.JPG" style="border-radius: 30px">
+    </div>
+    <div class="teacher-block">
+        <div class="teacher-bottom-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 empty_div">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="activity-traveling-text-style">Hobby, Traveling</p>
+                        <div class="photo-map">
+                            <img src="img/Poland.png" style="width: 250px;border-radius: 25px;">
                         </div>
-                        <div class="col-md-6">
-                            <p class="activity-traveling-text-style">Hobby, Traveling</p>
-                            <div class="photo-map">
-                                <img src="img/Poland.png" style="width: 250px;border-radius: 25px;">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="cir">
-                                <embed src="img/activities/cancel.svg" style="width: 40px">
-                            </a>
-                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="cir">
+                            <embed src="img/activities/cancel.svg" style="width: 40px">
+                        </a>
+                    </div>
 
-                    </div>
-                    <div class="hobby-teaching-bottom-text-style ex3">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                    </div>
-                    <div class="mouse-svg">
-                        <embed src="img/activities/mouse.svg" style="width: 25px">
-                    </div>
+                </div>
+                <div class="hobby-teaching-bottom-text-style ex3">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                </div>
+                <div class="mouse-svg">
+                    <embed src="img/activities/mouse.svg" style="width: 25px">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="feedback-sec">
-        <div class="teacher-block">
-            <img src="img/tourism/T1.JPG" style="border-radius: 30px">
-        </div>
-        <div class="teacher-block">
-            <div class="teacher-bottom-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 empty_div">
-                        </div>
+<div class="feedback-sec">
+    <div class="teacher-block">
+        <img src="img/tourism/T1.JPG" style="border-radius: 30px">
+    </div>
+    <div class="teacher-block">
+        <div class="teacher-bottom-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 empty_div">
+                    </div>
 
-                        <div class="col-md-6">
-                            <p class="hobby-teaching-text-style">Activity, Teaching</p>
-                        </div>
+                    <div class="col-md-6">
+                        <p class="hobby-teaching-text-style">Activity, Teaching</p>
+                    </div>
 
-                        <div class="col-md-3">
+                    <div class="col-md-3">
                         <span style="cursor: pointer">
                             <a href="#">
                                 <div class="cir">
@@ -589,97 +614,95 @@
                                 </div>
                             </a>
                         </span>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="hobby-teaching-bottom-text-style ex3">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad nformally the
-                        role of teacher may be...
-                    </div>
+                <div class="hobby-teaching-bottom-text-style ex3">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad nformally the
+                    role of teacher may be...
+                </div>
 
-                    <div class="mouse-svg">
-                        <embed src="img/activities/mouse.svg" style="width: 25px">
-                    </div>
+                <div class="mouse-svg">
+                    <embed src="img/activities/mouse.svg" style="width: 25px">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="portfolio-section">
-                <a href="https://mysnapp.co.uk/ignite/">
-            <p class="portfolio-top-text">MYSNAPP</p>
-                </a>
+<div class="container section" id="portfolio-section">
+    <div class="row">
+        <div class="portfolio-section">
+            <a href="https://mysnapp.co.uk/ignite/">
+                <p class="portfolio-top-text">MYSNAPP</p>
+            </a>
             <div class="portfolio-web">
 
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
 
-                                <a href="https://mysnapp.co.uk/ignite/">
+                            <a href="https://mysnapp.co.uk/ignite/">
                                 <img src="img/portfolio/portfolio1-6.png">
-                                </a>
-                            </div>
+                            </a>
+                        </div>
 
-                            <div class="item">
-                                <a href="http://svistel.in/kandio/">
+                        <div class="item">
+                            <a href="http://svistel.in/kandio/">
                                 <img src="img/portfolio/portfolio2-6.png">
-                                </a>
-                            </div>
+                            </a>
+                        </div>
 
-                            <div class="item">
-                                <a href="http://svistel.in/partner/">
+                        <div class="item">
+                            <a href="http://svistel.in/partner/">
                                 <img src="img/portfolio/portfolio3-6.png">
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="inline">
-                    <div class="yellow_circle left_circle">
-                      <a href="#myCarousel" data-slide="prev">
-                         <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                    </div>
-
-                    <div class="yellow_circle">
-                       <a href="#myCarousel" data-slide="next">
-                         <span class="glyphicon glyphicon-chevron-right"></span>
-                       </a>
-                    </div>
+            </div>
+            <div class="inline">
+                <div class="yellow_circle left_circle">
+                    <a href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
                 </div>
 
-                <div>
-                    <button class="button_portfolio button_left_portfolio">visit website</button>
-                    <button class="button_portfolio button_right_portfolio">and more to watch</button>
+                <div class="yellow_circle">
+                    <a href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
+            </div>
+
+            <div>
+                <button class="button_portfolio button_left_portfolio">visit website</button>
+                <button class="button_portfolio button_right_portfolio">and more to watch</button>
             </div>
         </div>
     </div>
 
 
-    <div id="portfolio">
-        <div class="container">
-            <div class="row">
-
+<div id="portfolio">
+    <div class="container">
+        <div class="row">
                     <div class="col-md-4 portfolio_block">
                         <a href="https://mysnapp.co.uk/ignite/">
                             <div class="two_image">
@@ -767,6 +790,6 @@
             </div>
         </div>
     </div>
-
+</div>
 </body>
 </html>

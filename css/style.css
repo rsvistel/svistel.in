@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url("https://fonts.googleapis.com/css?family=Bangers");
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+body, html {
+  overflow: hidden; }
+
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: #161616 !important;
@@ -143,7 +147,11 @@ body {
     width: 3px;
     height: 60px;
     background: #ffcd00;
-    margin: 0 auto; }
+    margin: 0 auto;
+    animation: append 1s; }
+@keyframes append {
+  from {
+    height: 0; } }
   #menu_left .logo_bee embed {
     pointer-events: none;
     cursor: pointer; }
