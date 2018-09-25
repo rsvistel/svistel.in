@@ -117,11 +117,13 @@ body
   transform: translate(100%, 0)
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
   border-bottom: none
-  height: 100vh
+  height: 105vh
   text-align: start
   li
     padding: 25px 0 25px 65px
     font-size: 38px
+    &:hover
+      color: #ffcd00
   p:hover
     text-decoration: underline
     text-decoration-color: red
@@ -147,6 +149,7 @@ body
   align-items: center
   a
     color: snow
+    cursor: pointer
   a:hover
     text-decoration: none
   embed
@@ -235,8 +238,12 @@ $step: 100px
     margin: 0 auto
     width: 80%
     height: 600px
+    padding-top: $step/2
   .container
     padding: 0 47px 0 53px
+    min-height: 100vh
+    display: flex
+    align-items: center
   .row
     position: relative
     margin-bottom: 10px

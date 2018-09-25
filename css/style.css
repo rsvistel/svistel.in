@@ -113,11 +113,13 @@ body {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   border-bottom: none;
-  height: 100vh;
+  height: 105vh;
   text-align: start; }
   #menu li {
     padding: 25px 0 25px 65px;
     font-size: 38px; }
+    #menu li:hover {
+      color: #ffcd00; }
   #menu p:hover {
     text-decoration: underline;
     text-decoration-color: red; }
@@ -139,7 +141,8 @@ body {
   flex-direction: column;
   align-items: center; }
   #menu_left a {
-    color: snow; }
+    color: snow;
+    cursor: pointer; }
   #menu_left a:hover {
     text-decoration: none; }
   #menu_left embed {
@@ -218,9 +221,13 @@ body {
   #icons_block .all_rows {
     margin: 0 auto;
     width: 80%;
-    height: 600px; }
+    height: 600px;
+    padding-top: 50px; }
   #icons_block .container {
-    padding: 0 47px 0 53px; }
+    padding: 0 47px 0 53px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
   #icons_block .row {
     position: relative;
     margin-bottom: 10px; }
