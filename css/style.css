@@ -527,6 +527,9 @@ body {
   flex-direction: column;
   justify-content: center; }
 
+#teaching-section, #travel-section {
+  display: none; }
+
 .feedbacks {
   min-height: 100vh; }
 
@@ -810,7 +813,8 @@ a.svg {
       margin-right: 80px; }
     .section_contact #contact_form textarea {
       width: 80%;
-      height: 140px; }
+      height: 140px;
+      resize: none; }
     .section_contact #contact_form .row_name_email {
       display: flex;
       justify-content: center; }
