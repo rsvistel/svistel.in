@@ -5,11 +5,8 @@ $(document).ready(function() {
        sections.push($(this));
     });
     bindScroll();
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-        $(this).toggleClass('open');
-    });
-    $("#navigation li").click(function () {
-        scroll(parseInt($(this).attr('id')))
+    $(".navigation-item").click(function () {
+        scroll(parseInt($(this).attr('scrollTo')))
     });
 });
 function scroll(param) {
@@ -20,9 +17,12 @@ function scroll(param) {
     } else if (param === 'up' && activeSection > 0) {
         activeSection--;
         start(activeSection)
-    } else if (param !== null && activeSection > 0 && activeSection < sections.length-1) {
+    } else if (param !== null && activeSection >= 0 && activeSection <= sections.length-1) {
         activeSection = param;
         start(param);
+    }
+    if ($('#menuToggle input').prop("checked") === true) {
+        $('#menuToggle input').click()
     }
     function start(i) {
         $('html, body').animate({
@@ -33,7 +33,11 @@ function scroll(param) {
         $('#bottomline .bottomline').animate({
             height: 0
         },1000);
-        $('#' + activeSection).after(line);
+        $('#navigation .navigation-item').each(function () {
+            if (parseInt($(this).attr('scrollTo')) === activeSection) {
+                $(this).after(line);
+            }
+        });
         setTimeout(function () {
             bindScroll()
         }, speed);
