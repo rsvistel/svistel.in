@@ -26,6 +26,28 @@ $(document).ready(function() {
         closeHobby()
     });
 
+    // Validate Form
+    $('#submit_button').click(function () {
+        var valid = true;
+        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+        $('#contact_form input, #contact_form textarea').each(function () {
+            if (!$(this).val()) {
+                valid = false;
+                var id = $(this).attr('id') + '_validation';
+                $('#'+id).text("The field can't be empty")
+            } else {
+                var id = $(this).attr('id') + '_validation';
+                $('#'+id).text("")
+            }
+        });
+        if (!testEmail.test($('#email').val())) {
+            valid = false;
+            $('#email_validation').text("Email is invalid")
+        }
+        if (valid) {
+            $('#contact_form').submit();
+        }
+    });
 });
 function scroll(param) {
     var speed = 2000;
