@@ -749,7 +749,7 @@ a.svg {
 #portfolio img {
   width: 100%;
   border-radius: 15px;
-  transition: 0.2s;
+  transition: 0.3s;
   z-index: 0; }
 
 #portfolio embed {
@@ -778,6 +778,9 @@ a.svg {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.portfolio-web img:hover {
+  filter: blur(1px) contrast(120%) opacity(85%); }
 
 .section_contact {
   height: 100vh;
@@ -1041,10 +1044,14 @@ a.svg {
     display: block; } }
 @media (max-width: 450px) {
   .button1 {
-    margin-top: 50px !important; }
+    margin-top: 50px !important;
+    font-size: 16px; }
+
+  .top-girl-photo img {
+    margin-left: 30px; }
 
   #icons_block {
-    padding: 50px 19px 10px 2px; }
+    padding: 50px 19px 10px 20px; }
     #icons_block .container {
       padding: 0;
       margin: 0; }
@@ -1062,20 +1069,20 @@ a.svg {
     width: 270px; }
 
   .blocks-about {
-    width: 230px !important; }
+    width: 205px !important; }
 
   .centom .grid {
     padding-right: 10px;
     padding-left: 10px; }
 
   .feedback-underline-text-2 {
-    width: 295px !important; }
+    width: 205px !important; }
 
   #section_vidhuku {
-    height: 950px; }
+    height: 1050px; }
 
   .feedback-underline-text-3 {
-    width: 180px !important; }
+    width: 160px !important; }
 
   .block_information .first_row, .block_information .second_row {
     margin-left: 0; }
@@ -1107,7 +1114,8 @@ a.svg {
       width: 25px !important; }
 
   .portfolio-section {
-    padding-right: 25px; }
+    padding-right: 25px;
+    padding-left: 30px; }
 
   .portfolio-web img {
     width: 250px; }
@@ -1121,7 +1129,10 @@ a.svg {
     margin-top: -150px; }
 
   .button_right_portfolio {
-    width: 135px; }
+    width: 122px; }
+
+  .button_left_portfolio {
+    width: 115px; }
 
   .button_portfolio {
     font-size: 12px;
@@ -1132,17 +1143,12 @@ a.svg {
     .teacher-bottom-block .container .cir {
       margin-left: 165px; }
 
-  #menu_left {
-    display: none; }
-
   .feedback-sec {
-    margin-left: 10px !important; }
+    margin-left: 40px !important;
+    margin-right: 45px !important; }
 
   .plane {
     margin-bottom: 10px; }
-
-  body {
-    padding-right: 15px; }
 
   .photo_team {
     min-height: 1000px; }
@@ -1158,16 +1164,27 @@ a.svg {
       margin-bottom: 15px;
       width: 83%; }
 
-  .section_contact #contact_form {
-    width: 77%; }
-
   .row_name_email {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .row_name_email input {
       margin: 2px 0 !important;
-      width: 75% !important; } }
+      width: 75% !important; }
+
+  .icon_contact embed {
+    width: 20px;
+    margin: 0 6px; }
+
+  .section_contact #contact_form {
+    width: 90%; }
+
+  #menu {
+    padding-top: 210px; }
+
+  #section_vidhuku .col-xs-4 {
+    padding-right: 0;
+    padding-left: 7px; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1175,7 +1192,7 @@ a.svg {
       margin-bottom: 0; }
 
   .top-text-style {
-    font-size: 36px !important; }
+    font-size: 33px !important; }
 
   .icons_block_tab {
     padding-right: 0 !important;
@@ -1189,14 +1206,8 @@ a.svg {
   .teacher-block img {
     width: 210px; }
 
-  #section_vidhuku {
-    height: 950px; }
-
   .feedback-underline-text-3 {
     width: 130px !important; }
-
-  .feedback-underline-text-2 {
-    width: 225px !important; }
 
   .teacher-bottom-block {
     width: 230px;
@@ -1213,8 +1224,12 @@ a.svg {
     font-size: 23px !important;
     text-align: center; }
 
+  #icons_block .row {
+    margin-bottom: 0; }
+
   .block_information .first_row .icon_block_information {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-left: 27px; }
   .block_information .second_row {
     margin-top: -10px; }
   .block_information .icon_block_information p {
@@ -1230,7 +1245,7 @@ a.svg {
     font-size: 12px; }
 
   .portfolio-web img {
-    width: 200px; }
+    width: 195px; }
 
   .button_right_portfolio {
     width: 125px; }
@@ -1242,7 +1257,7 @@ a.svg {
     width: 100px; }
 
   .left_circle {
-    margin-right: 165px; }
+    margin-right: 150px; }
 
   .yellow_circle {
     width: 35px;
@@ -1254,7 +1269,19 @@ a.svg {
     margin-bottom: 0; }
     #portfolio .row img {
       margin-bottom: 15px;
-      width: 88%; } }
+      width: 88%; }
+
+  .carousel-indicators {
+    width: 65%; }
+
+  #section_vidhuku {
+    height: 1120px; }
+
+  .section_contact #contact_form {
+    width: 74%; }
+
+  #menu {
+    padding-top: 160px; } }
 @media (min-width: 450px) and (max-width: 768px) {
   .section_banner {
     display: flex; }
@@ -1281,8 +1308,12 @@ a.svg {
   .block_information .second_icon_block_information svg {
     width: 40px; }
   .block_information .second_row {
-    margin-left: 40px;
+    margin-left: 25px;
     margin-top: -20px; }
+  .block_information .first_row {
+    margin-left: 25px; }
+  .block_information h3 {
+    font-size: 19px !important; }
 
   .text_col-xs {
     width: 59%; }
@@ -1308,7 +1339,17 @@ a.svg {
     margin-bottom: 10px; }
   #portfolio .row {
     text-align: center;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .section_contact #contact_form {
+    width: 78%; }
+    .section_contact #contact_form .icon_contact button {
+      margin-left: 0;
+      width: 50% !important;
+      margin-top: 15px; }
+
+  .button_portfolio {
+    margin: 50px 0 0 12px; } }
 @media (min-width: 600px) and (max-width: 767px) {
   .icons_block_tab {
     margin-top: -70px; }
@@ -1466,7 +1507,7 @@ a.svg {
     margin-top: 50px; }
 
   .top-girl-photo img {
-    width: 250px; }
+    width: 240px; }
 
   .top-girl-photo {
     margin-top: 0px; }
@@ -1560,11 +1601,9 @@ a.svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 33px;
-    margin-right: 25px; }
-
-  #hobby_activity {
-    margin-left: 0; }
+    margin-left: 35px;
+    margin-right: 55px;
+    height: 940px; }
 
   .cir {
     height: 60px;
@@ -1618,9 +1657,6 @@ a.svg {
     margin-left: -400px;
     margin-top: -300px;
     transition: 0.3s; }
-
-  .carousel-indicators {
-    bottom: -50px; }
 
   .hobby-teaching-text-style {
     font-family: "Fjalla One", sans-serif;
