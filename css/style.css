@@ -113,17 +113,19 @@ body {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   border-bottom: none;
-  height: 100vh;
+  height: 105vh;
   text-align: start; }
   #menu li {
     padding: 25px 0 25px 65px;
     font-size: 38px; }
   #menu p:hover {
-    text-decoration: underline;
-    text-decoration-color: red; }
+    color: #ffcd00;
+    text-decoration: none; }
   #menu a {
     color: snow;
     font-family: "Fjalla One", sans-serif; }
+    #menu a:hover {
+      text-decoration: none; }
 
 #menuToggle input:checked ~ ul {
   transform: none; }
@@ -139,7 +141,8 @@ body {
   flex-direction: column;
   align-items: center; }
   #menu_left a {
-    color: snow; }
+    color: snow;
+    cursor: pointer; }
   #menu_left a:hover {
     text-decoration: none; }
   #menu_left embed {
@@ -218,9 +221,13 @@ body {
   #icons_block .all_rows {
     margin: 0 auto;
     width: 80%;
-    height: 600px; }
+    height: 600px;
+    padding-top: 50px; }
   #icons_block .container {
-    padding: 0 47px 0 53px; }
+    padding: 0 47px 0 53px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
   #icons_block .row {
     position: relative;
     margin-bottom: 10px; }
@@ -520,6 +527,9 @@ body {
   flex-direction: column;
   justify-content: center; }
 
+#teaching-section, #travel-section {
+  display: none; }
+
 .feedbacks {
   min-height: 100vh; }
 
@@ -777,9 +787,11 @@ a.svg {
   display: flex;
   align-items: center; }
   .section_contact h1 {
-    font-family: "Franklin Gothic Demi", italic;
     text-align: center;
-    color: snow; }
+    color: snow;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-style: italic; }
   .section_contact .row {
     display: flex;
     justify-content: center; }
@@ -792,7 +804,9 @@ a.svg {
       border-radius: 10px;
       padding: 12px;
       border: none;
-      font-family: "Franklin Gothic Demi", italic;
+        border-font-family: "Libre Franklin", sans-serif;
+      font-weight: bold;
+      font-style: italic;
       font-size: 18px;
       opacity: 0.8; }
     .section_contact #contact_form input {
@@ -802,7 +816,8 @@ a.svg {
       margin-right: 80px; }
     .section_contact #contact_form textarea {
       width: 80%;
-      height: 140px; }
+      height: 140px;
+      resize: none; }
     .section_contact #contact_form .row_name_email {
       display: flex;
       justify-content: center; }
@@ -815,7 +830,9 @@ a.svg {
     border: none;
     background: #ffcd00;
     color: #161616;
-    font-family: "Franklin Gothic Demi", italic;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-style: italic;
     font-size: 21px;
     transition: 0.5s; }
   .section_contact #submit_button:hover {
@@ -889,7 +906,10 @@ a.svg {
     font-size: 16px; }
 
   .section_contact #contact_form input:nth-child(odd) {
-    margin-right: 40px; } }
+    margin-right: 40px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-style: italic; } }
 @media (min-width: 769px) and (max-width: 1023px) {
   .block_information .second_row {
     margin-left: 50px; } }
@@ -1284,7 +1304,10 @@ a.svg {
     align-items: center; }
 
   .section_contact #contact_form input:nth-child(odd) {
-    margin-right: 40px; } }
+    margin-right: 40px;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-style: italic; } }
 @media (min-width: 450px) and (max-width: 600px) {
   .block_information .icon_block_information p {
     font-size: 38px; }
