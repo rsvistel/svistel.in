@@ -527,7 +527,7 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
-  min-height: 700px; }
+  min-height: 850px; }
 
 .cir:hover {
   transform: scale(1.1);
@@ -969,7 +969,13 @@ a.svg {
     width: 215px; }
 
   .portfolio_block {
-    width: 28%; } }
+    width: 28%; }
+
+  .icon_contact embed {
+    margin: 0 8px; }
+
+  .cent {
+    width: 100%; } }
 @media only screen and (max-width: 600px) {
   .icons_second_row {
     margin-top: 15px;
@@ -1154,7 +1160,7 @@ a.svg {
 
   .icon_contact embed {
     width: 20px;
-    margin: 0 6px; }
+    margin: 0 5px; }
 
   .section_contact #contact_form {
     width: 90%; }
@@ -1164,7 +1170,12 @@ a.svg {
 
   #section_vidhuku .col-xs-4 {
     padding-right: 0;
-    padding-left: 7px; } }
+    padding-left: 7px; }
+
+  .section_contact #submit_button {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1272,9 +1283,6 @@ a.svg {
     justify-content: center;
     align-items: center; }
 
-  .portfolio-section {
-    padding-left: 25px; }
-
   .section_contact #contact_form input:nth-child(odd) {
     margin-right: 40px; } }
 @media (min-width: 450px) and (max-width: 600px) {
@@ -1326,7 +1334,10 @@ a.svg {
       margin-top: 15px; }
 
   .button_portfolio {
-    margin: 50px 0 0 12px; } }
+    margin: 50px 0 0 12px; }
+
+  .centom {
+    padding-right: 52px; } }
 @media (min-width: 600px) and (max-width: 767px) {
   .icons_block_tab {
     margin-top: -70px; }
@@ -1339,6 +1350,9 @@ a.svg {
 
   .hobby-teaching-text-style {
     margin-left: 95px; } }
+@media (min-width: 767px) and (max-width: 768px) {
+  .feedback-sec {
+    margin-right: 55px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
     margin-left: 0; }
@@ -1401,7 +1415,16 @@ a.svg {
     margin-bottom: 10px; }
   #portfolio .row {
     text-align: center;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .section_contact #contact_form {
+    width: 83%; }
+
+  .icon_contact button {
+    margin-left: 20px; }
+
+  .icon_contact embed {
+    margin: 0 9px; } }
 @media (min-width: 1500px) {
   .block_information .first_row, .block_information .second_row {
     justify-content: center; } }
@@ -1437,17 +1460,25 @@ a.svg {
   .section_banner {
     display: flex; }
 
-  .button_portfolio {
-    margin-top: 150px; }
-
   .yellow_circle {
     margin-top: -90px; }
 
   #section_vidhuku {
-    height: 550px; }
+    height: 600px; }
 
   #section_vidhuku .col-xs-4 embed {
-    width: 120px !important; } }
+    width: 120px !important; }
+
+  .icon_contact embed {
+    margin: 0 10px; }
+
+  .section_contact #submit_button {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0; }
+
+  #section_vidhuku {
+    margin-left: 105px !important; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
@@ -1578,9 +1609,10 @@ a.svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 35px;
-    margin-right: 55px;
     height: 940px; }
+
+  #section_vidhuku {
+    margin-left: 35px; }
 
   .cir {
     height: 60px;
@@ -1655,9 +1687,6 @@ a.svg {
 
   .photo-map img {
     display: none; }
-
-  .grid_second .feedback-top-text-style-2 {
-    margin-top: 15px; }
 
   #photo_team {
     display: flex;
