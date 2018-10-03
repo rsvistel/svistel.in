@@ -71,6 +71,7 @@ function scroll(param) {
             scrollTop: sections[i].offset().top
         }, speed);
         $(document).unbind('wheel');
+        $('#navigation li').css('pointer-events', 'none');
         var line = '<li id="bottomline" style="padding: 0"><div class="bottomline"></div></li>';
         $('#bottomline .bottomline').animate({
             height: 0
@@ -81,6 +82,7 @@ function scroll(param) {
             }
         });
         setTimeout(function () {
+            $('#navigation li').css('pointer-events', 'auto');
             bindScroll()
         }, speed);
     }

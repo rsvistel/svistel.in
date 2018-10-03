@@ -156,7 +156,8 @@ body {
     #menu_left ul li {
       padding: 15px 0;
       font-family: "Bangers", cursive;
-      font-size: 24px; }
+      font-size: 24px;
+      cursor: pointer; }
   #menu_left .bottomline {
     width: 3px;
     height: 60px;
@@ -499,7 +500,8 @@ body {
   font-family: "Fjalla One", sans-serif;
   font-size: 39px;
   color: #161616;
-  margin-top: 35px; }
+  margin-top: 35px;
+  text-align: center; }
 
 .hobby-teaching-bottom-text-style {
   font-family: "Fjalla One", sans-serif;
@@ -508,13 +510,14 @@ body {
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  text-align: center; }
+  text-align: left; }
 
 .activity-traveling-text-style {
   font-family: "Fjalla One", sans-serif;
   font-size: 38px;
   color: #161616;
-  margin-top: 35px; }
+  margin-top: 35px;
+  text-align: center; }
 
 .mouse-svg {
   display: grid;
@@ -720,7 +723,7 @@ a.svg {
   color: black;
   font-weight: bold;
   transition: 0.5s;
-  margin: 50px 0 0 40px; }
+  margin: 50px 0 0 0; }
 
 .button_right_portfolio {
   width: 185px;
@@ -747,7 +750,7 @@ a.svg {
   align-items: center; }
 
 #portfolio img {
-  width: 100%;
+  width: 95%;
   border-radius: 15px;
   transition: 0.3s;
   z-index: 0; }
@@ -760,10 +763,6 @@ a.svg {
   cursor: pointer;
   pointer-events: none;
   opacity: 0.9; }
-
-.portfolio_block {
-  height: 160px;
-  padding: 0 10px; }
 
 .portfolio_block:hover embed {
   display: block !important; }
