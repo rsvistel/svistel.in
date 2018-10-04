@@ -156,7 +156,8 @@ body {
     #menu_left ul li {
       padding: 15px 0;
       font-family: "Bangers", cursive;
-      font-size: 24px; }
+      font-size: 24px;
+      cursor: pointer; }
   #menu_left .bottomline {
     width: 3px;
     height: 60px;
@@ -499,7 +500,8 @@ body {
   font-family: "Fjalla One", sans-serif;
   font-size: 39px;
   color: #161616;
-  margin-top: 35px; }
+  margin-top: 35px;
+  text-align: center; }
 
 .hobby-teaching-bottom-text-style {
   font-family: "Fjalla One", sans-serif;
@@ -508,13 +510,14 @@ body {
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  text-align: center; }
+  text-align: left; }
 
 .activity-traveling-text-style {
   font-family: "Fjalla One", sans-serif;
   font-size: 38px;
   color: #161616;
-  margin-top: 35px; }
+  margin-top: 35px;
+  text-align: center; }
 
 .mouse-svg {
   display: grid;
@@ -537,7 +540,7 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
-  min-height: 700px; }
+  min-height: 850px; }
 
 .cir:hover {
   transform: scale(1.1);
@@ -720,7 +723,7 @@ a.svg {
   color: black;
   font-weight: bold;
   transition: 0.5s;
-  margin: 50px 0 0 40px; }
+  margin: 50px 0 0 0; }
 
 .button_right_portfolio {
   width: 185px;
@@ -728,13 +731,6 @@ a.svg {
 
 .button_right_portfolio:hover {
   background: snow; }
-
-.button_left_portfolio {
-  width: 145px;
-  background: snow; }
-
-.button_left_portfolio:hover {
-  background: #ffcd00; }
 
 #section_vidhuku .row {
   display: flex;
@@ -747,7 +743,7 @@ a.svg {
   align-items: center; }
 
 #portfolio img {
-  width: 100%;
+  width: 95% !important;
   border-radius: 15px;
   transition: 0.3s;
   z-index: 0; }
@@ -761,16 +757,11 @@ a.svg {
   pointer-events: none;
   opacity: 0.9; }
 
-.portfolio_block {
-  height: 160px;
-  padding: 0 10px; }
-
 .portfolio_block:hover embed {
   display: block !important; }
 
-#portfolio img:hover, #portfolio embed:hover {
-  filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4); }
-
+/* #portfolio img:hover, #portfolio embed:hover
+ * filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4) */
 #portfolio .row {
   margin-bottom: 15px;
   text-align: end; }
@@ -871,7 +862,8 @@ a.svg {
       height: 60px;
       margin-bottom: 10px; }
     .block_information .icon_block_information h3 {
-      margin-top: 5px; }
+      margin-top: 5px;
+      font-size: 20px; }
     .block_information .icon_block_information .second_row .icon_block_information {
       margin-left: 20px; }
 
@@ -895,10 +887,6 @@ a.svg {
   ._team {
     padding: 75px 15px 0 55px; }
 
-  .feedback-sec .row {
-    display: flex;
-    justify-content: center; }
-
   .photo-map img {
     display: none; }
 
@@ -921,7 +909,10 @@ a.svg {
     margin-bottom: 115px; }
 
   .hobby-teaching-text-style, .activity-traveling-text-style {
-    margin-left: 35px; } }
+    margin-left: 35px; }
+
+  #hobby_activity .container {
+    width: auto; } }
 @media (min-width: 769px) and (max-width: 992px) {
   .centom {
     padding-left: 70px !important; }
@@ -951,7 +942,18 @@ a.svg {
     width: 550px; }
 
   .left_circle {
-    margin-right: 500px; } }
+    margin-right: 500px; }
+
+  .photo_team img {
+    height: 180px; }
+
+  .feedback-top-text-style-2 {
+    font-size: 28px; }
+
+  .section_contact #submit_button {
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 0; } }
 @media (min-width: 1023px) and (max-width: 1113px) {
   .block_information .top-butto {
     width: 50px !important; }
@@ -989,7 +991,13 @@ a.svg {
     width: 215px; }
 
   .portfolio_block {
-    width: 28%; } }
+    width: 28%; }
+
+  .icon_contact embed {
+    margin: 0 8px; }
+
+  .cent {
+    width: 100%; } }
 @media only screen and (max-width: 600px) {
   .icons_second_row {
     margin-top: 15px;
@@ -1044,7 +1052,7 @@ a.svg {
     display: block; } }
 @media (max-width: 450px) {
   .button1 {
-    margin-top: 50px !important;
+    margin-top: 40px !important;
     font-size: 16px; }
 
   .top-girl-photo img {
@@ -1079,7 +1087,7 @@ a.svg {
     width: 205px !important; }
 
   #section_vidhuku {
-    height: 1050px; }
+    height: 1180px; }
 
   .feedback-underline-text-3 {
     width: 160px !important; }
@@ -1151,7 +1159,7 @@ a.svg {
     margin-bottom: 10px; }
 
   .photo_team {
-    min-height: 1000px; }
+    min-height: 1125px; }
     .photo_team .row {
       flex-direction: column; }
     .photo_team .photo_block {
@@ -1174,7 +1182,7 @@ a.svg {
 
   .icon_contact embed {
     width: 20px;
-    margin: 0 6px; }
+    margin: 0 5px; }
 
   .section_contact #contact_form {
     width: 90%; }
@@ -1184,7 +1192,12 @@ a.svg {
 
   #section_vidhuku .col-xs-4 {
     padding-right: 0;
-    padding-left: 7px; } }
+    padding-left: 7px; }
+
+  .section_contact #submit_button {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
@@ -1192,7 +1205,7 @@ a.svg {
       margin-bottom: 0; }
 
   .top-text-style {
-    font-size: 33px !important; }
+    font-size: 28px !important; }
 
   .icons_block_tab {
     padding-right: 0 !important;
@@ -1275,13 +1288,20 @@ a.svg {
     width: 65%; }
 
   #section_vidhuku {
-    height: 1120px; }
+    height: 1370px; }
 
   .section_contact #contact_form {
     width: 74%; }
 
   #menu {
-    padding-top: 160px; } }
+    padding-top: 160px; }
+
+  #menu_left ul li {
+    padding: 10px 0;
+    font-size: 22px; }
+
+  #hobby_activity {
+    height: 1200px; } }
 @media (min-width: 450px) and (max-width: 768px) {
   .section_banner {
     display: flex; }
@@ -1291,9 +1311,6 @@ a.svg {
     flex-flow: column;
     justify-content: center;
     align-items: center; }
-
-  .portfolio-section {
-    padding-left: 25px; }
 
   .section_contact #contact_form input:nth-child(odd) {
     margin-right: 40px;
@@ -1328,7 +1345,7 @@ a.svg {
     width: 350px; }
 
   .photo_team {
-    min-height: 1000px; }
+    min-height: 1125px; }
     .photo_team .row {
       flex-direction: column; }
     .photo_team .photo_block {
@@ -1345,11 +1362,17 @@ a.svg {
     width: 78%; }
     .section_contact #contact_form .icon_contact button {
       margin-left: 0;
-      width: 50% !important;
+      width: 25% !important;
       margin-top: 15px; }
 
   .button_portfolio {
-    margin: 50px 0 0 12px; } }
+    margin: 50px 0 0 12px; }
+
+  .centom {
+    padding-right: 52px; }
+
+  #section_vidhuku {
+    height: 1050px; } }
 @media (min-width: 600px) and (max-width: 767px) {
   .icons_block_tab {
     margin-top: -70px; }
@@ -1361,7 +1384,10 @@ a.svg {
     margin-left: 110px; }
 
   .hobby-teaching-text-style {
-    margin-left: 95px; } }
+    margin-left: 95px; }
+
+  .icon_contact button {
+    margin-left: 20px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
     margin-left: 0; }
@@ -1394,7 +1420,7 @@ a.svg {
     width: 500px; }
 
   .left_circle {
-    margin-right: 450px; }
+    margin-right: 415px; }
 
   .yellow_circle {
     margin-top: -250px; }
@@ -1424,7 +1450,13 @@ a.svg {
     margin-bottom: 10px; }
   #portfolio .row {
     text-align: center;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .section_contact #contact_form {
+    width: 83%; }
+
+  .icon_contact embed {
+    margin: 0 9px; } }
 @media (min-width: 1500px) {
   .block_information .first_row, .block_information .second_row {
     justify-content: center; } }
@@ -1460,17 +1492,25 @@ a.svg {
   .section_banner {
     display: flex; }
 
-  .button_portfolio {
-    margin-top: 150px; }
-
   .yellow_circle {
     margin-top: -90px; }
 
   #section_vidhuku {
-    height: 550px; }
+    height: 600px; }
 
   #section_vidhuku .col-xs-4 embed {
-    width: 120px !important; } }
+    width: 120px !important; }
+
+  .icon_contact embed {
+    margin: 0 10px; }
+
+  .section_contact #submit_button {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0; }
+
+  #section_vidhuku {
+    margin-left: 105px !important; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
@@ -1500,7 +1540,7 @@ a.svg {
       transform: none; }
 
   .top-text-style {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 20px; }
 
   .button1 {
@@ -1546,7 +1586,7 @@ a.svg {
     margin-top: 25px; }
 
   .feedback-underline-text-3 {
-    width: 220px;
+    width: 190px;
     height: 4px;
     background-color: #ffd000;
     border-radius: 10px;
@@ -1555,7 +1595,7 @@ a.svg {
     transition: 0.1s; }
 
   .feedback-underline-text-1 {
-    width: 115px;
+    width: 155px;
     height: 4px;
     background-color: #ffd000;
     border-radius: 10px;
@@ -1600,10 +1640,10 @@ a.svg {
   .feedback-sec {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 35px;
-    margin-right: 55px;
-    height: 940px; }
+    justify-content: center; }
+
+  #section_vidhuku {
+    margin-left: 35px; }
 
   .cir {
     height: 60px;
@@ -1678,9 +1718,6 @@ a.svg {
 
   .photo-map img {
     display: none; }
-
-  .grid_second .feedback-top-text-style-2 {
-    margin-top: 15px; }
 
   #photo_team {
     display: flex;

@@ -4,13 +4,11 @@ $(document).ready(function() {
     $('.section').each(function () {
        sections.push($(this));
     });
+    $('html, body').animate({scrollTop: $('#section_banner').offset().top},2000);
     bindScroll();
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
     });
-    $('html, body').animate({
-        scrollTop: sections[0].offset().top
-    }, 0);
 
     // Hobbies
     $('#travel').click(function () {
@@ -71,6 +69,7 @@ function scroll(param) {
             scrollTop: sections[i].offset().top
         }, speed);
         $(document).unbind('wheel');
+        $('#navigation li').css('pointer-events', 'none');
         var line = '<li id="bottomline" style="padding: 0"><div class="bottomline"></div></li>';
         $('#bottomline .bottomline').animate({
             height: 0
@@ -81,6 +80,7 @@ function scroll(param) {
             }
         });
         setTimeout(function () {
+            $('#navigation li').css('pointer-events', 'auto');
             bindScroll()
         }, speed);
     }
