@@ -51,8 +51,27 @@ body {
 .plane {
   display: flex;
   margin-bottom: 20px;
-  z-index: 1; }
+  z-index: 1;
+  position: relative;
+  animation: planeappear 2s; }
+@keyframes planeappear {
+  from {
+    right: -70px; }
+  to {
+    right: 0; } }
   .plane embed {
+    width: 40px;
+    pointer-events: none;
+    cursor: pointer; }
+
+#menuToggle {
+  animation: toggleappear 2s; }
+@keyframes toggleappear {
+  from {
+    right: -70px; }
+  to {
+    right: 20px; } }
+  #menuToggle embed {
     width: 40px;
     pointer-events: none;
     cursor: pointer; }
@@ -139,7 +158,13 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  animation: menuappear 2s; }
+@keyframes menuappear {
+  from {
+    left: -70px; }
+  to {
+    left: 0; } }
   #menu_left a {
     color: snow;
     cursor: pointer; }
@@ -494,7 +519,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.2s; }
+  transition: 0.2s;
+  cursor: pointer; }
 
 .hobby-teaching-text-style {
   font-family: "Fjalla One", sans-serif;

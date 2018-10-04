@@ -56,11 +56,29 @@ body
   display: flex
   margin-bottom: 20px
   z-index: 1
+  position: relative
+  animation: planeappear 2s
+  @keyframes planeappear
+    from
+      right: -70px
+    to
+      right: 0
   embed
     width: 40px
     pointer-events: none
     cursor: pointer
 
+#menuToggle
+  animation: toggleappear 2s
+  @keyframes toggleappear
+    from
+      right: -70px
+    to
+      right: 20px
+  embed
+    width: 40px
+    pointer-events: none
+    cursor: pointer
 #menuToggle input
   display: block
   width: 40px
@@ -146,6 +164,12 @@ body
   display: flex
   flex-direction: column
   align-items: center
+  animation: menuappear 2s
+  @keyframes menuappear
+    from
+      left: -70px
+    to
+      left: 0
   a
     color: snow
     cursor: pointer
@@ -522,6 +546,7 @@ $step: 100px
   justify-content: center
   align-items: center
   transition: 0.2s
+  cursor: pointer
 
 .hobby-teaching-text-style
   font-family: 'Fjalla One', sans-serif
