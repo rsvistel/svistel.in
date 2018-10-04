@@ -887,10 +887,6 @@ a.svg {
   ._team {
     padding: 75px 15px 0 55px; }
 
-  .feedback-sec .row {
-    display: flex;
-    justify-content: center; }
-
   .photo-map img {
     display: none; }
 
@@ -913,7 +909,10 @@ a.svg {
     margin-bottom: 115px; }
 
   .hobby-teaching-text-style, .activity-traveling-text-style {
-    margin-left: 35px; } }
+    margin-left: 35px; }
+
+  #hobby_activity .container {
+    width: auto; } }
 @media (min-width: 769px) and (max-width: 992px) {
   .centom {
     padding-left: 70px !important; }
@@ -943,7 +942,18 @@ a.svg {
     width: 550px; }
 
   .left_circle {
-    margin-right: 500px; } }
+    margin-right: 500px; }
+
+  .photo_team img {
+    height: 180px; }
+
+  .feedback-top-text-style-2 {
+    font-size: 28px; }
+
+  .section_contact #submit_button {
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 0; } }
 @media (min-width: 1023px) and (max-width: 1113px) {
   .block_information .top-butto {
     width: 50px !important; }
@@ -1077,7 +1087,7 @@ a.svg {
     width: 205px !important; }
 
   #section_vidhuku {
-    height: 1050px; }
+    height: 1180px; }
 
   .feedback-underline-text-3 {
     width: 160px !important; }
@@ -1278,7 +1288,7 @@ a.svg {
     width: 65%; }
 
   #section_vidhuku {
-    height: 1120px; }
+    height: 1370px; }
 
   .section_contact #contact_form {
     width: 74%; }
@@ -1288,7 +1298,10 @@ a.svg {
 
   #menu_left ul li {
     padding: 10px 0;
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  #hobby_activity {
+    height: 1200px; } }
 @media (min-width: 450px) and (max-width: 768px) {
   .section_banner {
     display: flex; }
@@ -1349,14 +1362,17 @@ a.svg {
     width: 78%; }
     .section_contact #contact_form .icon_contact button {
       margin-left: 0;
-      width: 50% !important;
+      width: 25% !important;
       margin-top: 15px; }
 
   .button_portfolio {
     margin: 50px 0 0 12px; }
 
   .centom {
-    padding-right: 52px; } }
+    padding-right: 52px; }
+
+  #section_vidhuku {
+    height: 1050px; } }
 @media (min-width: 600px) and (max-width: 767px) {
   .icons_block_tab {
     margin-top: -70px; }
@@ -1368,10 +1384,10 @@ a.svg {
     margin-left: 110px; }
 
   .hobby-teaching-text-style {
-    margin-left: 95px; } }
-@media (min-width: 767px) and (max-width: 768px) {
-  .feedback-sec {
-    margin-right: 55px; } }
+    margin-left: 95px; }
+
+  .icon_contact button {
+    margin-left: 20px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .block_information .first_row {
     margin-left: 0; }
@@ -1438,9 +1454,6 @@ a.svg {
 
   .section_contact #contact_form {
     width: 83%; }
-
-  .icon_contact button {
-    margin-left: 20px; }
 
   .icon_contact embed {
     margin: 0 9px; } }
@@ -1573,7 +1586,7 @@ a.svg {
     margin-top: 25px; }
 
   .feedback-underline-text-3 {
-    width: 220px;
+    width: 190px;
     height: 4px;
     background-color: #ffd000;
     border-radius: 10px;
@@ -1582,7 +1595,7 @@ a.svg {
     transition: 0.1s; }
 
   .feedback-underline-text-1 {
-    width: 115px;
+    width: 155px;
     height: 4px;
     background-color: #ffd000;
     border-radius: 10px;
@@ -1627,8 +1640,7 @@ a.svg {
   .feedback-sec {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 940px; }
+    justify-content: center; }
 
   #section_vidhuku {
     margin-left: 35px; }
