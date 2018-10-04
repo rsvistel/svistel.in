@@ -4,13 +4,11 @@ $(document).ready(function() {
     $('.section').each(function () {
        sections.push($(this));
     });
+    $('html, body').animate({scrollTop: $('#section_banner').offset().top},2000);
     bindScroll();
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
     });
-    $('html, body').animate({
-        scrollTop: sections[0].offset().top
-    }, 0);
 
     // Hobbies
     $('#travel').click(function () {
