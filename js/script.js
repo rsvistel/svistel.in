@@ -4,8 +4,15 @@ $(document).ready(function() {
     $('.section').each(function () {
        sections.push($(this));
     });
-    $('html, body').animate({scrollTop: $('#section_banner').offset().top},2000);
-    bindScroll();
+    setTimeout(function () {
+        for (i = 0; i < sections.length; i++) {
+            if (sections[i].isInViewport() && i !== 0) {
+                scroll(i);
+            } else if (sections[i].isInViewport() && i === 0) {
+                bindScroll()
+            }
+        }
+    },1000);
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
     });
@@ -48,7 +55,7 @@ $(document).ready(function() {
     });
 });
 function scroll(param) {
-    var speed = 2000;
+    var speed = 1500;
     if (param === 'down' && activeSection < sections.length-1) {
         activeSection++;
         start(activeSection)
@@ -108,3 +115,12 @@ function closeHobby() {
     $('.menu_right').show();
     bindScroll()
 }
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
