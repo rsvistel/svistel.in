@@ -862,7 +862,8 @@ a.svg {
       height: 60px;
       margin-bottom: 10px; }
     .block_information .icon_block_information h3 {
-      margin-top: 5px; }
+      margin-top: 5px;
+      font-size: 20px; }
     .block_information .icon_block_information .second_row .icon_block_information {
       margin-left: 20px; }
 
@@ -1148,7 +1149,7 @@ a.svg {
     margin-bottom: 10px; }
 
   .photo_team {
-    min-height: 1000px; }
+    min-height: 1125px; }
     .photo_team .row {
       flex-direction: column; }
     .photo_team .photo_block {
@@ -1331,7 +1332,7 @@ a.svg {
     width: 350px; }
 
   .photo_team {
-    min-height: 1000px; }
+    min-height: 1125px; }
     .photo_team .row {
       flex-direction: column; }
     .photo_team .photo_block {
@@ -1403,7 +1404,7 @@ a.svg {
     width: 500px; }
 
   .left_circle {
-    margin-right: 450px; }
+    margin-right: 415px; }
 
   .yellow_circle {
     margin-top: -250px; }
