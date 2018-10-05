@@ -26,7 +26,20 @@ body {
   background: #161616;
   background-size: cover;
   height: 100vh;
-  min-height: 1000px; }
+  min-height: 1000px;
+  margin-bottom: 200vh; }
+  .section.shownext {
+    top: 100vh;
+    position: relative;
+    top: 0;
+    margin-bottom: 200vh;
+    transition: top 500ms linear; }
+  .section.showprev {
+    top: -100vh;
+    position: relative;
+    top: 0;
+    margin-bottom: 200vh;
+    transition: top 500ms linear; }
 
 #menuToggle {
   display: block;
@@ -570,7 +583,8 @@ body {
 
 .cir:hover {
   transform: scale(1.1);
-  -webkit-transition: 0.3s; }
+  -webkit-transition: 0.3s;
+  cursor: pointer; }
 
 div.ex3 {
   height: 135px;
@@ -769,7 +783,7 @@ a.svg {
   align-items: center; }
 
 #portfolio img {
-  width: 95% !important;
+  width: 100% !important;
   border-radius: 15px;
   transition: 0.3s;
   z-index: 0; }
