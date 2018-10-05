@@ -56,16 +56,17 @@ $(document).ready(function() {
 });
 function scroll(param) {
     var speed = 1500;
+    var temp = activeSection;
     if (param === 'down' && activeSection < sections.length-1) {
         activeSection++;
-        start(activeSection)
+        start(activeSection);
     } else if (param === 'up' && activeSection > 0) {
         activeSection--;
-        start(activeSection)
+        start(activeSection);
     } else if (param !== 'up' && param !== 'down') {
         if (activeSection >= 0 && activeSection <= sections.length-1) {
             activeSection = param;
-            start(param);
+            start(activeSection);
         }
     }
     if ($('#menuToggle input').prop("checked") === true) {
@@ -75,6 +76,12 @@ function scroll(param) {
         $('html, body').animate({
             scrollTop: sections[i].offset().top
         }, speed);
+        $('.section').removeClass('shownext showprev');
+        if (temp < i) {
+            sections[i].addClass('shownext')
+        } else {
+            sections[i].addClass('showprev')
+        }
         $(document).unbind('wheel');
         $('#navigation li').css('pointer-events', 'none');
         var line = '<li id="bottomline" style="padding: 0"><div class="bottomline"></div></li>';
