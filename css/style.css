@@ -955,6 +955,57 @@ a.svg {
   color: white;
   text-decoration: none; }
 
+.cent-mess-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.mess-text1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 35vh; }
+
+.mess-text2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 10px; }
+
+#submit_button-mess {
+  border-radius: 45px;
+  width: 235px;
+  height: 40px;
+  border: none;
+  background: #ffcd00;
+  color: #161616;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 19px;
+  transition: 0.5s;
+  margin-top: 15px; }
+
+#submit_button-mess:hover {
+  background: #161616;
+  color: snow;
+  border: 2px #ffcd00 solid; }
+
+.icon_contact-mess {
+  color: #161616;
+  font-family: "Libre Franklin", sans-serif; }
+
+.a-link-text-style a {
+  color: black;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none; }
+
+.a-link-text-style a:hover {
+  color: white; }
+
 .section_contact {
   height: 100vh;
   display: flex;
