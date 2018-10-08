@@ -4,13 +4,18 @@ $(document).ready(function() {
     $('.section').each(function () {
        sections.push($(this));
     });
-    bindScroll();
+    setTimeout(function () {
+        for (i = 0; i < sections.length; i++) {
+            if (sections[i].isInViewport() && i !== 0) {
+                scroll(i);
+            } else if (sections[i].isInViewport() && i === 0) {
+                bindScroll()
+            }
+        }
+    },1000);
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
     });
-    $('html, body').animate({
-        scrollTop: sections[0].offset().top
-    }, 0);
 
     // Hobbies
     $('#travel').click(function () {
@@ -50,17 +55,18 @@ $(document).ready(function() {
     });
 });
 function scroll(param) {
-    var speed = 2000;
+    var speed = 1500;
+    var temp = activeSection;
     if (param === 'down' && activeSection < sections.length-1) {
         activeSection++;
-        start(activeSection)
+        start(activeSection);
     } else if (param === 'up' && activeSection > 0) {
         activeSection--;
-        start(activeSection)
+        start(activeSection);
     } else if (param !== 'up' && param !== 'down') {
         if (activeSection >= 0 && activeSection <= sections.length-1) {
             activeSection = param;
-            start(param);
+            start(activeSection);
         }
     }
     if ($('#menuToggle input').prop("checked") === true) {
@@ -70,6 +76,12 @@ function scroll(param) {
         $('html, body').animate({
             scrollTop: sections[i].offset().top
         }, speed);
+        $('.section').removeClass('shownext showprev');
+        if (temp < i) {
+            sections[i].addClass('shownext')
+        } else {
+            sections[i].addClass('showprev')
+        }
         $(document).unbind('wheel');
         $('#navigation li').css('pointer-events', 'none');
         var line = '<li id="bottomline" style="padding: 0"><div class="bottomline"></div></li>';
@@ -110,3 +122,12 @@ function closeHobby() {
     $('.menu_right').show();
     bindScroll()
 }
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
