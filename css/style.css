@@ -166,7 +166,6 @@ body {
   position: fixed;
   width: 70px;
   height: 100vh;
-  background: #000000;
   padding-top: 20px;
   z-index: 1;
   display: flex;
