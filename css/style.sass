@@ -1323,12 +1323,11 @@ a.svg
 
   .block_information
     display: flex
-    flex-direction: row
+    flex-direction: column
     align-items: center
     .icon_block_information
       margin-bottom: 15px
-      display: flex
-      align-items: baseline
+
     .first_row, .second_row
       margin-bottom: 0
       float: left
@@ -1344,11 +1343,8 @@ a.svg
     margin-top: 40px!important
     font-size: 16px
 
-  .top-girl-photo img
-    margin-left: 30px
-
   #icons_block
-    padding: 50px 19px 10px 20px
+    padding: 50px 19px 10px 5px
     .container
       padding: 0
       margin: 0
@@ -1366,7 +1362,7 @@ a.svg
     width: 270px
 
   .blocks-about
-    width: 205px!important
+    width: 235px!important
 
   .centom .grid
     padding-right: 10px
@@ -1378,25 +1374,37 @@ a.svg
   #section_vidhuku
     height: 1180px
 
-  .feedback-underline-text-3
-    width: 160px!important
+  .feedback-underline-text-3, .feedback-underline-text-1
+    width: 230px!important
 
   .block_information
-    .first_row, .second_row
+    height: 1250px
+    .row
       margin-left: 0
+      width: 100%
     .second_row
       margin-top: -10px
-    .icon_block_information p
-      font-size: 30px
+    .icon_block_information
+      margin-bottom: 40px
+      br
+        display: none
+      p
+        font-size: 45px
     .icon_block_information svg
-      width: 40px
+      width: 75px
+      margin-bottom: 5px
+      margin-right: 20px
     .second_icon_block_information svg
-      width: 37px
+      width: 60px
     .third_icon_block_information svg
-      width: 38px
+      width: 65px
       margin-top: -5px
     .icon_block_information h3
-      font-size: 14px
+      font-size: 27px
+      text-align: center
+      margin-top: 18px
+      width: 50%
+
 
   .blocks-about:hover
     transform: none
@@ -1410,10 +1418,6 @@ a.svg
     height: 50px!important
     embed
       width: 25px!important
-
-  .portfolio-section
-    padding-right: 25px
-    padding-left: 30px
 
   .portfolio-web img
     width: 250px
@@ -1442,7 +1446,7 @@ a.svg
       margin-left: 165px
 
   .feedback-sec
-    margin-left: 40px!important
+    margin-left: 16px!important
     margin-right: 45px!important
 
   .plane
@@ -1471,8 +1475,8 @@ a.svg
       width: 75%!important
 
   .icon_contact embed
-    width: 20px
-    margin: 0 5px
+    width: 22px
+    margin: 0 7px
 
   .section_contact #contact_form
     width: 90%
@@ -1489,6 +1493,25 @@ a.svg
     margin-top: 20px
     margin-left: 0
 
+  #menu_left
+    display: none
+
+  .photo_team img
+    height: 175px
+
+  .plane
+    display: none
+
+  .image_feedback
+    text-align: center
+    embed
+      width: 50%!important
+
+  #menu
+    height: 110vh
+
+  .text_col-xs
+    text-align: center
 
 
 
@@ -1513,9 +1536,6 @@ a.svg
   .teacher-block img
     width: 210px
 
-  .feedback-underline-text-3
-    width: 130px!important
-
   .teacher-bottom-block
     width: 230px
     height: 215px
@@ -1534,25 +1554,34 @@ a.svg
     margin-bottom: 0
 
   .block_information
-    .first_row .icon_block_information
-      padding-left: 0
-      margin-left: 27px
+    height: 1000px
+    .row
+      margin-left: 0
+      width: 100%
     .second_row
       margin-top: -10px
-    .icon_block_information p
-      font-size: 28px
+    .icon_block_information
+      margin-bottom: 40px
+      br
+        display: none
+      p
+        font-size: 40px
     .icon_block_information svg
-      width: 30px
+      width: 58px
+      margin-bottom: 5px
+      margin-right: 15px
     .second_icon_block_information svg
-      width: 25px
+      width: 48px
     .third_icon_block_information svg
-      width: 30px
+      width: 50px
       margin-top: -5px
+      //margin-top: -5px
     .icon_block_information h3
-      font-size: 12px
+      font-size: 23px
+      text-align: center
+      margin-top: 12px
+      width: 50%
 
-  .portfolio-web img
-    width: 195px
 
   .button_right_portfolio
     width: 125px
@@ -1562,9 +1591,6 @@ a.svg
 
   .button_left_portfolio
     width: 100px
-
-  .left_circle
-    margin-right: 150px
 
   .yellow_circle
     width: 35px
@@ -1585,7 +1611,7 @@ a.svg
     height: 1370px
 
   .section_contact #contact_form
-    width: 74%
+    width: 80%
 
   #menu
     padding-top: 160px
@@ -1595,7 +1621,7 @@ a.svg
     font-size: 22px
 
   #hobby_activity
-    height: 1200px
+    height: 800px
 
 @media (min-width: 450px) and (max-width: 768px)
   .section_banner
@@ -1811,10 +1837,10 @@ a.svg
     display: flex
 
   .yellow_circle
-    margin-top: -90px
+    margin-top: -210px
 
   #section_vidhuku
-    height: 600px
+    height: 750px
 
   #section_vidhuku .col-xs-4 embed
     width: 120px!important
@@ -1875,7 +1901,7 @@ a.svg
     margin-top: 0px
 
   .about-photo-in-block embed
-    width: 65%
+    width: 60%
 
   .feedback-bottom-text-style2
     font-family: "Fjalla One", sans-serif
@@ -1941,7 +1967,7 @@ a.svg
     justify-items: center
 
   .text-style-in-about-block
-    font-size: 30px
+    font-size: 27px
     font-family: "Fjalla One", sans-serif
     color: white
     display: flex
@@ -2075,10 +2101,8 @@ a.svg
     padding: 0 100px!important
 
   #section_vidhuku
-    height: 768px
+    height: 1050px
 
-  .yellow_circle
-    margin-top: 0
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
