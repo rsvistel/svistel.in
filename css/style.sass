@@ -9,7 +9,8 @@ $yellow: #ffcd00
 
 body, html
   overflow: hidden
-
+a
+  text-decoration: none!important
 body
   overflow: hidden
   margin: 0
@@ -613,14 +614,13 @@ $step: 100px
   display: flex
   align-items: center
   height: 100vh
-  min-height: 850px
+  min-height: 750px
 .cir:hover
   transform: scale(1.1)
   -webkit-transition: 0.3s
   cursor: pointer
 
 div.ex3
-  //width: 530px
   height: 135px
   overflow: auto
   display: flex
@@ -1102,10 +1102,21 @@ a.svg
   embed
     width: 23px
     margin: 0 16px
-    pointer-events: none
+    opacity: 0.2
+    transition: 0.3s
+    pointer-events: auto
+  embed:hover
+    opacity: 1
     cursor: pointer
   button
     margin-left: 75px
+
+#name_validation
+  position: absolute
+
+#email_validation
+  position: absolute
+
 
 
 //Media Query
@@ -1229,10 +1240,13 @@ a.svg
     margin-left: 0
 
   #icons_block
-    height: 1020px
+    height: 1060px
 
   .feedback-sec
     height: 108vh
+
+  #icons_block .container
+    min-height: 108vh
 @media (min-width: 1023px) and (max-width: 1113px)
   .block_information .top-butto
     width: 50px!important
@@ -1342,6 +1356,7 @@ a.svg
     .container
       padding: 0
       margin: 0
+      height: 800px
     embed
       width: 134px
 
@@ -1503,6 +1518,8 @@ a.svg
 
   .text_col-xs
     text-align: center
+
+
 
 
 
@@ -1711,6 +1728,9 @@ a.svg
 
   .icon_contact button
     margin-left: 20px
+
+  #icons_block .container
+    min-height: 110vh
 @media (min-width: 767px) and (max-width: 768px)
   //.feedback-sec
   //  margin-right: 55px
@@ -2087,9 +2107,6 @@ a.svg
 
   .photo-map img
     display: none
-
-  //.grid_second .feedback-top-text-style-2
-  //  margin-top: 15px
 
   #photo_team
     display: flex
