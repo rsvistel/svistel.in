@@ -166,7 +166,6 @@ body {
   position: fixed;
   width: 70px;
   height: 100vh;
-  background: #000000;
   padding-top: 20px;
   z-index: 1;
   display: flex;
@@ -879,8 +878,6 @@ a.svg {
 .portfolio_block:hover embed {
   display: block !important; }
 
-/* #portfolio img:hover, #portfolio embed:hover
- * filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4) */
 #portfolio .row {
   margin-bottom: 15px;
   text-align: end; }
@@ -1794,7 +1791,12 @@ a.svg {
     text-align: center;
     padding: 0; }
     .text_col-xs .feedback-underline-text-1 {
-      width: 100%; } }
+      width: 100%; }
+
+  #menu {
+    height: 115vh; }
+    #menu p {
+      text-align: center; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
