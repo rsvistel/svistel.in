@@ -533,7 +533,8 @@ $step: 100px
   display: flex
   justify-content: center
   align-items: center
-  min-height: 250px
+  min-height: 235px
+  padding-top: 100px
 
 .teacher-block img
   width: 700px
@@ -541,9 +542,9 @@ $step: 100px
 .teacher-bottom-block
   background-color: white
   width: 620px
-  height: 330px
+  height: 300px
   border-radius: 35px
-  margin-top: -150px
+  margin-top: -200px
   padding: 10px
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9)
   display: flex
@@ -566,7 +567,7 @@ $step: 100px
   font-family: 'Fjalla One', sans-serif
   font-size: 39px
   color: #161616
-  margin-top: 35px
+  margin-top: 15px
   text-align: center
 
 .hobby-teaching-bottom-text-style
@@ -582,7 +583,7 @@ $step: 100px
   font-family: 'Fjalla One', sans-serif
   font-size: 38px
   color: #161616
-  margin-top: 35px
+  margin-top: 15px
   text-align: center
 
 .mouse-svg
@@ -614,7 +615,7 @@ $step: 100px
   display: flex
   align-items: center
   height: 100vh
-  min-height: 750px
+  min-height: 800px
 .cir:hover
   transform: scale(1.1)
   -webkit-transition: 0.3s
@@ -893,7 +894,7 @@ a.svg
   transition: 0.3s
   z-index: 0
 
-#portfolio embed
+#portfolio embed, #portfolio-section embed
   z-index: 1
   position: absolute
   width: 15%
@@ -914,8 +915,6 @@ a.svg
     justify-content: center
     align-items: center
 
-.portfolio-web img:hover
-  filter: blur(1px) contrast(120%) opacity(85%)
 
 .overlay
   position: fixed
@@ -1059,23 +1058,20 @@ a.svg
       border-radius: 10px
       padding: 12px
       border: none
-        font-family: "Libre Franklin", sans-serif
+      font-family: "Libre Franklin", sans-serif
       font-weight: bold
       font-style: italic
       font-size: 18px
       opacity: 0.8
     input
-      width: 35%
-      margin: 20px 0 35px 0
-    input:nth-child(odd)
-      margin-right: 80px
+      width: 70%
+      margin: 20px 0 0 0
     textarea
-      width: 80%
+      width: 100%
       height: 140px
       resize: none
     .row_name_email
-      display: flex
-      justify-content: center
+      padding: 0 20px
     .row_message
       text-align: center
   #submit_button
@@ -1111,13 +1107,25 @@ a.svg
   button
     margin-left: 75px
 
-#name_validation
-  position: absolute
+.input_span
+  width: 50%
+  display: flex
+  flex-direction: column
+  align-items: center
 
-#email_validation
-  position: absolute
+#name_validation, #email_validation, #message_validation
+  margin-top: -10px
+  opacity: 0.8
+  font-family: "Fjalla One", sans-serif
+  font-size: 12px
+  width: 67%
 
-
+.textarea_span
+  width: 80%
+  margin-top: 20px
+  text-align: start
+  span
+    padding-left: 5px
 
 //Media Query
 @media (min-width: 768px) and (max-width: 1023px)
@@ -1162,22 +1170,11 @@ a.svg
   ._team
     padding: 75px 15px 0 55px
 
-  //.feedback-sec .row
-  //  display: flex
-  //  justify-content: center
-
   .photo-map img
     display: none
 
   .button_portfolio
     font-size: 16px
-
-  .section_contact #contact_form input:nth-child(odd)
-    margin-right: 40px
-    font-family: "Libre Franklin", sans-serif
-    font-weight: bold
-    font-style: italic
-
 
 @media (min-width: 769px) and (max-width: 1023px)
   .block_information .second_row
@@ -1411,7 +1408,6 @@ a.svg
       margin-top: 18px
       width: 50%
 
-
   .blocks-about:hover
     transform: none
 
@@ -1519,8 +1515,21 @@ a.svg
   .text_col-xs
     text-align: center
 
+  .hobby-teaching-bottom-text-style
+    margin-left: 0!important
+    margin-right: 0!important
 
+  .activity-traveling-text-style, .hobby-teaching-text-style
+    margin-bottom: 20px
 
+  .input_span
+    width: 100%
+
+  .row_name_email
+    padding: 0!important
+
+  .textarea_span
+    width: 76%
 
 
 @media (max-width: 320px)
@@ -1641,12 +1650,6 @@ a.svg
     justify-content: center
     align-items: center
 
-  .section_contact #contact_form input:nth-child(odd)
-    margin-right: 40px
-    font-family: "Libre Franklin", sans-serif
-    font-weight: bold
-    font-style: italic
-
 @media (min-width: 450px) and (max-width: 600px)
   .block_information
     .icon_block_information p
@@ -1720,7 +1723,7 @@ a.svg
     width: 330px!important
 
   .activity-traveling-text-style
-    margin-left: 110px
+    margin-left: 85px
 
   .hobby-teaching-text-style
     margin-left: 95px

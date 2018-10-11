@@ -3186,7 +3186,7 @@
 
 <div class="section">
     <h1 class="heading">Portfolio</h1>
-    <div id="portfolio-section">
+    <div id="w">
         <div class="container">
             <div class="row">
                 <div class="portfolio-section">
@@ -3209,8 +3209,15 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
+                                    <!--<a href="https://mysnapp.co.uk/ignite/">-->
+                                        <!--<img src="img/portfolio/portfolio1.png">-->
+                                    <!--</a>-->
+
                                     <a href="https://mysnapp.co.uk/ignite/">
-                                        <img src="img/portfolio/portfolio1.png">
+                                        <div class="two_image">
+                                            <img src="img/portfolio/portfolio1.png">
+                                            <embed src="img/arrow.svg">
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="item">
@@ -3542,19 +3549,25 @@
                 <form id="contact_form" action="send.php" method="POST" enctype="multipart/form-data">
                     <h1>CONTACT</h1>
                     <div class="row row_name_email">
-                        <input id="name" class="input input_text col-md-4" name="name" type="text" value="" size="30"
-                               placeholder="Name"/><br/>
-                        <span id="name_validation" class="error_message"></span>
+                       <div class="input_span">
+                          <input id="name" class="input input_text col-md-4" name="name" type="text" value="" size="30"
+                                 placeholder="Name"/><br/>
+                          <span id="name_validation" class="error_message"></span>
+                       </div>
 
-                        <input id="email" class="input col-md-4" name="email" type="text" value="" size="30"
-                               placeholder="Email"/><br/>
-                        <span id="email_validation" class="error_message"></span>
+                        <div class="input_span">
+                          <input id="email" class="input col-md-4" name="email" type="text" value="" size="30"
+                                  placeholder="Email"/><br/>
+                           <span id="email_validation" class="error_message"></span>
+                        </div>
                     </div>
 
                     <div class="row row_message">
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"
-                                  placeholder="Message"></textarea><br/>
-                        <span id="message_validation" class="error_message"></span>
+                        <div class="textarea_span">
+                           <textarea id="message" class="input" name="message" rows="7" cols="30"
+                                   placeholder="Message"></textarea><br/>
+                           <span id="message_validation" class="error_message"></span>
+                        </div>
                     </div>
 
                     <div class="icon_contact">
