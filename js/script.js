@@ -9,7 +9,7 @@ $(document).ready(function() {
             if (sections[i].isInViewport() && i !== 0) {
                 scroll(i);
             } else if (sections[i].isInViewport() && i === 0) {
-                bindScroll()
+                scroll(0)
             }
         }
     },1000);
