@@ -1,6 +1,7 @@
 var sections = [];
 var activeSection = 0;
 $(document).ready(function() {
+    $('[data-toggle="popover"]').popover({ trigger: "hover" });
     $('.section').each(function () {
        sections.push($(this));
     });
@@ -108,11 +109,12 @@ function bindScroll() {
 }
 
 function openHobby(section) {
-    section.show();
+    section.css('display', 'flex');
     $('#hobby_activity').hide();
     $('#menu_left').hide();
     $('.menu_right').hide();
     $(document).unbind('wheel');
+    $('.heading-hobby').hide()
 }
 function closeHobby() {
     $('#travel-section').hide();
@@ -120,7 +122,8 @@ function closeHobby() {
     $('#hobby_activity').show();
     $('#menu_left').show();
     $('.menu_right').show();
-    bindScroll()
+    bindScroll();
+    $('.heading-hobby').show()
 }
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;

@@ -210,6 +210,10 @@ body {
   #menu_left .logo_bee embed {
     pointer-events: none;
     cursor: pointer; }
+  #menu_left .popover-title {
+    color: #555; }
+  #menu_left .popover-content {
+    display: none; }
 
 .block_information {
   height: 100vh;
