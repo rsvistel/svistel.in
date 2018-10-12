@@ -221,6 +221,9 @@ body
 
 //STATISTIC SECTION
 .block_information
+  //background: #161616
+  //background-size: cover
+  //height: 100vh
   height: 100vh
   min-height: 500px
   display: flex
@@ -349,14 +352,33 @@ $step: 100px
   margin-right: 35px
 
 .top-text-style
-  font-size: 61px
+  font-size: 63px
   color: white
   font-family: 'Bangers', cursive
   margin-top: 175px
+//opacity: 0
+//position: relative
+//animation: showHeaderText 1s
+//@keyframes showHeaderText
+//  from
+//    opacity: 0
+//    right: 20%
+//  to
+//    opacity: 1
+//    right: 0
+
 
 .top-girl-photo
   img
     width: 390px
+//animation: fadeHeroImage 1s
+//@keyframes fadeHeroImage
+//  from
+//    opacity: 0
+//    left: 20%
+//  to
+//    opacity: 1
+//    left: 0
 
 .top-girl-photo
   margin-top: 150px
@@ -1233,7 +1255,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 0
       transition: opacity 1s linear
-    .col-xs-12
+    .col-xs-4
       transform: scale(0)
       transition: transform 1s linear
 
@@ -1247,7 +1269,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 1
       transition: opacity 0.5s linear 1.5s
-    .col-xs-12
+    .col-xs-4
       transform: scale(1)
       transition: transform 0.5s linear 1s
 
@@ -1292,9 +1314,6 @@ a.tooltip span
 
   #photo_team
     .photo_block
-      img
-        transform: scale(0)
-        transition: transform 1s linear
       &:nth-child(3)
         h3, h5
           position: relative
@@ -1585,7 +1604,7 @@ a.tooltip span
   .portfolio_block
     width: 28%
 
-  .icon_contact img
+  .icon_contact embed
     margin: 0 8px
 
   .cent
@@ -1643,20 +1662,6 @@ a.tooltip span
     display: block
 
 @media (max-width: 450px)
-  .section
-    margin-bottom: 0
-    min-height: auto
-    height: auto
-
-  .section.showprev
-    margin-bottom: 0
-
-  .icon_block_information
-    height: 100vh
-    display: flex
-    justify-content: center
-    align-items: center
-
   .button1
     margin-top: 40px !important
     font-size: 16px
@@ -1693,7 +1698,7 @@ a.tooltip span
     width: 100% !important
 
   .block_information
-    height: auto
+    height: 1250px
     .row
       margin-left: 0
       width: 100%
@@ -1788,11 +1793,12 @@ a.tooltip span
       margin: 2px 0 !important
       width: 75% !important
 
-  .section_contact #contact_form
-    width: 78%
+  .icon_contact embed
+    width: 22px
+    margin: 0 7px
 
-  .icon_contact
-    margin: 0 0 15px 0
+  .section_contact #contact_form
+    width: 90%
 
   #menu
     padding-top: 210px
@@ -1845,12 +1851,6 @@ a.tooltip span
   .display-none
     display: none
 
-  .icon_contact img
-    margin: 0 9px
-
-  .block-in-center, .blocks-about
-    pointer-events: none
-
 @media (max-width: 320px)
   #icons_block embed
     width: 105px
@@ -1890,6 +1890,7 @@ a.tooltip span
     margin-bottom: 0
 
   .block_information
+    height: 1000px
     .row
       margin-left: 0
       width: 100%
@@ -1945,7 +1946,7 @@ a.tooltip span
     height: 1370px
 
   .section_contact #contact_form
-    width: 72%
+    width: 80%
 
   #menu
     padding-top: 160px
@@ -1956,9 +1957,6 @@ a.tooltip span
 
   #hobby_activity
     height: 800px
-
-  .icon_contact img
-    margin: 18px 16px 0 16px
 
 @media (min-width: 450px) and (max-width: 768px)
   .section_banner
@@ -2137,7 +2135,7 @@ a.tooltip span
   .section_contact #contact_form
     width: 83%
 
-  .icon_contact img
+  .icon_contact embed
     margin: 0 9px
 
 @media (min-width: 1500px)
@@ -2161,6 +2159,11 @@ a.tooltip span
       font-size: 15px
       padding: 4px 0
 
+  #menu
+    padding-top: 80px
+    li
+      padding: 5px 0
+
   .logo_bee
     padding: 0 !important
 
@@ -2176,7 +2179,7 @@ a.tooltip span
   #section_vidhuku .col-xs-4 embed
     width: 120px !important
 
-  .icon_contact img
+  .icon_contact embed
     margin: 0 10px
 
   .section_contact #submit_button
@@ -2194,7 +2197,7 @@ a.tooltip span
     height: 530px
 
   #icons_block .all_rows
-    padding-top: 155px
+    padding-top: 80px
 
   .text_col-xs
     width: 100%
@@ -2205,14 +2208,8 @@ a.tooltip span
 
   #menu
     height: 115vh
-    padding-top: 140px
     p
       text-align: center
-    li
-      padding: 5px 0
-
-  #hobby_activity
-    min-height: 530px
 
 @media (max-width: 768px)
   #icons_block
@@ -2448,7 +2445,7 @@ a.tooltip span
     padding: 0 100px !important
 
   #section_vidhuku
-    height: 1365px
+    height: 1400px
 
   .block_information
     height: 750px
@@ -2457,13 +2454,7 @@ a.tooltip span
     text-align: center
     width: 100% !important
     embed
-      width: 42%!important
-
-  #icons_block .all_rows
-    padding-top: 135px
-
-  #hobby_activity
-    min-height: 800px
+      width: 50% !important
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
@@ -2479,5 +2470,4 @@ a.tooltip span
 @media (max-height: 550px)
   #menu_left
     display: none
-
 
