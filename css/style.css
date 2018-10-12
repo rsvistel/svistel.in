@@ -1126,7 +1126,7 @@ a.svg {
   .textarea_span span {
     padding-left: 5px; }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #portfolio-section .yellow_circle {
     position: relative;
     transition: left 1s linear; }
