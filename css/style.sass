@@ -9,15 +9,20 @@ $yellow: #ffcd00
 
 body, html
   overflow: hidden
+
 a
-  text-decoration: none!important
+  text-decoration: none !important
+
 body
   overflow: hidden
   margin: 0
   padding: 0
-  background-color: #161616!important
+  background-color: #161616 !important
   color: #cdcdcd
   font-family: "Avenir Next", "Avenir", sans-serif
+
+.no-overflow
+  overflow-y: auto
 
 .heading
   font-family: "Fjalla One", sans-serif
@@ -45,8 +50,6 @@ body
     margin-bottom: 200vh
     transition: top 500ms linear
 
-
-
 //HAMBURGER NENU
 #menuToggle
   display: block
@@ -67,6 +70,7 @@ body
   right: 20px
   display: flex
   align-items: flex-end
+
 .plane
   display: flex
   margin-bottom: 20px
@@ -94,6 +98,7 @@ body
     width: 40px
     pointer-events: none
     cursor: pointer
+
 #menuToggle input
   display: block
   width: 40px
@@ -116,8 +121,8 @@ body
   border-radius: 3px
   z-index: 1
   transform-origin: 4px 0px
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
-  background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+  background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
   opacity: 0.55s ease
 
 #menuToggle span:first-child
@@ -167,7 +172,6 @@ body
 #menuToggle input:checked ~ ul
   transform: none
 
-
 //MENU LEFT
 #menu_left
   position: fixed
@@ -214,7 +218,6 @@ body
   .logo_bee embed
     pointer-events: none
     cursor: pointer
-
 
 //STATISTIC SECTION
 .block_information
@@ -265,8 +268,6 @@ body
     display: flex
     flex-direction: row
     align-items: center
-
-
 
 //SKILLS SECTION
 $step: 100px
@@ -329,7 +330,6 @@ $step: 100px
     margin: 0 auto
     width: 165px
 
-
 //FIRST SECTION
 .section_banner
   display: flex
@@ -356,29 +356,29 @@ $step: 100px
   color: white
   font-family: 'Bangers', cursive
   margin-top: 175px
-  //opacity: 0
-  //position: relative
-  //animation: showHeaderText 1s
-  //@keyframes showHeaderText
-  //  from
-  //    opacity: 0
-  //    right: 20%
-  //  to
-  //    opacity: 1
-  //    right: 0
+//opacity: 0
+//position: relative
+//animation: showHeaderText 1s
+//@keyframes showHeaderText
+//  from
+//    opacity: 0
+//    right: 20%
+//  to
+//    opacity: 1
+//    right: 0
 
 
 .top-girl-photo
   img
     width: 390px
-    //animation: fadeHeroImage 1s
-    //@keyframes fadeHeroImage
-    //  from
-    //    opacity: 0
-    //    left: 20%
-    //  to
-    //    opacity: 1
-    //    left: 0
+//animation: fadeHeroImage 1s
+//@keyframes fadeHeroImage
+//  from
+//    opacity: 0
+//    left: 20%
+//  to
+//    opacity: 1
+//    left: 0
 
 .top-girl-photo
   margin-top: 150px
@@ -410,8 +410,6 @@ $step: 100px
 .top-text-style p
   margin-bottom: 0
   margin-top: -10px
-
-
 
 //ABOUT US
 .blocks-about
@@ -452,9 +450,6 @@ $step: 100px
   display: flex
   justify-content: center
   margin-top: 50px
-
-
-
 
 //FEEDBACK
 .width100
@@ -549,7 +544,6 @@ $step: 100px
   display: grid
   justify-items: center
 
-
 .teacher-block
   display: flex
   justify-content: center
@@ -637,6 +631,7 @@ $step: 100px
   align-items: center
   height: 100vh
   min-height: 800px
+
 .cir:hover
   transform: scale(1.1)
   -webkit-transition: 0.3s
@@ -826,17 +821,19 @@ a.svg
 .button_right_portfolio
   width: 185px
   background: #ffd000
+
 .button_right_portfolio:hover
   background: snow
 
 .button_left_portfolio
   width: 145px
   background: snow
+
 .button_left_portfolio:hover
   background: #ffcd00
 
 .portfolio_block:hover embed
-  display: block!important
+  display: block !important
 
 #portfolio
   height: 100vh
@@ -853,17 +850,19 @@ a.svg
 #portfolio embed
   z-index: 1
   position: absolute
-  width: 15%
+  width: 100%
   display: none
   cursor: pointer
   pointer-events: none
   opacity: 0.9
+  text-align: center
 
 .portfolio_block
   height: 160px
   padding: 0 10px
+
 .portfolio_block:hover embed
-  display: block!important
+  display: block !important
 
 #portfolio img:hover, #portfolio embed:hover
   filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4)
@@ -893,9 +892,9 @@ a.svg
 .button_right_portfolio
   width: 185px
   background: #ffd000
+
 .button_right_portfolio:hover
   background: snow
-
 
 #section_vidhuku .row
   display: flex
@@ -908,7 +907,7 @@ a.svg
   align-items: center
 
 #portfolio img
-  width: 100%!important
+  width: 100% !important
   border-radius: 15px
   transition: 0.3s
   z-index: 0
@@ -917,14 +916,21 @@ a.svg
   z-index: 1
   position: absolute
   width: 15%
+  height: 100%
+  margin: 0 42.5%
   display: none
   cursor: pointer
   pointer-events: none
   opacity: 0.9
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
 
 .portfolio_block
+
 .portfolio_block:hover embed
-  display: block!important
+  display: block !important
 
 #portfolio .row
   margin-bottom: 15px
@@ -997,7 +1003,6 @@ a.svg
   color: white
   text-decoration: none
 
-
 .cent-mess-text
   display: flex
   justify-content: center
@@ -1035,7 +1040,6 @@ a.svg
   color: snow
   border: 2px #ffcd00 solid
 
-
 .icon_contact-mess
   color: #161616
   font-family: "Libre Franklin", sans-serif
@@ -1050,13 +1054,15 @@ a.svg
 .a-link-text-style a:hover
   color: white
 
-
 a.tooltip
   outline: none
+
 a.tooltip strong
   line-height: 30px
+
 a.tooltip:hover
   text-decoration: none
+
 a.tooltip span
   z-index: 10
   display: none
@@ -1065,7 +1071,6 @@ a.tooltip span
   margin-left: -160px
   width: 300px
   line-height: 16px
-
 
 a.tooltip:hover span
   display: inline
@@ -1476,7 +1481,7 @@ a.tooltip span
 
   #icons_block.row
     overflow: auto
-    bottom: 0!important
+    bottom: 0 !important
     text-align: center
     embed
       margin-bottom: 0
@@ -1494,7 +1499,7 @@ a.tooltip span
   .block_information .second_row
     margin-left: 25px
 
-@media  (min-width: 768px) and (max-width: 981px)
+@media (min-width: 768px) and (max-width: 981px)
   .icons_block_tab embed
     margin-top: -105px
 
@@ -1510,7 +1515,7 @@ a.tooltip span
 
 @media (min-width: 769px) and (max-width: 992px)
   .centom
-    padding-left: 70px!important
+    padding-left: 70px !important
 
   #icons_block .container
     padding: 0 180px 0 170px
@@ -1558,9 +1563,10 @@ a.tooltip span
 
   #icons_block .container
     min-height: 108vh
+
 @media (min-width: 1023px) and (max-width: 1113px)
   .block_information .top-butto
-    width: 50px!important
+    width: 50px !important
 
   .block_information .icon_block_information p
     font-size: 30px
@@ -1603,8 +1609,6 @@ a.tooltip span
 
   .cent
     width: 100%
-
-
 
 @media only screen and (max-width: 600px)
   .icons_second_row
@@ -1657,10 +1661,9 @@ a.tooltip span
   #section_vidhuku .row
     display: block
 
-
 @media (max-width: 450px)
   .button1
-    margin-top: 40px!important
+    margin-top: 40px !important
     font-size: 16px
 
   #icons_block
@@ -1682,7 +1685,7 @@ a.tooltip span
     width: 270px
 
   .blocks-about
-    width: 235px!important
+    width: 235px !important
 
   .centom .grid
     padding-right: 10px
@@ -1692,7 +1695,7 @@ a.tooltip span
     height: 1350px
 
   .feedback-underline-text-1
-    width: 100%!important
+    width: 100% !important
 
   .block_information
     height: 1250px
@@ -1730,10 +1733,10 @@ a.tooltip span
     height: 235px
 
   .cir
-    width: 50px!important
-    height: 50px!important
+    width: 50px !important
+    height: 50px !important
     embed
-      width: 25px!important
+      width: 25px !important
 
   .portfolio-web img
     width: 250px
@@ -1762,8 +1765,8 @@ a.tooltip span
       margin-left: 165px
 
   .feedback-sec
-    margin-left: 16px!important
-    margin-right: 16px!important
+    margin-left: 16px !important
+    margin-right: 16px !important
 
   .plane
     margin-bottom: 10px
@@ -1787,8 +1790,8 @@ a.tooltip span
     flex-direction: column
     align-items: center
     input
-      margin: 2px 0!important
-      width: 75%!important
+      margin: 2px 0 !important
+      width: 75% !important
 
   .icon_contact embed
     width: 22px
@@ -1821,7 +1824,7 @@ a.tooltip span
   .image_feedback
     text-align: center
     embed
-      width: 50%!important
+      width: 50% !important
 
   #menu
     height: 110vh
@@ -1830,8 +1833,8 @@ a.tooltip span
     text-align: center
 
   .hobby-teaching-bottom-text-style
-    margin-left: 0!important
-    margin-right: 0!important
+    margin-left: 0 !important
+    margin-right: 0 !important
 
   .activity-traveling-text-style, .hobby-teaching-text-style
     margin-bottom: 20px
@@ -1840,11 +1843,13 @@ a.tooltip span
     width: 100%
 
   .row_name_email
-    padding: 0!important
+    padding: 0 !important
 
   .textarea_span
     width: 76%
 
+  .display-none
+    display: none
 
 @media (max-width: 320px)
   #icons_block embed
@@ -1853,15 +1858,15 @@ a.tooltip span
       margin-bottom: 0
 
   .top-text-style
-    font-size: 28px!important
+    font-size: 28px !important
 
   .icons_block_tab
-    padding-right: 0!important
+    padding-right: 0 !important
     margin-top: -30px
 
   .icons_second_row
     margin-top: 15px
-    padding-left: 0!important
+    padding-left: 0 !important
     position: relative
 
   .teacher-block img
@@ -1870,15 +1875,15 @@ a.tooltip span
   .teacher-bottom-block
     width: 230px
     height: 215px
-    margin-top: -180px!important
+    margin-top: -180px !important
     .container
       padding: 0
   .activity-traveling-text-style
-    font-size: 24px!important
+    font-size: 24px !important
     text-align: center
 
   .hobby-teaching-text-style
-    font-size: 23px!important
+    font-size: 23px !important
     text-align: center
 
   #icons_block .row
@@ -1906,13 +1911,12 @@ a.tooltip span
     .third_icon_block_information svg
       width: 50px
       margin-top: -5px
-      //margin-top: -5px
+    //margin-top: -5px
     .icon_block_information h3
       font-size: 23px
       text-align: center
       margin-top: 12px
       width: 50%
-
 
   .button_right_portfolio
     width: 125px
@@ -1978,7 +1982,7 @@ a.tooltip span
     .first_row
       margin-left: 25px
     h3
-      font-size: 19px!important
+      font-size: 19px !important
 
   .text_col-xs
     width: 59%
@@ -2011,7 +2015,7 @@ a.tooltip span
     width: 78%
     .icon_contact button
       margin-left: 0
-      width: 25%!important
+      width: 25% !important
       margin-top: 15px
 
   .button_portfolio
@@ -2027,14 +2031,12 @@ a.tooltip span
     width: 35%
     margin-top: 20px
 
-
-
 @media (min-width: 600px) and (max-width: 767px)
   .icons_block_tab
     margin-top: -70px
 
   div.ex3
-    width: 330px!important
+    width: 330px !important
 
   .activity-traveling-text-style
     margin-left: 85px
@@ -2042,15 +2044,15 @@ a.tooltip span
   .hobby-teaching-text-style
     margin-left: 95px
 
-
   .icon_contact button
     margin-left: 20px
 
   #icons_block .container
     min-height: 110vh
+
 @media (min-width: 767px) and (max-width: 768px)
-  //.feedback-sec
-  //  margin-right: 55px
+//.feedback-sec
+//  margin-right: 55px
 
 
 
@@ -2070,7 +2072,7 @@ a.tooltip span
     flex-direction: row
 
   .feedback-underline-text-2
-    width: 170px!important
+    width: 170px !important
 
   .teacher-block img
     width: 520px
@@ -2109,7 +2111,7 @@ a.tooltip span
         margin-top: 30px
 
   .feedback-underline-text-3
-    width: 115px!important
+    width: 115px !important
 
   #section_vidhuku .empty_div
     display: none
@@ -2136,15 +2138,9 @@ a.tooltip span
   .icon_contact embed
     margin: 0 9px
 
-
-
-
-
 @media (min-width: 1500px)
   .block_information .first_row, .block_information .second_row
     justify-content: center
-
-
 
 @media (max-width: 768px) and (orientation: landscape)
   #icons_block .container
@@ -2169,7 +2165,7 @@ a.tooltip span
       padding: 5px 0
 
   .logo_bee
-    padding: 0!important
+    padding: 0 !important
 
   .section_banner
     display: flex
@@ -2181,7 +2177,7 @@ a.tooltip span
     height: 1000px
 
   #section_vidhuku .col-xs-4 embed
-    width: 120px!important
+    width: 120px !important
 
   .icon_contact embed
     margin: 0 10px
@@ -2192,7 +2188,7 @@ a.tooltip span
     margin-left: 0
 
   #section_vidhuku
-    margin-left: 0px!important
+    margin-left: 0px !important
 
   .plane
     display: none
@@ -2215,15 +2211,11 @@ a.tooltip span
     p
       text-align: center
 
-
-
-
-
 @media (max-width: 768px)
   #icons_block
     overflow: hidden
     .row
-      bottom: 0!important
+      bottom: 0 !important
       text-align: center
       embed
         margin-bottom: 0
@@ -2362,7 +2354,7 @@ a.tooltip span
     align-items: center
     transition: 0.2s
     embed
-      width: 25px!important
+      width: 25px !important
 
   div.ex3
     height: 85px
@@ -2445,15 +2437,12 @@ a.tooltip span
   .teacher-bottom-block
     height: 400px
 
-
-
-
 @media (max-width: 568px) and (orientation: landscape)
   .feedback-sec .col-xs-4
     width: 28%
 
   #icons_block .container
-    padding: 0 100px!important
+    padding: 0 100px !important
 
   #section_vidhuku
     height: 1400px
@@ -2463,16 +2452,16 @@ a.tooltip span
 
   .image_feedback
     text-align: center
-    width: 100%!important
+    width: 100% !important
     embed
-      width: 50%!important
+      width: 50% !important
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
     padding: 0 158px
 
   #section_vidhuku .col-xs-4 embed
-    width: 100px!important
+    width: 100px !important
 
   .hobby-teaching-text-style, .activity-traveling-text-style
     margin-left: 50px

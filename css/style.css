@@ -18,6 +18,9 @@ body {
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif; }
 
+.no-overflow {
+  overflow-y: auto; }
+
 .heading {
   font-family: "Fjalla One", sans-serif;
   text-align: center;
@@ -812,11 +815,12 @@ a.svg {
 #portfolio embed {
   z-index: 1;
   position: absolute;
-  width: 15%;
+  width: 100%;
   display: none;
   cursor: pointer;
   pointer-events: none;
-  opacity: 0.9; }
+  opacity: 0.9;
+  text-align: center; }
 
 .portfolio_block {
   height: 160px;
@@ -877,10 +881,16 @@ a.svg {
   z-index: 1;
   position: absolute;
   width: 15%;
+  height: 100%;
+  margin: 0 42.5%;
   display: none;
   cursor: pointer;
   pointer-events: none;
-  opacity: 0.9; }
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
 
 .portfolio_block:hover embed {
   display: block !important; }
@@ -1731,7 +1741,10 @@ a.tooltip span {
     padding: 0 !important; }
 
   .textarea_span {
-    width: 76%; } }
+    width: 76%; }
+
+  .display-none {
+    display: none; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
