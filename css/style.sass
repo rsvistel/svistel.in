@@ -9,7 +9,8 @@ $yellow: #ffcd00
 
 body, html
   overflow: hidden
-
+a
+  text-decoration: none!important
 body
   overflow: hidden
   margin: 0
@@ -172,7 +173,6 @@ body
   position: fixed
   width: 70px
   height: 100vh
-  background: #000000
   padding-top: 20px
   z-index: 1
   display: flex
@@ -233,6 +233,8 @@ body
     display: flex
     flex-direction: column
     align-items: center
+    position: relative
+    transition: top 1s linear
     svg
       width: 52px
       float: left
@@ -292,11 +294,10 @@ $step: 100px
     &:last-child
       bottom: $step*3
     embed
-      transition: 0.3s
       margin-bottom: 20px
+      transition: 0.3s
     embed:hover
       transform: scale(1.3)
-
 
 //TEAM SECTION
 .photo_team
@@ -314,7 +315,6 @@ $step: 100px
   img
     height: 200px
     border-radius: 20px
-    transition: 0.2s
   h3
     font-family: "Fjalla One", sans-serif
     color: snow
@@ -356,9 +356,29 @@ $step: 100px
   color: white
   font-family: 'Bangers', cursive
   margin-top: 175px
+  //opacity: 0
+  //position: relative
+  //animation: showHeaderText 1s
+  //@keyframes showHeaderText
+  //  from
+  //    opacity: 0
+  //    right: 20%
+  //  to
+  //    opacity: 1
+  //    right: 0
 
-.top-girl-photo img
-  width: 390px
+
+.top-girl-photo
+  img
+    width: 390px
+    //animation: fadeHeroImage 1s
+    //@keyframes fadeHeroImage
+    //  from
+    //    opacity: 0
+    //    left: 20%
+    //  to
+    //    opacity: 1
+    //    left: 0
 
 .top-girl-photo
   margin-top: 150px
@@ -446,6 +466,7 @@ $step: 100px
   color: white
   margin-bottom: 3px
   margin-top: 25px
+  position: relative
 
 .feedback-underline-text-3
   width: 220px
@@ -533,7 +554,8 @@ $step: 100px
   display: flex
   justify-content: center
   align-items: center
-  min-height: 250px
+  min-height: 235px
+  padding-top: 100px
 
 .teacher-block img
   width: 700px
@@ -541,9 +563,9 @@ $step: 100px
 .teacher-bottom-block
   background-color: white
   width: 620px
-  height: 330px
+  height: 300px
   border-radius: 35px
-  margin-top: -150px
+  margin-top: -200px
   padding: 10px
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.9)
   display: flex
@@ -566,7 +588,7 @@ $step: 100px
   font-family: 'Fjalla One', sans-serif
   font-size: 39px
   color: #161616
-  margin-top: 35px
+  margin-top: 15px
   text-align: center
 
 .hobby-teaching-bottom-text-style
@@ -582,7 +604,7 @@ $step: 100px
   font-family: 'Fjalla One', sans-serif
   font-size: 38px
   color: #161616
-  margin-top: 35px
+  margin-top: 15px
   text-align: center
 
 .mouse-svg
@@ -614,14 +636,13 @@ $step: 100px
   display: flex
   align-items: center
   height: 100vh
-  min-height: 850px
+  min-height: 800px
 .cir:hover
   transform: scale(1.1)
   -webkit-transition: 0.3s
   cursor: pointer
 
 div.ex3
-  //width: 530px
   height: 135px
   overflow: auto
   display: flex
@@ -775,6 +796,8 @@ a.svg
   align-items: center
   z-index: 1
   margin-top: -350px
+  position: relative
+  transition: left 1s linear
   a
     font-size: 25px
 
@@ -815,14 +838,11 @@ a.svg
 .portfolio_block:hover embed
   display: block!important
 
-
 #portfolio
   height: 100vh
   min-height: 700px
   display: flex
   align-items: center
-
-
 
 #portfolio img
   width: 100%
@@ -868,7 +888,6 @@ a.svg
   border: none
   color: black
   font-weight: bold
-  transition: 0.5s
   margin: 50px 0 0 0
 
 .button_right_portfolio
@@ -894,7 +913,7 @@ a.svg
   transition: 0.3s
   z-index: 0
 
-#portfolio embed
+#portfolio embed, #portfolio-section embed
   z-index: 1
   position: absolute
   width: 15%
@@ -907,11 +926,6 @@ a.svg
 .portfolio_block:hover embed
   display: block!important
 
-/* #portfolio img:hover, #portfolio embed:hover
-  filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4)
-
-
-
 #portfolio .row
   margin-bottom: 15px
   text-align: end
@@ -919,15 +933,6 @@ a.svg
     display: flex
     justify-content: center
     align-items: center
-
-
-
-
-.portfolio-web img:hover
-  filter: blur(1px) contrast(120%) opacity(85%)
-
-
-
 
 .overlay
   position: fixed
@@ -1108,23 +1113,20 @@ a.tooltip span
       border-radius: 10px
       padding: 12px
       border: none
-        font-family: "Libre Franklin", sans-serif
+      font-family: "Libre Franklin", sans-serif
       font-weight: bold
       font-style: italic
       font-size: 18px
       opacity: 0.8
     input
-      width: 35%
-      margin: 20px 0 35px 0
-    input:nth-child(odd)
-      margin-right: 80px
+      width: 70%
+      margin: 20px 0 0 0
     textarea
-      width: 80%
+      width: 100%
       height: 140px
       resize: none
     .row_name_email
-      display: flex
-      justify-content: center
+      padding: 0 20px
     .row_message
       text-align: center
   #submit_button
@@ -1148,16 +1150,298 @@ a.tooltip span
 .icon_contact
   text-align: center
   margin: 15px 0
-  embed
+  img
     width: 23px
     margin: 0 16px
-    pointer-events: none
+    opacity: 0.2
+    transition: 0.3s
+    pointer-events: auto
+  img:hover
+    opacity: 1
     cursor: pointer
   button
     margin-left: 75px
 
+.input_span
+  width: 50%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+#name_validation, #email_validation, #message_validation
+  margin-top: -10px
+  opacity: 0.8
+  font-family: "Fjalla One", sans-serif
+  font-size: 12px
+  width: 67%
+
+.textarea_span
+  width: 80%
+  margin-top: 20px
+  text-align: start
+  span
+    padding-left: 5px
 
 //Media Query
+@media (min-width: 768px)
+  #portfolio-section
+    .yellow_circle
+      position: relative
+      transition: left 1s linear
+      &:nth-child(1)
+        left: -20%
+      &:nth-child(2)
+        left: 20%
+    .inline
+      opacity: 0
+      transition: opacity 1s linear
+    .carousel-indicators
+      letter-spacing: 10px
+      transition: letter-spacing 1s linear
+    .carousel-inner
+      transform: scale(0)
+      transition: transform 1s linear
+    .button_portfolio
+      position: relative
+      top: 50vh
+      transition: top 1s linear
+
+  .section.shownext #portfolio-section, .section.showprev #portfolio-section
+    .yellow_circle
+      left: 0
+      transition: left 0.5s linear 1s
+    .inline
+      opacity: 1
+      transition: opacity 0.5s linear 1s
+    .carousel-indicators
+      letter-spacing: 0
+      transition: letter-spacing 0.5s linear 1s
+    .carousel-inner
+      transform: scale(1)
+      transition: transform 0.5s linear 1s
+    .button_portfolio
+      top: 0
+      transition: top 0.5s linear 1s
+
+  #hobby_activity
+    .col-md-5
+      transform: scale(0)
+      &:nth-child(1)
+        transition: transform 0.5s linear
+      &:nth-child(2)
+        transition: transform 0.5s linear 0.2s
+
+  .section.shownext #hobby_activity, .section.showprev #hobby_activity
+    .col-md-5
+      transform: scale(1)
+      &:nth-child(1)
+        transition: transform 0.25s linear 1s
+      &:nth-child(2)
+        transition: transform 0.25s linear 1.25s
+
+  #section_vidhuku
+    .feedback-top-text-style
+      position: relative
+      left: 50%
+      transition: left 1s linear
+    .feedback-bottom-text-style
+      opacity: 0
+      transition: opacity 1s linear
+    .feedback-bottom-text-style2
+      opacity: 0
+      transition: opacity 1s linear
+    .col-xs-4
+      transform: scale(0)
+      transition: transform 1s linear
+
+  .section.shownext #section_vidhuku, .section.showprev #section_vidhuku
+    .feedback-top-text-style
+      left: 0
+      transition: left 0.5s linear 1s
+    .feedback-bottom-text-style
+      opacity: 1
+      transition: opacity 0.5s linear 1s
+    .feedback-bottom-text-style2
+      opacity: 1
+      transition: opacity 0.5s linear 1.5s
+    .col-xs-4
+      transform: scale(1)
+      transition: transform 0.5s linear 1s
+
+  .section_banner
+    .top-text-style
+      opacity: 0
+      transition: opacity 1s linear
+      p
+        opacity: 0
+        transition: opacity 1s linear
+    .top-button
+      top: 20vh
+      transition: top 1s linear 1s
+    .top-girl-photo
+      position: relative
+      left: 20%
+      transition: left 1s linear
+      img
+        opacity: 0
+        transition: opacity 1s linear
+
+  .section.shownext .section_banner, .section.showprev .section_banner
+    .top-text-style
+      opacity: 1
+      transition: opacity 1s linear 1s
+      p:first-child
+        opacity: 1
+        transition: opacity 1s linear 1s
+      p
+        opacity: 1
+        transition: opacity 1s linear 1.5s
+    .top-button
+      position: relative
+      top: 0
+      transition: top 1s linear 1s
+    .top-girl-photo
+      left: 0
+      transition: left 1s linear 1s
+      img
+        opacity: 1
+        transition: opacity 1s linear 1s
+
+  #photo_team
+    .photo_block
+      &:nth-child(3)
+        h3, h5
+          position: relative
+          left: 50%
+          transition: left 1s linear
+      &:nth-child(1)
+        h3, h5
+          position: relative
+          left: -50%
+          transition: left 1s linear
+
+  .section.shownext #photo_team, .section.showprev #photo_team
+    .photo_block
+      img
+        transform: scale(1)
+        transition: transform 0.5s linear 1s
+      h3, h5
+        left: 0
+        transition: left 0.5s linear 1s
+
+  #icons_block
+    .col-md-3
+      transform: scale(0)
+    .row:nth-child(1)
+      .col-md-3:nth-child(1)
+        //4
+        transition: transform 0.07s linear 0.15s
+      .col-md-3:nth-child(3)
+        //7
+        transition: transform 0.07s linear 0.3s
+    .row:nth-child(2)
+      .col-md-3:nth-child(2)
+        //5
+        transition: transform 0.07s linear 0.2s
+      .col-md-3:nth-child(4)
+        //3
+        transition: transform 0.07s linear 0.1s
+    .row:nth-child(3)
+      .col-md-3:nth-child(1)
+        //2
+        transition: transform 0.07s linear 0.05s
+      .col-md-3:nth-child(3)
+        //1
+        transition: transform 0.07s linear
+    .row:nth-child(4)
+      .col-md-3:nth-child(2)
+        //8
+        transition: transform 0.07s linear 0.35s
+      .col-md-3:nth-child(4)
+        //6
+        transition: transform 0.07s linear 0.25s
+
+  .section.shownext #icons_block, .section.showprev #icons_block
+    .col-md-3
+      transform: scale(1)
+    .row:nth-child(1)
+      .col-md-3:nth-child(1)
+        //4
+        transition: transform 0.2s linear 1.5s
+      .col-md-3:nth-child(3)
+        //7
+        transition: transform 0.2s linear 1.8s
+    .row:nth-child(2)
+      .col-md-3:nth-child(2)
+        //5
+        transition: transform 0.2s linear 1.6s
+      .col-md-3:nth-child(4)
+        //3
+        transition: transform 0.2s linear 1.4s
+    .row:nth-child(3)
+      .col-md-3:nth-child(1)
+        //2
+        transition: transform 0.2s linear 1.3s
+      .col-md-3:nth-child(3)
+        //1
+        transition: transform 0.2s linear 1.2s
+    .row:nth-child(4)
+      .col-md-3:nth-child(2)
+        //8
+        transition: transform 0.2s linear 1.9s
+      .col-md-3:nth-child(4)
+        //6
+        transition: transform 0.2s linear 1.7s
+
+  .block_information
+    .icon_block_information
+      *
+        opacity: 0
+        transition: opacity 1s linear
+    .first_row
+      .icon_block_information
+        &:nth-child(1)
+          top: 25vh
+        &:nth-child(2)
+          top: 50vh
+        &:nth-child(3)
+          top: 75vh
+    .second_row
+      .icon_block_information
+        &:nth-child(1)
+          top: 50vh
+        &:nth-child(2)
+          top: 75vh
+        &:nth-child(3)
+          top: 90vh
+
+  .section.shownext .block_information, .section.showprev .block_information
+    .first_row .icon_block_information, .second_row .icon_block_information
+      top: 0
+      transition: top 0.5s linear 1s
+      *
+        opacity: 1
+    .first_row .icon_block_information
+      &:nth-child(1)
+        *
+          transition: opacity 0.1s linear 1s
+      &:nth-child(2)
+        *
+          transition: opacity 0.2s linear 1s
+      &:nth-child(3)
+        *
+          transition: opacity 0.3s linear 1s
+    .second_row .icon_block_information
+      &:nth-child(1)
+        *
+          transition: opacity 0.4s linear 1s
+      &:nth-child(2)
+        *
+          transition: opacity 0.5s linear 1s
+      &:nth-child(3)
+        *
+          transition: opacity 0.6s linear 1s
+
 @media (min-width: 768px) and (max-width: 1023px)
   .section_banner
     text-align: center
@@ -1200,26 +1484,15 @@ a.tooltip span
   ._team
     padding: 75px 15px 0 55px
 
-  //.feedback-sec .row
-  //  display: flex
-  //  justify-content: center
-
   .photo-map img
     display: none
 
   .button_portfolio
     font-size: 16px
 
-  .section_contact #contact_form input:nth-child(odd)
-    margin-right: 40px
-    font-family: "Libre Franklin", sans-serif
-    font-weight: bold
-    font-style: italic
-
-
 @media (min-width: 769px) and (max-width: 1023px)
   .block_information .second_row
-    margin-left: 50px
+    margin-left: 25px
 
 @media  (min-width: 768px) and (max-width: 981px)
   .icons_block_tab embed
@@ -1276,6 +1549,15 @@ a.tooltip span
     width: 25%
     margin-top: 20px
     margin-left: 0
+
+  #icons_block
+    height: 1060px
+
+  .feedback-sec
+    height: 108vh
+
+  #icons_block .container
+    min-height: 108vh
 @media (min-width: 1023px) and (max-width: 1113px)
   .block_information .top-butto
     width: 50px!important
@@ -1361,12 +1643,11 @@ a.tooltip span
 
   .block_information
     display: flex
-    flex-direction: row
+    flex-direction: column
     align-items: center
     .icon_block_information
       margin-bottom: 15px
-      display: flex
-      align-items: baseline
+
     .first_row, .second_row
       margin-bottom: 0
       float: left
@@ -1382,14 +1663,11 @@ a.tooltip span
     margin-top: 40px!important
     font-size: 16px
 
-  .top-girl-photo img
-    margin-left: 30px
-
   #icons_block
-    padding: 50px 19px 10px 20px
     .container
       padding: 0
       margin: 0
+      height: 800px
     embed
       width: 134px
 
@@ -1404,37 +1682,45 @@ a.tooltip span
     width: 270px
 
   .blocks-about
-    width: 205px!important
+    width: 235px!important
 
   .centom .grid
     padding-right: 10px
     padding-left: 10px
 
-  .feedback-underline-text-2
-    width: 205px!important
-
   #section_vidhuku
-    height: 1180px
+    height: 1350px
 
-  .feedback-underline-text-3
-    width: 160px!important
+  .feedback-underline-text-1
+    width: 100%!important
 
   .block_information
-    .first_row, .second_row
+    height: 1250px
+    .row
       margin-left: 0
+      width: 100%
     .second_row
       margin-top: -10px
-    .icon_block_information p
-      font-size: 30px
+    .icon_block_information
+      margin-bottom: 40px
+      br
+        display: none
+      p
+        font-size: 45px
     .icon_block_information svg
-      width: 40px
+      width: 75px
+      margin-bottom: 5px
+      margin-right: 20px
     .second_icon_block_information svg
-      width: 37px
+      width: 60px
     .third_icon_block_information svg
-      width: 38px
+      width: 65px
       margin-top: -5px
     .icon_block_information h3
-      font-size: 14px
+      font-size: 27px
+      text-align: center
+      margin-top: 18px
+      width: 50%
 
   .blocks-about:hover
     transform: none
@@ -1448,10 +1734,6 @@ a.tooltip span
     height: 50px!important
     embed
       width: 25px!important
-
-  .portfolio-section
-    padding-right: 25px
-    padding-left: 30px
 
   .portfolio-web img
     width: 250px
@@ -1480,8 +1762,8 @@ a.tooltip span
       margin-left: 165px
 
   .feedback-sec
-    margin-left: 40px!important
-    margin-right: 45px!important
+    margin-left: 16px!important
+    margin-right: 16px!important
 
   .plane
     margin-bottom: 10px
@@ -1509,8 +1791,8 @@ a.tooltip span
       width: 75%!important
 
   .icon_contact embed
-    width: 20px
-    margin: 0 5px
+    width: 22px
+    margin: 0 7px
 
   .section_contact #contact_form
     width: 90%
@@ -1527,7 +1809,41 @@ a.tooltip span
     margin-top: 20px
     margin-left: 0
 
+  #menu_left
+    display: none
 
+  .photo_team img
+    height: 175px
+
+  .plane
+    display: none
+
+  .image_feedback
+    text-align: center
+    embed
+      width: 50%!important
+
+  #menu
+    height: 110vh
+
+  .text_col-xs
+    text-align: center
+
+  .hobby-teaching-bottom-text-style
+    margin-left: 0!important
+    margin-right: 0!important
+
+  .activity-traveling-text-style, .hobby-teaching-text-style
+    margin-bottom: 20px
+
+  .input_span
+    width: 100%
+
+  .row_name_email
+    padding: 0!important
+
+  .textarea_span
+    width: 76%
 
 
 @media (max-width: 320px)
@@ -1551,9 +1867,6 @@ a.tooltip span
   .teacher-block img
     width: 210px
 
-  .feedback-underline-text-3
-    width: 130px!important
-
   .teacher-bottom-block
     width: 230px
     height: 215px
@@ -1572,25 +1885,34 @@ a.tooltip span
     margin-bottom: 0
 
   .block_information
-    .first_row .icon_block_information
-      padding-left: 0
-      margin-left: 27px
+    height: 1000px
+    .row
+      margin-left: 0
+      width: 100%
     .second_row
       margin-top: -10px
-    .icon_block_information p
-      font-size: 28px
+    .icon_block_information
+      margin-bottom: 40px
+      br
+        display: none
+      p
+        font-size: 40px
     .icon_block_information svg
-      width: 30px
+      width: 58px
+      margin-bottom: 5px
+      margin-right: 15px
     .second_icon_block_information svg
-      width: 25px
+      width: 48px
     .third_icon_block_information svg
-      width: 30px
+      width: 50px
       margin-top: -5px
+      //margin-top: -5px
     .icon_block_information h3
-      font-size: 12px
+      font-size: 23px
+      text-align: center
+      margin-top: 12px
+      width: 50%
 
-  .portfolio-web img
-    width: 195px
 
   .button_right_portfolio
     width: 125px
@@ -1600,9 +1922,6 @@ a.tooltip span
 
   .button_left_portfolio
     width: 100px
-
-  .left_circle
-    margin-right: 150px
 
   .yellow_circle
     width: 35px
@@ -1623,7 +1942,7 @@ a.tooltip span
     height: 1370px
 
   .section_contact #contact_form
-    width: 74%
+    width: 80%
 
   #menu
     padding-top: 160px
@@ -1633,7 +1952,7 @@ a.tooltip span
     font-size: 22px
 
   #hobby_activity
-    height: 1200px
+    height: 800px
 
 @media (min-width: 450px) and (max-width: 768px)
   .section_banner
@@ -1644,12 +1963,6 @@ a.tooltip span
     flex-flow: column
     justify-content: center
     align-items: center
-
-  .section_contact #contact_form input:nth-child(odd)
-    margin-right: 40px
-    font-family: "Libre Franklin", sans-serif
-    font-weight: bold
-    font-style: italic
 
 @media (min-width: 450px) and (max-width: 600px)
   .block_information
@@ -1710,6 +2023,10 @@ a.tooltip span
   #section_vidhuku
     height: 1050px
 
+  .image_feedback
+    width: 35%
+    margin-top: 20px
+
 
 
 @media (min-width: 600px) and (max-width: 767px)
@@ -1720,7 +2037,7 @@ a.tooltip span
     width: 330px!important
 
   .activity-traveling-text-style
-    margin-left: 110px
+    margin-left: 85px
 
   .hobby-teaching-text-style
     margin-left: 95px
@@ -1728,6 +2045,9 @@ a.tooltip span
 
   .icon_contact button
     margin-left: 20px
+
+  #icons_block .container
+    min-height: 110vh
 @media (min-width: 767px) and (max-width: 768px)
   //.feedback-sec
   //  margin-right: 55px
@@ -1736,11 +2056,10 @@ a.tooltip span
 
 
 @media (min-width: 600px) and (max-width: 768px)
-  .block_information .first_row
-    margin-left: 0
-
-  #icons_block .container embed
-    width: 158px
+  #icons_block
+    height: 1000px
+    .container embed
+      width: 158px
 
   #icons_block
     .icons_second_row
@@ -1776,9 +2095,18 @@ a.tooltip span
   #icons_block .container
     padding: 0 165px 0 125px
 
-  #section_vidhuku .row
-    margin-right: 50px
-    margin-left: 0
+  #section_vidhuku
+    height: 1000px
+    .row
+      margin-right: 50px
+      margin-left: 0
+      display: block
+      .image_feedback
+        width: 30%
+        margin-top: 12px
+      .text_col-xs
+        width: 70%
+        margin-top: 30px
 
   .feedback-underline-text-3
     width: 115px!important
@@ -1819,8 +2147,6 @@ a.tooltip span
 
 
 @media (max-width: 768px) and (orientation: landscape)
-  body
-    padding-right: 35px
   #icons_block .container
     width: 100%
     padding: 0 185px
@@ -1849,10 +2175,10 @@ a.tooltip span
     display: flex
 
   .yellow_circle
-    margin-top: -90px
+    margin-top: -210px
 
   #section_vidhuku
-    height: 600px
+    height: 1000px
 
   #section_vidhuku .col-xs-4 embed
     width: 120px!important
@@ -1866,8 +2192,28 @@ a.tooltip span
     margin-left: 0
 
   #section_vidhuku
-    margin-left: 105px!important
+    margin-left: 0px!important
 
+  .plane
+    display: none
+
+  .portfolio-section
+    height: 530px
+
+  #icons_block .all_rows
+    padding-top: 80px
+
+  .text_col-xs
+    width: 100%
+    text-align: center
+    padding: 0
+    .feedback-underline-text-1
+      width: 100%
+
+  #menu
+    height: 115vh
+    p
+      text-align: center
 
 
 
@@ -1913,7 +2259,7 @@ a.tooltip span
     margin-top: 0px
 
   .about-photo-in-block embed
-    width: 65%
+    width: 60%
 
   .feedback-bottom-text-style2
     font-family: "Fjalla One", sans-serif
@@ -1940,7 +2286,7 @@ a.tooltip span
 
   .feedback-top-text-style
     font-family: "Fjalla One", sans-serif
-    font-size: 21px
+    font-size: 25px
     color: white
     margin-bottom: 3px
     margin-top: 25px
@@ -1979,7 +2325,7 @@ a.tooltip span
     justify-items: center
 
   .text-style-in-about-block
-    font-size: 30px
+    font-size: 27px
     font-family: "Fjalla One", sans-serif
     color: white
     display: flex
@@ -2079,9 +2425,6 @@ a.tooltip span
   .photo-map img
     display: none
 
-  //.grid_second .feedback-top-text-style-2
-  //  margin-top: 15px
-
   #photo_team
     display: flex
     flex-direction: column
@@ -2113,10 +2456,16 @@ a.tooltip span
     padding: 0 100px!important
 
   #section_vidhuku
-    height: 768px
+    height: 1400px
 
-  .yellow_circle
-    margin-top: 0
+  .block_information
+    height: 750px
+
+  .image_feedback
+    text-align: center
+    width: 100%!important
+    embed
+      width: 50%!important
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
