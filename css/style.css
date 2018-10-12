@@ -403,7 +403,7 @@ body {
   margin-top: 50px;
   display: grid;
   justify-items: center; }
-  .about-photo-in-block embed {
+  .about-photo-in-block embed svg {
     pointer-events: none; }
 
 .text-style-in-about-block {
