@@ -218,9 +218,6 @@ body
 
 //STATISTIC SECTION
 .block_information
-  //background: #161616
-  //background-size: cover
-  //height: 100vh
   height: 100vh
   min-height: 500px
   display: flex
@@ -356,29 +353,10 @@ $step: 100px
   color: white
   font-family: 'Bangers', cursive
   margin-top: 175px
-  //opacity: 0
-  //position: relative
-  //animation: showHeaderText 1s
-  //@keyframes showHeaderText
-  //  from
-  //    opacity: 0
-  //    right: 20%
-  //  to
-  //    opacity: 1
-  //    right: 0
-
 
 .top-girl-photo
   img
     width: 390px
-    //animation: fadeHeroImage 1s
-    //@keyframes fadeHeroImage
-    //  from
-    //    opacity: 0
-    //    left: 20%
-    //  to
-    //    opacity: 1
-    //    left: 0
 
 .top-girl-photo
   margin-top: 150px
@@ -1051,6 +1029,43 @@ a.svg
   color: white
 
 
+a.tooltip
+  outline: none
+a.tooltip strong
+  line-height: 30px
+a.tooltip:hover
+  text-decoration: none
+a.tooltip span
+  z-index: 10
+  display: none
+  padding: 14px 20px
+  margin-top: 60px
+  margin-left: -160px
+  width: 300px
+  line-height: 16px
+
+
+a.tooltip:hover span
+  display: inline
+  position: absolute
+  border: 2px solid #FFF
+  color: #EEE
+  background: #333 url(img/ic/2.svg) repeat-x 0 0
+
+.callout
+  z-index: 20
+  position: absolute
+  border: 0
+  top: -14px
+  left: 120px
+
+/*CSS3 extras*/
+a.tooltip span
+
+  border-radius: 2px
+  box-shadow: 0px 0px 8px 4px #666
+/*opacity: 0.8;*/
+
 
 
 //Contact
@@ -1213,7 +1228,7 @@ a.svg
     .feedback-bottom-text-style2
       opacity: 0
       transition: opacity 1s linear
-    .col-xs-4
+    .col-xs-12
       transform: scale(0)
       transition: transform 1s linear
 
@@ -1227,7 +1242,7 @@ a.svg
     .feedback-bottom-text-style2
       opacity: 1
       transition: opacity 0.5s linear 1.5s
-    .col-xs-4
+    .col-xs-12
       transform: scale(1)
       transition: transform 0.5s linear 1s
 
@@ -1272,6 +1287,9 @@ a.svg
 
   #photo_team
     .photo_block
+      img
+        transform: scale(0)
+        transition: transform 1s linear
       &:nth-child(3)
         h3, h5
           position: relative
