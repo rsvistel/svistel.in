@@ -226,9 +226,6 @@ body {
     align-items: center;
     position: relative;
     transition: top 1s linear; }
-    .block_information .icon_block_information * {
-      opacity: 0;
-      transition: opacity 1s linear; }
     .block_information .icon_block_information svg {
       width: 52px;
       float: left;
@@ -283,8 +280,6 @@ body {
       bottom: 200px; }
     #icons_block .row:last-child {
       bottom: 300px; }
-    #icons_block .row .col-md-3 {
-      transform: scale(0); }
     #icons_block .row embed {
       margin-bottom: 20px;
       transition: 0.3s; }
@@ -304,10 +299,8 @@ body {
     align-items: center;
     height: 100%; }
   .photo_team img {
-    transform: scale(0);
     height: 200px;
-    border-radius: 20px;
-    transition: transform 1s linear; }
+    border-radius: 20px; }
   .photo_team h3 {
     font-family: "Fjalla One", sans-serif;
     color: snow; }
@@ -346,12 +339,7 @@ body {
   font-size: 63px;
   color: white;
   font-family: "Bangers", cursive;
-  margin-top: 175px;
-  opacity: 0;
-  transition: opacity 1s linear; }
-  .top-text-style p {
-    opacity: 0;
-    transition: opacity 1s linear; }
+  margin-top: 175px; }
 
 .top-girl-photo img {
   width: 390px; }
@@ -435,9 +423,7 @@ body {
   color: white;
   margin-bottom: 3px;
   margin-top: 25px;
-  position: relative;
-  left: 50%;
-  transition: left 1s linear; }
+  position: relative; }
 
 .feedback-underline-text-3 {
   width: 220px;
@@ -475,16 +461,12 @@ body {
 .feedback-bottom-text-style {
   font-family: "Fjalla One", sans-serif;
   font-size: 14px;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s linear; }
+  color: white; }
 
 .feedback-bottom-text-style2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 14px;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s linear; }
+  color: white; }
 
 .feedback-underline-text-2 {
   width: 220px;
@@ -689,9 +671,7 @@ a.svg {
 .inline {
   display: flex;
   align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 1s linear; }
+  justify-content: center; }
 
 .glyphicon {
   position: relative;
@@ -753,9 +733,7 @@ a.svg {
   margin-top: 40px; }
 
 .carousel-indicators {
-  bottom: -50px;
-  letter-spacing: 10px;
-  transition: letter-spacing 1s linear; }
+  bottom: -50px; }
   .carousel-indicators li {
     background: snow; }
   .carousel-indicators .active {
@@ -763,9 +741,7 @@ a.svg {
     border-color: #ffd000; }
 
 .carousel-inner {
-  z-index: 0;
-  transform: scale(0);
-  transition: transform 1s linear; }
+  z-index: 0; }
 
 .yellow_circle {
   background: #ffd000;
@@ -779,10 +755,6 @@ a.svg {
   margin-top: -350px;
   position: relative;
   transition: left 1s linear; }
-  .yellow_circle:nth-child(1) {
-    left: -20%; }
-  .yellow_circle:nth-child(2) {
-    left: 20%; }
   .yellow_circle a {
     font-size: 25px; }
 
