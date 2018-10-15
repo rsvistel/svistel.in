@@ -1755,7 +1755,9 @@ a.tooltip span {
     margin-bottom: 0; }
 
   .icon_block_information {
-    height: 100vh; }
+    height: 100vh;
+    display: flex;
+    justify-content: center; }
 
   .section {
     margin-bottom: 0;
@@ -1810,9 +1812,7 @@ a.tooltip span {
   .block_information .second_row {
     margin-top: -10px; }
   .block_information .icon_block_information {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center; }
+    margin-bottom: 40px; }
     .block_information .icon_block_information br {
       display: none; }
     .block_information .icon_block_information p {
