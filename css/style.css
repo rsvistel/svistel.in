@@ -1212,7 +1212,7 @@ a.tooltip span {
   #section_vidhuku .feedback-bottom-text-style2 {
     opacity: 0;
     transition: opacity 1s linear; }
-  #section_vidhuku .col-xs-4 {
+  #section_vidhuku .col-xs-12 {
     transform: scale(0);
     transition: transform 1s linear; }
 
@@ -1225,7 +1225,7 @@ a.tooltip span {
   .section.shownext #section_vidhuku .feedback-bottom-text-style2, .section.showprev #section_vidhuku .feedback-bottom-text-style2 {
     opacity: 1;
     transition: opacity 0.5s linear 1.5s; }
-  .section.shownext #section_vidhuku .col-xs-4, .section.showprev #section_vidhuku .col-xs-4 {
+  .section.shownext #section_vidhuku .col-xs-12, .section.showprev #section_vidhuku .col-xs-12 {
     transform: scale(1);
     transition: transform 0.5s linear 1s; }
 
@@ -1266,6 +1266,9 @@ a.tooltip span {
       opacity: 1;
       transition: opacity 1s linear 1s; }
 
+  #photo_team .photo_block img {
+    transform: scale(0);
+    transition: transform 1s linear; }
   #photo_team .photo_block:nth-child(3) h3, #photo_team .photo_block:nth-child(3) h5 {
     position: relative;
     left: 50%;

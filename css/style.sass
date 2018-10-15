@@ -1260,7 +1260,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 0
       transition: opacity 1s linear
-    .col-xs-4
+    .col-xs-12
       transform: scale(0)
       transition: transform 1s linear
 
@@ -1274,7 +1274,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 1
       transition: opacity 0.5s linear 1.5s
-    .col-xs-4
+    .col-xs-12
       transform: scale(1)
       transition: transform 0.5s linear 1s
 
@@ -1319,6 +1319,9 @@ a.tooltip span
 
   #photo_team
     .photo_block
+      img
+        transform: scale(0)
+        transition: transform 1s linear
       &:nth-child(3)
         h3, h5
           position: relative
