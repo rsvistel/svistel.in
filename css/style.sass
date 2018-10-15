@@ -356,7 +356,7 @@ $step: 100px
   margin-right: 35px
 
 .top-text-style
-  font-size: 63px
+  font-size: 61px
   color: white
   font-family: 'Bangers', cursive
   margin-top: 175px
@@ -862,7 +862,6 @@ a.svg
   text-align: center
 
 .portfolio_block
-  height: 160px
   padding: 0 10px
 
 .portfolio_block:hover embed
@@ -910,11 +909,13 @@ a.svg
   display: flex
   align-items: center
 
+
 #portfolio img
   width: 100% !important
   border-radius: 15px
   transition: 0.3s
   z-index: 0
+  margin-top: 10px
 
 #portfolio embed
   z-index: 1
@@ -1203,7 +1204,7 @@ a.tooltip span
 
 .icon_contact
   text-align: center
-  margin: 15px 0
+  margin: 5px 0 15px 0
   img
     width: 23px
     margin: 0 16px
@@ -1304,7 +1305,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 0
       transition: opacity 1s linear
-    .col-xs-4
+    .col-xs-12
       transform: scale(0)
       transition: transform 1s linear
 
@@ -1318,7 +1319,7 @@ a.tooltip span
     .feedback-bottom-text-style2
       opacity: 1
       transition: opacity 0.5s linear 1.5s
-    .col-xs-4
+    .col-xs-12
       transform: scale(1)
       transition: transform 0.5s linear 1s
 
@@ -1363,6 +1364,9 @@ a.tooltip span
 
   #photo_team
     .photo_block
+      img
+        transform: scale(0)
+        transition: transform 1s linear
       &:nth-child(3)
         h3, h5
           position: relative
@@ -1842,12 +1846,11 @@ a.tooltip span
       margin: 2px 0 !important
       width: 75% !important
 
-  .icon_contact embed
-    width: 22px
-    margin: 0 7px
+  .icon_contact img
+    margin: 0 24px 17px 24px
 
   .section_contact #contact_form
-    width: 90%
+    width: 77%
 
   #menu
     padding-top: 210px
@@ -1858,7 +1861,6 @@ a.tooltip span
 
   .section_contact #submit_button
     width: 50%
-    margin-top: 20px
     margin-left: 0
 
   #menu_left
@@ -1900,6 +1902,29 @@ a.tooltip span
   .display-none
     display: none
 
+  .block-in-center, .blocks-about
+    pointer-events: none
+
+  .section.showprev, .shownext
+    margin-bottom: 0
+
+  .icon_block_information
+    height: 100vh
+    display: flex
+    justify-content: center
+
+  .section
+    margin-bottom: 0
+    height: auto
+    min-height: auto
+
+  .block_information
+    height: auto
+    min-height: auto
+
+
+
+
 @media (max-width: 320px)
   #icons_block embed
     width: 105px
@@ -1939,7 +1964,6 @@ a.tooltip span
     margin-bottom: 0
 
   .block_information
-    height: 1000px
     .row
       margin-left: 0
       width: 100%
@@ -1960,7 +1984,6 @@ a.tooltip span
     .third_icon_block_information svg
       width: 50px
       margin-top: -5px
-    //margin-top: -5px
     .icon_block_information h3
       font-size: 23px
       text-align: center
@@ -1995,7 +2018,11 @@ a.tooltip span
     height: 1370px
 
   .section_contact #contact_form
-    width: 80%
+    width: 73%
+    .icon_contact
+      margin: 0 0 15px 0
+      img
+        margin: 0 15px 17px 15px
 
   #menu
     padding-top: 160px
