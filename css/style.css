@@ -1746,7 +1746,10 @@ a.tooltip span {
     width: 76%; }
 
   .display-none {
-    display: none; } }
+    display: none; }
+
+  .block-in-center, .blocks-about {
+    pointer-events: none; } }
 @media (max-width: 320px) {
   #icons_block embed {
     width: 105px; }
