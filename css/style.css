@@ -1810,7 +1810,9 @@ a.tooltip span {
   .block_information .second_row {
     margin-top: -10px; }
   .block_information .icon_block_information {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center; }
     .block_information .icon_block_information br {
       display: none; }
     .block_information .icon_block_information p {
