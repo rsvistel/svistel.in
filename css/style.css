@@ -752,6 +752,8 @@ a.svg {
 
 .carousel-inner {
   z-index: 0; }
+  .carousel-inner:hover embed {
+    visibility: visible; }
 
 .yellow_circle {
   background: #ffd000;
@@ -1083,7 +1085,8 @@ a.tooltip span {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  visibility: hidden; }
 
 .carousel-inner embed {
   z-index: 1;
