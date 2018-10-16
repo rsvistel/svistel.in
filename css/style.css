@@ -2152,8 +2152,10 @@ a.tooltip span {
   .portfolio-section {
     height: 530px; }
 
-  #icons_block .all_rows {
-    padding-top: 80px; }
+  #icons_block {
+    height: auto; }
+    #icons_block .all_rows {
+      padding-top: 80px; }
 
   .text_col-xs {
     width: 100%;
@@ -2404,8 +2406,10 @@ a.tooltip span {
   .feedback-sec .col-xs-4 {
     width: 28%; }
 
-  #icons_block .container {
-    padding: 0 100px !important; }
+  #icons_block {
+    min-height: 800px; }
+    #icons_block .container {
+      padding: 0 100px !important; }
 
   #section_vidhuku {
     height: 1400px; }
