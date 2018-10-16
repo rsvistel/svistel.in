@@ -878,7 +878,7 @@ a.svg {
   z-index: 0;
   margin-top: 10px; }
 
-#portfolio embed, #portfolio-section embed {
+#portfolio embed {
   z-index: 1;
   position: absolute;
   width: 15%;
@@ -892,6 +892,23 @@ a.svg {
   right: 0;
   top: 0;
   bottom: 0; }
+
+#portfolio-section embed {
+  z-index: 1;
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  margin: 0 42.5%;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+#portfolio-section img:hover, #portfolio-section embed:hover {
+  filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4); }
 
 .portfolio_block:hover embed {
   display: block !important; }
@@ -1056,6 +1073,35 @@ a.tooltip span {
   box-shadow: 0px 0px 8px 4px #666; }
 
 /*opacity: 0.8; */
+.carousel-inner embed {
+  z-index: 1;
+  width: 15%;
+  margin: 0 42.5%;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.carousel-inner embed {
+  z-index: 1;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.9;
+  text-align: center; }
+
+.two_image img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+.two_image img:hover {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px); }
+
 .section_contact {
   height: 100vh;
   display: flex;
@@ -1209,7 +1255,7 @@ a.tooltip span {
   #section_vidhuku .feedback-bottom-text-style2 {
     opacity: 0;
     transition: opacity 1s linear; }
-  #section_vidhuku .col-xs-4 {
+  #section_vidhuku .col-xs-12 {
     transform: scale(0);
     transition: transform 1s linear; }
 
@@ -1222,7 +1268,7 @@ a.tooltip span {
   .section.shownext #section_vidhuku .feedback-bottom-text-style2, .section.showprev #section_vidhuku .feedback-bottom-text-style2 {
     opacity: 1;
     transition: opacity 0.5s linear 1.5s; }
-  .section.shownext #section_vidhuku .col-xs-4, .section.showprev #section_vidhuku .col-xs-4 {
+  .section.shownext #section_vidhuku .col-xs-12, .section.showprev #section_vidhuku .col-xs-12 {
     transform: scale(1);
     transition: transform 0.5s linear 1s; }
 
@@ -1263,6 +1309,9 @@ a.tooltip span {
       opacity: 1;
       transition: opacity 1s linear 1s; }
 
+  #photo_team .photo_block img {
+    transform: scale(0);
+    transition: transform 1s linear; }
   #photo_team .photo_block:nth-child(3) h3, #photo_team .photo_block:nth-child(3) h5 {
     position: relative;
     left: 50%;
@@ -2054,14 +2103,14 @@ a.tooltip span {
     #icons_block .container embed {
       width: 130px; }
 
-  #icons_block {
-    height: 800px; }
-
   #menu_left {
     padding-top: 10px; }
     #menu_left ul li {
       font-size: 15px;
       padding: 4px 0; }
+
+  .heading {
+    position: relative; }
 
   #menu {
     padding-top: 80px; }
@@ -2113,7 +2162,12 @@ a.tooltip span {
   #menu {
     height: 115vh; }
     #menu p {
-      text-align: center; } }
+      text-align: center; }
+
+  .section {
+    height: auto;
+    min-height: auto;
+    margin-bottom: 0; } }
 @media (max-width: 768px) {
   #icons_block {
     overflow: hidden; }
