@@ -1457,7 +1457,7 @@ a.tooltip span
         opacity: 0
         transition: opacity 1s linear
     .first_row
-      .icon_block_information
+      .icon_block_information.top
         &:nth-child(1)
           top: 25vh
         &:nth-child(2)
@@ -1465,13 +1465,29 @@ a.tooltip span
         &:nth-child(3)
           top: 75vh
     .second_row
-      .icon_block_information
+      .icon_block_information.top
         &:nth-child(1)
           top: 50vh
         &:nth-child(2)
           top: 75vh
         &:nth-child(3)
           top: 90vh
+    .first_row
+      .icon_block_information.bottom
+        &:nth-child(1)
+          top: -25vh
+        &:nth-child(2)
+          top: -50vh
+        &:nth-child(3)
+          top: -75vh
+    .second_row
+      .icon_block_information.bottom
+        &:nth-child(1)
+          top: -50vh
+        &:nth-child(2)
+          top: -75vh
+        &:nth-child(3)
+          top: -90vh
 
   .section.shownext .block_information, .section.showprev .block_information
     .first_row .icon_block_information, .second_row .icon_block_information
