@@ -20,6 +20,12 @@ $(document).ready(function() {
                 }
             }
         }, 1000);
+    } else {
+        $('body').bind('touchmove', function(e) {
+            if ($('#menuToggle input').prop("checked") === true) {
+                $('#menuToggle input').click()
+            }
+        });
     }
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
@@ -70,6 +76,7 @@ function scroll(param) {
         start(activeSection);
     } else if (param === 'up' && activeSection > 0) {
         activeSection--;
+
         start(activeSection);
     } else if (param !== 'up' && param !== 'down') {
         if (activeSection >= 0 && activeSection <= sections.length-1) {
@@ -86,9 +93,14 @@ function scroll(param) {
         }, speed);
         $('.section').removeClass('shownext showprev');
         if (temp < i) {
-            sections[i].addClass('shownext')
+            sections[i].addClass('shownext');
+            $('.icon_block_information').addClass('bottom').removeClass('top');
         } else {
-            sections[i].addClass('showprev')
+            sections[i].addClass('showprev');
+            $('.icon_block_information').addClass('top').removeClass('bottom');
+        }
+        if (temp === 3) {
+            $('.icon_block_information').addClass('bottom').removeClass('top');
         }
         $(document).unbind('wheel');
         $('#navigation li').css('pointer-events', 'none');
@@ -131,6 +143,9 @@ function closeHobby() {
     $('.menu_right').show();
     bindScroll();
     $('.heading-hobby').show()
+}
+function statisticsSectionDirection() {
+    
 }
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;

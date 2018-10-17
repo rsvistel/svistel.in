@@ -31,6 +31,9 @@ body
   position: absolute
   width: 100%
 
+.portfolio-heading
+  position: relative
+
 .section
   background: #161616
   background-size: cover
@@ -776,6 +779,7 @@ a.svg
 
 .carousel-indicators
   bottom: -50px
+  z-index: 0
   li
     background: snow
   .active
@@ -795,7 +799,7 @@ a.svg
   display: flex
   justify-content: center
   align-items: center
-  z-index: 1
+  z-index: 0
   margin-top: -350px
   position: relative
   transition: left 1s linear
@@ -842,10 +846,9 @@ a.svg
   display: block !important
 
 #portfolio
-  height: 100vh
+  height: auto
   min-height: 700px
   display: flex
-  align-items: center
 
 #portfolio img
   width: 100%
@@ -904,12 +907,6 @@ a.svg
 #section_vidhuku .row
   display: flex
   justify-content: center
-
-#portfolio
-  height: 100vh
-  min-height: 700px
-  display: flex
-  align-items: center
 
 
 #portfolio img
@@ -1462,7 +1459,7 @@ a.tooltip span
         opacity: 0
         transition: opacity 1s linear
     .first_row
-      .icon_block_information
+      .icon_block_information.top
         &:nth-child(1)
           top: 25vh
         &:nth-child(2)
@@ -1470,13 +1467,29 @@ a.tooltip span
         &:nth-child(3)
           top: 75vh
     .second_row
-      .icon_block_information
+      .icon_block_information.top
         &:nth-child(1)
           top: 50vh
         &:nth-child(2)
           top: 75vh
         &:nth-child(3)
           top: 90vh
+    .first_row
+      .icon_block_information.bottom
+        &:nth-child(1)
+          top: -25vh
+        &:nth-child(2)
+          top: -50vh
+        &:nth-child(3)
+          top: -75vh
+    .second_row
+      .icon_block_information.bottom
+        &:nth-child(1)
+          top: -50vh
+        &:nth-child(2)
+          top: -75vh
+        &:nth-child(3)
+          top: -90vh
 
   .section.shownext .block_information, .section.showprev .block_information
     .first_row .icon_block_information, .second_row .icon_block_information
@@ -1658,9 +1671,6 @@ a.tooltip span
       justify-content: center
     img
       width: 215px
-
-  .portfolio_block
-    width: 28%
 
   .icon_contact embed
     margin: 0 8px
@@ -1865,7 +1875,7 @@ a.tooltip span
     padding-left: 7px
 
   .section_contact #submit_button
-    width: 50%
+    width: 57%
     margin-left: 0
 
   #menu_left
@@ -2112,6 +2122,12 @@ a.tooltip span
     width: 35%
     margin-top: 20px
 
+  #portfolio
+    align-items: flex-end
+
+  .heading
+    padding-top: 0
+
 @media (min-width: 600px) and (max-width: 767px)
   .icons_block_tab
     margin-top: -70px
@@ -2132,9 +2148,6 @@ a.tooltip span
     min-height: 110vh
 
 @media (min-width: 767px) and (max-width: 768px)
-//.feedback-sec
-//  margin-right: 55px
-
 
 
 
@@ -2219,6 +2232,8 @@ a.tooltip span
   .icon_contact embed
     margin: 0 9px
 
+  #portfolio .container
+    height: 80%
 @media (min-width: 1500px)
   .block_information .first_row, .block_information .second_row
     justify-content: center
@@ -2231,14 +2246,14 @@ a.tooltip span
       margin-top: 0
     embed
       width: 130px
-  #icons_block
-    height: 800px
-
   #menu_left
     padding-top: 10px
     ul li
       font-size: 15px
       padding: 4px 0
+
+  .position_absolute, .heading-hobby
+    position: relative
 
   #menu
     padding-top: 80px
@@ -2277,8 +2292,10 @@ a.tooltip span
   .portfolio-section
     height: 530px
 
-  #icons_block .all_rows
-    padding-top: 80px
+  #icons_block
+    height: auto
+    .all_rows
+      padding-top: 80px
 
   .text_col-xs
     width: 100%
@@ -2291,6 +2308,24 @@ a.tooltip span
     height: 115vh
     p
       text-align: center
+
+  .section
+    height: auto
+    min-height: auto
+    margin-bottom: 0
+
+  .section.shownext, .section.showprev
+    margin-bottom: 0
+
+  .section_contact
+    height: auto
+
+  #hobby_activity
+    height: auto
+    min-height: auto
+
+  .block-in-center, .blocks-about
+    pointer-events: none
 
 @media (max-width: 768px)
   #icons_block
@@ -2522,20 +2557,39 @@ a.tooltip span
   .feedback-sec .col-xs-4
     width: 28%
 
-  #icons_block .container
-    padding: 0 100px !important
-
-  #section_vidhuku
-    height: 1400px
-
-  .block_information
-    height: 750px
+  #icons_block
+    min-height: 800px
+    .container
+      padding: 0 100px !important
 
   .image_feedback
     text-align: center
-    width: 100% !important
+    width: 30% !important
     embed
-      width: 50% !important
+      width: 90% !important
+
+  .section_contact #contact_form .icon_contact button
+    width: 50%!important
+
+  .block_information
+    height: auto
+    min-height: auto
+
+  .icon_block_information
+    height: 100vh
+    display: flex
+    justify-content: center
+
+  .text_col-xs
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  .text_col-xs
+    width: 60%
+    .feedback-underline-text-1
+      width: 85%
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
