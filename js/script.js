@@ -20,6 +20,12 @@ $(document).ready(function() {
                 }
             }
         }, 1000);
+    } else {
+        $('body').bind('touchmove', function(e) {
+            if ($('#menuToggle input').prop("checked") === true) {
+                $('#menuToggle input').click()
+            }
+        });
     }
     $('.navigation-item').click(function () {
         scroll(parseInt($(this).attr('scrollTo')))
