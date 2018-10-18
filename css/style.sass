@@ -780,6 +780,7 @@ a.svg
 
 .carousel-indicators
   bottom: -50px
+  z-index: 0
   li
     background: snow
   .active
@@ -799,7 +800,7 @@ a.svg
   display: flex
   justify-content: center
   align-items: center
-  z-index: 1
+  z-index: 0
   margin-top: -350px
   position: relative
   transition: left 1s linear
@@ -849,7 +850,6 @@ a.svg
   height: auto
   min-height: 700px
   display: flex
-  align-items: center
 
 #portfolio img
   width: 100%
@@ -2253,7 +2253,7 @@ a.tooltip span
       font-size: 15px
       padding: 4px 0
 
-  .heading
+  .position_absolute, .heading-hobby
     position: relative
 
   #menu
@@ -2324,6 +2324,9 @@ a.tooltip span
   #hobby_activity
     height: auto
     min-height: auto
+
+  .block-in-center, .blocks-about
+    pointer-events: none
 
 @media (max-width: 768px)
   #icons_block
@@ -2560,17 +2563,34 @@ a.tooltip span
     .container
       padding: 0 100px !important
 
-  #section_vidhuku
-    height: 1400px
-
-  .block_information
-    height: 750px
-
   .image_feedback
     text-align: center
-    width: 100% !important
+    width: 30% !important
     embed
-      width: 50% !important
+      width: 90% !important
+
+  .section_contact #contact_form .icon_contact button
+    width: 50%!important
+
+  .block_information
+    height: auto
+    min-height: auto
+
+  .icon_block_information
+    height: 100vh
+    display: flex
+    justify-content: center
+
+  .text_col-xs
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  .text_col-xs
+    width: 60%
+    .feedback-underline-text-1
+      width: 85%
 
 @media (max-width: 667px) and (orientation: landscape)
   #icons_block .container
