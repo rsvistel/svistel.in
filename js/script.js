@@ -117,6 +117,9 @@ function scroll(param) {
             $('#navigation li').css('pointer-events', 'auto');
             bindScroll()
         }, speed);
+        if (sections[1].hasClass('shownext') || sections[1].hasClass('showprev')) {
+            animateStatistics()
+        }
     }
 }
 function bindScroll() {
@@ -144,9 +147,6 @@ function closeHobby() {
     bindScroll();
     $('.heading-hobby').show()
 }
-function statisticsSectionDirection() {
-    
-}
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
@@ -156,3 +156,11 @@ $.fn.isInViewport = function() {
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+function animateStatistics() {
+    if (activeSection === 1) {
+        $('.icon_block_information .svg_text').mouseover();
+        setTimeout(function () { animateStatistics() },2000);
+    } else {
+        return
+    }
+}

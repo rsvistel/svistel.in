@@ -265,7 +265,8 @@ body {
   .block_information .svg_text {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    pointer-events: none; }
 
 #icons_block {
   overflow-y: hidden;
@@ -1369,7 +1370,7 @@ a.tooltip span {
   .section.shownext #icons_block .row:nth-child(4) .col-md-3:nth-child(4), .section.showprev #icons_block .row:nth-child(4) .col-md-3:nth-child(4) {
     transition: transform 0.2s linear 1.7s; }
 
-  .block_information .icon_block_information * {
+  .block_information .icon_block_information .svg_text, .block_information .icon_block_information h3 {
     opacity: 0;
     transition: opacity 1s linear; }
   .block_information .first_row .icon_block_information.top:nth-child(1) {
@@ -1400,19 +1401,19 @@ a.tooltip span {
   .section.shownext .block_information .first_row .icon_block_information, .section.shownext .block_information .second_row .icon_block_information, .section.showprev .block_information .first_row .icon_block_information, .section.showprev .block_information .second_row .icon_block_information {
     top: 0;
     transition: top 0.5s linear 1s; }
-    .section.shownext .block_information .first_row .icon_block_information *, .section.shownext .block_information .second_row .icon_block_information *, .section.showprev .block_information .first_row .icon_block_information *, .section.showprev .block_information .second_row .icon_block_information * {
+    .section.shownext .block_information .first_row .icon_block_information .svg_text, .section.shownext .block_information .first_row .icon_block_information h3, .section.shownext .block_information .second_row .icon_block_information .svg_text, .section.shownext .block_information .second_row .icon_block_information h3, .section.showprev .block_information .first_row .icon_block_information .svg_text, .section.showprev .block_information .first_row .icon_block_information h3, .section.showprev .block_information .second_row .icon_block_information .svg_text, .section.showprev .block_information .second_row .icon_block_information h3 {
       opacity: 1; }
-  .section.shownext .block_information .first_row .icon_block_information:nth-child(1) *, .section.showprev .block_information .first_row .icon_block_information:nth-child(1) * {
+  .section.shownext .block_information .first_row .icon_block_information:nth-child(1) .svg_text, .section.shownext .block_information .first_row .icon_block_information:nth-child(1) h3, .section.showprev .block_information .first_row .icon_block_information:nth-child(1) .svg_text, .section.showprev .block_information .first_row .icon_block_information:nth-child(1) h3 {
     transition: opacity 0.1s linear 1s; }
-  .section.shownext .block_information .first_row .icon_block_information:nth-child(2) *, .section.showprev .block_information .first_row .icon_block_information:nth-child(2) * {
+  .section.shownext .block_information .first_row .icon_block_information:nth-child(2) .svg_text, .section.shownext .block_information .first_row .icon_block_information:nth-child(2) h3, .section.showprev .block_information .first_row .icon_block_information:nth-child(2) .svg_text, .section.showprev .block_information .first_row .icon_block_information:nth-child(2) h3 {
     transition: opacity 0.2s linear 1s; }
-  .section.shownext .block_information .first_row .icon_block_information:nth-child(3) *, .section.showprev .block_information .first_row .icon_block_information:nth-child(3) * {
+  .section.shownext .block_information .first_row .icon_block_information:nth-child(3) .svg_text, .section.shownext .block_information .first_row .icon_block_information:nth-child(3) h3, .section.showprev .block_information .first_row .icon_block_information:nth-child(3) .svg_text, .section.showprev .block_information .first_row .icon_block_information:nth-child(3) h3 {
     transition: opacity 0.3s linear 1s; }
-  .section.shownext .block_information .second_row .icon_block_information:nth-child(1) *, .section.showprev .block_information .second_row .icon_block_information:nth-child(1) * {
+  .section.shownext .block_information .second_row .icon_block_information:nth-child(1) .svg_text, .section.shownext .block_information .second_row .icon_block_information:nth-child(1) h3, .section.showprev .block_information .second_row .icon_block_information:nth-child(1) .svg_text, .section.showprev .block_information .second_row .icon_block_information:nth-child(1) h3 {
     transition: opacity 0.4s linear 1s; }
-  .section.shownext .block_information .second_row .icon_block_information:nth-child(2) *, .section.showprev .block_information .second_row .icon_block_information:nth-child(2) * {
+  .section.shownext .block_information .second_row .icon_block_information:nth-child(2) .svg_text, .section.shownext .block_information .second_row .icon_block_information:nth-child(2) h3, .section.showprev .block_information .second_row .icon_block_information:nth-child(2) .svg_text, .section.showprev .block_information .second_row .icon_block_information:nth-child(2) h3 {
     transition: opacity 0.5s linear 1s; }
-  .section.shownext .block_information .second_row .icon_block_information:nth-child(3) *, .section.showprev .block_information .second_row .icon_block_information:nth-child(3) * {
+  .section.shownext .block_information .second_row .icon_block_information:nth-child(3) .svg_text, .section.shownext .block_information .second_row .icon_block_information:nth-child(3) h3, .section.showprev .block_information .second_row .icon_block_information:nth-child(3) .svg_text, .section.showprev .block_information .second_row .icon_block_information:nth-child(3) h3 {
     transition: opacity 0.6s linear 1s; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   .section_banner {

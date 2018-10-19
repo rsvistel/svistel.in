@@ -275,6 +275,7 @@ body
     display: flex
     flex-direction: row
     align-items: center
+    pointer-events: none
 
 //SKILLS SECTION
 $step: 100px
@@ -1455,7 +1456,7 @@ a.tooltip span
 
   .block_information
     .icon_block_information
-      *
+      .svg_text, h3
         opacity: 0
         transition: opacity 1s linear
     .first_row
@@ -1495,27 +1496,27 @@ a.tooltip span
     .first_row .icon_block_information, .second_row .icon_block_information
       top: 0
       transition: top 0.5s linear 1s
-      *
+      .svg_text, h3
         opacity: 1
     .first_row .icon_block_information
       &:nth-child(1)
-        *
+        .svg_text, h3
           transition: opacity 0.1s linear 1s
       &:nth-child(2)
-        *
+        .svg_text, h3
           transition: opacity 0.2s linear 1s
       &:nth-child(3)
-        *
+        .svg_text, h3
           transition: opacity 0.3s linear 1s
     .second_row .icon_block_information
       &:nth-child(1)
-        *
+        .svg_text, h3
           transition: opacity 0.4s linear 1s
       &:nth-child(2)
-        *
+        .svg_text, h3
           transition: opacity 0.5s linear 1s
       &:nth-child(3)
-        *
+        .svg_text, h3
           transition: opacity 0.6s linear 1s
 
 @media (min-width: 768px) and (max-width: 1023px)
