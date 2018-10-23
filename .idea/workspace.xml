@@ -20,20 +20,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3593" column="25" selection-start-line="3593" selection-start-column="25" selection-end-line="3593" selection-end-column="25" />
+              <caret line="3603" column="25" selection-start-line="3603" selection-start-column="25" selection-end-line="3603" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19108">
-              <caret line="1124" column="21" selection-start-line="1124" selection-start-column="21" selection-end-line="1124" selection-end-column="21" />
+            <state relative-caret-position="248">
+              <caret line="873" column="28" lean-forward="true" selection-start-line="873" selection-start-column="28" selection-end-line="873" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -42,7 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.portfolio</find>
       <find>portfolio-sl-text</find>
       <find>.glyphicon:hover</find>
       <find>portfolio_block</find>
@@ -72,6 +71,7 @@
       <find>container</find>
       <find>portfolio</find>
       <find>pop</find>
+      <find>.portfolio_block</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,8 +89,8 @@
         <option value="$USER_HOME$/Desktop/svistel.in/css/style.sass" />
         <option value="$PROJECT_DIR$/send.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
-        <option value="$PROJECT_DIR$/css/style.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.sass" />
       </list>
     </option>
   </component>
@@ -116,7 +116,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,6 +144,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,11 +244,13 @@
       <workItem from="1539682727850" duration="16664000" />
       <workItem from="1539775955234" duration="328000" />
       <workItem from="1539957484957" duration="946000" />
+      <workItem from="1540209389588" duration="1192000" />
+      <workItem from="1540293726377" duration="98000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139869000" />
+    <option name="totallyTimeSpent" value="141159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -543,17 +545,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19108">
-          <caret line="1124" column="21" selection-start-line="1124" selection-start-column="21" selection-end-line="1124" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3593" column="25" selection-start-line="3593" selection-start-column="25" selection-end-line="3593" selection-end-column="25" />
+          <caret line="3603" column="25" selection-start-line="3603" selection-start-column="25" selection-end-line="3603" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="873" column="28" lean-forward="true" selection-start-line="873" selection-start-column="28" selection-end-line="873" selection-end-column="28" />
         </state>
       </provider>
     </entry>
