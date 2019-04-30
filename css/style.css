@@ -52,7 +52,7 @@ body {
 
 #menuToggle {
   display: block;
-  top: 50px;
+  top: 34px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -577,8 +577,14 @@ body {
 .mouse-svg {
   display: grid;
   justify-content: center;
-  margin-top: 15px; }
+  margin-top: 15px;
+  animation: bottom 2s ease-in-out infinite; }
 
+@keyframes bottom {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(8px); } }
 .feedback-sec {
   height: 100vh;
   display: flex;
@@ -833,7 +839,8 @@ a.svg {
   text-align: center; }
 
 .portfolio_block {
-  padding: 0 10px; }
+  padding: 0 10px;
+  z-index: -1; }
 
 .portfolio_block:hover embed {
   display: block !important; }

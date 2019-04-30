@@ -56,7 +56,7 @@ body
 //HAMBURGER NENU
 #menuToggle
   display: block
-  top: 50px
+  top: 34px
   z-index: 1
   -webkit-user-select: none
   user-select: none
@@ -613,7 +613,13 @@ $step: 100px
   display: grid
   justify-content: center
   margin-top: 15px
+  animation: bottom 2s ease-in-out infinite
 
+@keyframes bottom
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(8px)
 .feedback-sec
   height: 100vh
   display: flex
@@ -2484,6 +2490,7 @@ a.tooltip span
     display: grid
     justify-content: center
     margin-top: 15px
+
 
   .teacher-bottom-block
     background-color: white
