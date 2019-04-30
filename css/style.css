@@ -839,8 +839,7 @@ a.svg {
   text-align: center; }
 
 .portfolio_block {
-  padding: 0 10px;
-  z-index: -1; }
+  padding: 0 10px; }
 
 .portfolio_block:hover embed {
   display: block !important; }
