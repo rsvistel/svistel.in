@@ -13,6 +13,15 @@ body, html
 a
   text-decoration: none !important
 
+h1
+  font-size: 2.5vw
+
+h3
+  font-size: 1.65vw
+
+h5
+  font-size: 1vw
+
 body
   overflow: hidden
   margin: 0
@@ -250,14 +259,16 @@ body
       float: left
       margin-right: 15px
     p
-      font-size: 47px
+      //font-size: 47px
+      font-size: 3.3vw
       margin: 0
       color: snow
       font-family: 'Fjalla One', sans-serif
     h3
       font-family: 'Fjalla One', sans-serif
       color: snow
-      font-size: 22px
+      //font-size: 22px
+      font-size: 1.53vw
   .second_icon_block_information svg
     width: 49px
   .first_row, .second_row
@@ -454,7 +465,8 @@ $step: 100px
     pointer-events: none
 
 .text-style-in-about-block
-  font-size: 37px
+  //font-size: 37px
+  font-size: 2.65vw
   font-family: 'Fjalla One', sans-serif
   color: white
   display: flex
@@ -467,7 +479,8 @@ $step: 100px
 
 .feedback-top-text-style
   font-family: 'Fjalla One', sans-serif
-  font-size: 30px
+  //font-size: 30px
+  font-size: 2.05vw
   color: white
   margin-bottom: 3px
   margin-top: 25px
@@ -508,12 +521,15 @@ $step: 100px
 
 .feedback-bottom-text-style
   font-family: 'Fjalla One', sans-serif
-  font-size: 14px
+  //font-size: 14px
+  font-size: 1vw
+
   color: white
 
 .feedback-bottom-text-style2
   font-family: 'Fjalla One', sans-serif
-  font-size: 14px
+  //font-size: 14px
+  font-size: 1vw
   color: white
 
 .feedback-underline-text-2
@@ -829,7 +845,8 @@ a.svg
 
 .button_portfolio
   height: 45px
-  font-size: 18px
+  //font-size: 18px
+  font-size: 1.25vw
   border-radius: 50px
   border: none
   color: black
@@ -1186,7 +1203,8 @@ a.tooltip span
       font-family: "Libre Franklin", sans-serif
       font-weight: bold
       font-style: italic
-      font-size: 18px
+      //font-size: 18px
+      font-size: 1.25vw
       opacity: 0.8
     input
       width: 70%
@@ -1209,7 +1227,8 @@ a.tooltip span
     font-family: "Libre Franklin", sans-serif
     font-weight: bold
     font-style: italic
-    font-size: 21px
+    //font-size: 21px
+    font-size: 1.45vw
     transition: 0.5s
   #submit_button:hover
     background: #161616
@@ -2160,10 +2179,6 @@ a.tooltip span
   #icons_block .container
     min-height: 110vh
 
-@media (min-width: 767px) and (max-width: 768px)
-
-
-
 @media (min-width: 600px) and (max-width: 768px)
   #icons_block
     height: 1000px
@@ -2382,7 +2397,7 @@ a.tooltip span
   .about-photo-in-block embed
     width: 60%
 
-  .feedback-bottom-text-style2
+  .feedback-bottom-text-style2, .feedback-bottom-text-style
     font-family: "Fjalla One", sans-serif
     font-size: 11px
     color: white
@@ -2554,6 +2569,24 @@ a.tooltip span
   #portfolio
     overflow: auto
 
+  .block_information .icon_block_information h3
+    font-size: 18px
+
+  h1
+    font-size: 27px
+
+  h3
+    font-size: 24px
+
+  h5
+    font-size: 14px
+
+  .section_contact #contact_form textarea, .section_contact #contact_form input
+    font-size: 18px
+
+  .section_contact #submit_button
+    font-size: 21px
+
 @media (min-width: 1024px) and (max-width: 1112px)
   #icons_block .row embed
     margin-bottom: 45px
@@ -2624,3 +2657,6 @@ a.tooltip span
 @media (min-width: 2000px)
   .top-text-style
     font-size: 3.6vw
+
+  .section_contact #submit_button
+    font-size: 1.1vw
