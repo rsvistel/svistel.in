@@ -347,7 +347,7 @@ body {
   margin-right: 35px; }
 
 .top-text-style {
-  font-size: 61px;
+  font-size: 4.25vw;
   color: white;
   font-family: "Bangers", cursive;
   margin-top: 175px; }
@@ -365,7 +365,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.25vw;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -2483,5 +2483,8 @@ a.tooltip span {
 @media (max-height: 550px) {
   #menu_left {
     display: none; } }
+@media (min-width: 2000px) {
+  .top-text-style {
+    font-size: 3.6vw; } }
 
 /*# sourceMappingURL=style.css.map */
