@@ -643,6 +643,7 @@ $step: 100px
   display: flex
   flex-direction: column
   justify-content: center
+  padding: 0 10%
 
 #teaching-section, #travel-section
   display: none
@@ -917,7 +918,8 @@ a.svg
 
 .button_portfolio
   height: 45px
-  font-size: 18px
+  //font-size: 18px
+  font-size: 1.25vw
   border-radius: 50px
   border: none
   color: black
@@ -1839,10 +1841,10 @@ a.tooltip span
       width: 25px !important
 
   .portfolio-web img
-    width: 250px
+    width: 330px
 
   .left_circle
-    margin-right: 205px
+    margin-right: 305px
 
   .yellow_circle
     width: 40px
@@ -2049,7 +2051,7 @@ a.tooltip span
   .yellow_circle
     width: 35px
     height: 35px
-    margin-top: -115px
+    margin-top: -150px
 
   #portfolio .row
     text-align: left
@@ -2080,6 +2082,9 @@ a.tooltip span
 
   #hobby_activity
     height: 800px
+
+  .feedback-sec
+    padding: 0
 
 @media (min-width: 450px) and (max-width: 768px)
   .section_banner
@@ -2653,6 +2658,13 @@ a.tooltip span
   #menu_left
     display: none
 
+@media (max-width: 375px)
+  .portfolio-web img
+    width: 270px
+
+  .left_circle
+    margin-right: 230px
+
 
 @media (min-width: 2000px)
   .top-text-style
@@ -2660,3 +2672,12 @@ a.tooltip span
 
   .section_contact #submit_button
     font-size: 1.1vw
+
+  h3
+    font-size: 1.1vw
+
+  h5
+    font-size: 0.8vw
+
+  .button_portfolio
+    font-size: 0.9vw
