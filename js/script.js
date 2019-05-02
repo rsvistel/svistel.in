@@ -44,7 +44,19 @@ $(document).ready(function() {
     $('#close-teaching').click(function () {
         closeHobby()
     });
+    $(".hobby-teaching-bottom-text-style").on("scroll", function () {
+        var len = $( ".hobby-teaching-bottom-text-style" ).length;
+        var scroll = $( ".hobby-teaching-bottom-text-style" ).scrollTop();
+        if (scroll > len) {
+            $(".teacher-block").attr("src","img/Girl.png");
+            // console.log(len);
+            // console.log(scroll);
+            alert('yes');
+        }else{
+            alert('test');
+        }
 
+    });
     // Validate Form
     $('#submit_button').click(function () {
         var valid = true;
@@ -163,4 +175,45 @@ function animateStatistics() {
     } else {
         return
     }
+
 }
+
+
+
+
+
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+//
+// $(window).scroll(function() {
+//     $('.teacher-bottom-block').html($(this).scrollbar() > 20;
+// }).scroll();
+// //     if ($(.teacher-bottom-block).scrollbar() > 100) {
+// //         $(".teacher-block").text("NO")
+// //         // document.getElementById("teacher-block").prepend('<img id="theImg" src="img/tourism/TR5.JPG" />');
+// //     } else {
+// //         $(".teacher-block").text("YES")
+// //         // document.getElementById("header").style.fontSize = "90px";
+// //     }
+// // }
+// window.onscroll = function() {scrollFunction()};
+//     function scrollFunction() {
+//         if ($(".teacher-bottom-block") > 50 || document.documentElement.scrollTop > 50) {
+//         // if($(".teacher-bottom-block").html($(this).scrollbar() >0){
+//         alert('no');
+//         }
+//     });
+
+// window.onscroll = function() {scrollFunction()};
+//
+//     if (.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//         document.getElementById("header").style.fontSize = "30px";
+//     } else {
+//         document.getElementById("header").style.fontSize = "90px";
+//     }
+// }
+
+// $(".teacher-bottom-block").on('scroll', function () {
+//     // if ($(".teacher-bottom-block").scrollTop() > 0) {
+//     alert("no");
+// });
+
