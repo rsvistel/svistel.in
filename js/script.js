@@ -44,19 +44,36 @@ $(document).ready(function() {
     $('#close-teaching').click(function () {
         closeHobby()
     });
+
     $(".hobby-teaching-bottom-text-style").on("scroll", function () {
-        var len = $( ".hobby-teaching-bottom-text-style" ).length;
-        var scroll = $( ".hobby-teaching-bottom-text-style" ).scrollTop();
-        if (scroll > len) {
-            $(".teacher-block").attr("src","img/Girl.png");
-            // console.log(len);
-            // console.log(scroll);
-            alert('yes');
-        }else{
-            alert('test');
+        var len = $(".hobby-teaching-bottom-text-style")[0].scrollHeight;
+        var scroll = $(".hobby-teaching-bottom-text-style").scrollTop();
+        if (scroll < len / 4) {
+            $('.teacher-block-image').attr('src','img/tourism/TR5.JPG');
+        } else if (scroll < len / 2) {
+            $('.teacher-block-image').attr('src','img/tourism/T1.JPG');
+        } else if (scroll < len / 4 * 3) {
+            $('.teacher-block-image').attr('src','img/tourism/TR5.JPG');
+        } else if (scroll > 800) {
+            $('.teacher-block-image').attr('src','img/tourism/T1.JPG');
         }
 
     });
+    $(".hobby-teaching-bottom-text-style").on("scroll", function () {
+        var len = $(".hobby-teaching-bottom-text-style")[0].scrollHeight;
+        var scroll = $(".hobby-teaching-bottom-text-style").scrollTop();
+        if (scroll < len / 4) {
+            $('.teacher-block-image').attr('src','img/tourism/T1.JPG');
+        } else if (scroll < len / 2) {
+            $('.teacher-block-image').attr('src','img/tourism/TR5.JPG');
+        } else if (scroll < len / 4 * 3) {
+            $('.teacher-block-image').attr('src','img/tourism/TR5.JPG');
+        } else if (scroll > 800) {
+            $('.teacher-block-image').attr('src','img/tourism/T1.JPG');
+        }
+
+    });
+
     // Validate Form
     $('#submit_button').click(function () {
         var valid = true;
@@ -171,49 +188,143 @@ $.fn.isInViewport = function() {
 function animateStatistics() {
     if (activeSection === 1) {
         $('.icon_block_information .svg_text').mouseover();
-        setTimeout(function () { animateStatistics() },2000);
+        setTimeout(function () {
+            animateStatistics()
+        }, 2000);
     } else {
         return
     }
 
-}
-
-
-
-
-
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-//
-// $(window).scroll(function() {
-//     $('.teacher-bottom-block').html($(this).scrollbar() > 20;
-// }).scroll();
-// //     if ($(.teacher-bottom-block).scrollbar() > 100) {
-// //         $(".teacher-block").text("NO")
-// //         // document.getElementById("teacher-block").prepend('<img id="theImg" src="img/tourism/TR5.JPG" />');
-// //     } else {
-// //         $(".teacher-block").text("YES")
-// //         // document.getElementById("header").style.fontSize = "90px";
-// //     }
-// // }
-// window.onscroll = function() {scrollFunction()};
-//     function scrollFunction() {
-//         if ($(".teacher-bottom-block") > 50 || document.documentElement.scrollTop > 50) {
-//         // if($(".teacher-bottom-block").html($(this).scrollbar() >0){
-//         alert('no');
-//         }
+//     particlesJS("particles-js", {
+//         "particles": {
+//             "number": {
+//                 "value": 380,
+//                 "density": {
+//                     "enable": true,
+//                     "value_area": 800
+//                 }
+//             },
+//             "color": {
+//                 "value": "#ffffff"
+//             },
+//             "shape": {
+//                 "type": "circle",
+//                 "stroke": {
+//                     "width": 0,
+//                     "color": "#000000"
+//                 },
+//                 "polygon": {
+//                     "nb_sides": 5
+//                 },
+//                 "image": {
+//                     "src": "img/github.svg",
+//                     "width": 100,
+//                     "height": 100
+//                 }
+//             },
+//             "opacity": {
+//                 "value": 0.5,
+//                 "random": false,
+//                 "anim": {
+//                     "enable": false,
+//                     "speed": 1,
+//                     "opacity_min": 0.1,
+//                     "sync": false
+//                 }
+//             },
+//             "size": {
+//                 "value": 3,
+//                 "random": true,
+//                 "anim": {
+//                     "enable": false,
+//                     "speed": 40,
+//                     "size_min": 0.1,
+//                     "sync": false
+//                 }
+//             },
+//             "line_linked": {
+//                 "enable": true,
+//                 "distance": 150,
+//                 "color": "#ffffff",
+//                 "opacity": 0.4,
+//                 "width": 1
+//             },
+//             "move": {
+//                 "enable": true,
+//                 "speed": 6,
+//                 "direction": "none",
+//                 "random": false,
+//                 "straight": false,
+//                 "out_mode": "out",
+//                 "bounce": false,
+//                 "attract": {
+//                     "enable": false,
+//                     "rotateX": 600,
+//                     "rotateY": 1200
+//                 }
+//             }
+//         },
+//         "interactivity": {
+//             "detect_on": "canvas",
+//             "events": {
+//                 "onhover": {
+//                     "enable": true,
+//                     "mode": "grab"
+//                 },
+//                 "onclick": {
+//                     "enable": true,
+//                     "mode": "push"
+//                 },
+//                 "resize": true
+//             },
+//             "modes": {
+//                 "grab": {
+//                     "distance": 140,
+//                     "line_linked": {
+//                         "opacity": 1
+//                     }
+//                 },
+//                 "bubble": {
+//                     "distance": 400,
+//                     "size": 40,
+//                     "duration": 2,
+//                     "opacity": 8,
+//                     "speed": 3
+//                 },
+//                 "repulse": {
+//                     "distance": 200,
+//                     "duration": 0.4
+//                 },
+//                 "push": {
+//                     "particles_nb": 4
+//                 },
+//                 "remove": {
+//                     "particles_nb": 2
+//                 }
+//             }
+//         },
+//         "retina_detect": true
 //     });
-
-// window.onscroll = function() {scrollFunction()};
 //
-//     if (.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         document.getElementById("header").style.fontSize = "30px";
-//     } else {
-//         document.getElementById("header").style.fontSize = "90px";
-//     }
-// }
-
-// $(".teacher-bottom-block").on('scroll', function () {
-//     // if ($(".teacher-bottom-block").scrollTop() > 0) {
-//     alert("no");
-// });
-
+//
+//     /* ---- stats.js config ---- */
+//
+//     var count_particles, stats, update;
+//     stats = new Stats;
+//     stats.setMode(0);
+//     stats.domElement.style.position = 'absolute';
+//     stats.domElement.style.left = '0px';
+//     stats.domElement.style.top = '0px';
+//     document.body.appendChild(stats.domElement);
+//     count_particles = document.querySelector('.js-count-particles');
+//     update = function () {
+//         stats.begin();
+//         stats.end();
+//         if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//             count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//         }
+//         requestAnimationFrame(update);
+//     };
+//     requestAnimationFrame(update);
+//
+}
