@@ -13,7 +13,8 @@
             crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/particles.js"></script>
+    <script src="js/particles.js" defer="defer"></script>
+    <script src="app.js" defer="defer"></script>
     <script src="js/script.js"></script>
     <title>Roman Svistel | Front End Developer</title>
     <link rel="shortcut icon" type="image/png" href="img/web_logo/beelogo32x32.2.png">
@@ -3355,6 +3356,7 @@
     <h1 class="heading">Feedbacks</h1>
     <div class="feedback-sec" id="section_vidhuku">
         <div class="first_row_feedbacks">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-1 empty_div"></div>
                     <div class="col-md-2 col-xs-12 image_feedback">
@@ -3380,8 +3382,10 @@
                     </div>
                 </div>
         </div>
+    </div>
 
         <div class="second_row_feedbacks">
+            <div class="container">
                 <div class="row centom">
                     <div class="col-md-4 col-xs-12 grid grid_first">
                         <p class="feedback-top-text-style-2">Marcus, Singapore</p>
@@ -3405,6 +3409,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </div>
@@ -3513,7 +3518,7 @@
 
     <div id="teaching-section" class="feedback-sec">
         <div class="teacher-block">
-            <img src="img/tourism/T1.JPG" style="border-radius: 30px" alt="tourism" class="teacher-block-image">
+            <img src="img/tourism/T1.JPG" style="border-radius: 30px" alt="tourism" class="teacher-block-image section-two">
         </div>
         <div class="teacher-block">
             <div class="teacher-bottom-block">
@@ -3557,6 +3562,7 @@
 
 <div class="section">
     <div class="section_contact">
+        <div id="particles-js"></div>
         <div class="container">
             <div class="row">
                 <form id="contact_form" action="send.php" method="POST" enctype="multipart/form-data">
