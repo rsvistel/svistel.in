@@ -712,7 +712,8 @@ a.svg {
 .portfolio-web img {
   width: 700px;
   border-radius: 20px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  transition: 0.3s; }
 
 .portfolio-section {
   height: 100vh;
@@ -884,10 +885,9 @@ a.svg {
   display: block !important; }
 
 #portfolio img:hover, #portfolio embed:hover {
-  opacity: 0.2;
+  filter: brightness(25%);
   transition: 0.3s linear ease-in-out;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1; }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .glyphicon:hover {
   transform: scale(1.1); }
@@ -949,9 +949,7 @@ a.svg {
   bottom: 0; }
 
 #portfolio-section img:hover, #portfolio-section embed:hover {
-  opacity: 0.2;
-  transition: 0.3s linear ease-in-out;
-  background: rgba(0, 0, 0, 0.6); }
+  filter: brightness(25%); }
 
 .portfolio_block:hover embed {
   display: block !important; }

@@ -44,45 +44,32 @@ $(document).ready(function() {
     $('#close-teaching').click(function () {
         closeHobby()
     });
-
+ // Scroll image
     $(".hobby-teaching-bottom-text-style").on("scroll", function () {
         var len = $(this)[0].scrollHeight;
         var scroll = $(this).scrollTop();
         if (scroll < len / 4) {
-            //if ($('.teacher-block-image').hasClass('active')){
-            //}else{
                 $('.teacher-block-image').removeClass('active');
                 $('.image1').attr('src','img/tourism/TR5.JPG').addClass('active');
-                //$('.image2').animate({opacity: 0});
-                //$('.image3').animate({opacity: 0});
-                //$('.image4').animate({opacity: 0});
+
         } else if (scroll < len / 2) {
-                $('.teacher-block-image').removeClass('active');
-                $('.image2').attr('src','img/tourism/T1.JPG').addClass('active');
-                //$('.image1').attr('src','img/tourism/TR5.JPG').animate({opacity: 0});
-                //$('.image3').attr('src','img/tourism/T1.JPG').animate({opacity: 0});
-                //$('.image4').attr('src','img/tourism/TR5.JPG').animate({opacity: 0}); 
-        } 
-        else if (scroll < len / 4 * 3) {
+            $('.teacher-block-image').removeClass('active');
+            $('.image2').attr('src', 'img/tourism/T1.JPG').addClass('active');
+
+        }else if (scroll < len / 4 * 3) {
             $('.teacher-block-image').removeClass('active');
                 $('.image3').attr('src','img/tourism/TR5.JPG').addClass('active');
-                //$('.image1').attr('src','img/tourism/T1.JPG').animate({opacity: 0});
-                //$('.image2').attr('src','img/tourism/TR5.JPG').animate({opacity: 0});
-                //$('.image4').attr('src','img/tourism/T1.JPG').animate({opacity: 0});
+
         } else if (scroll > 800) {
             $('.teacher-block-image').removeClass('active');
                 $('.image4').attr('src','img/tourism/T1.JPG').addClass('active');
-                //$('.image1').attr('src','img/tourism/TR5.JPG').animate({opacity: 0});
-                //$('.image2').attr('src','img/tourism/T1.JPG').animate({opacity: 0});
-                //$('.image3').attr('src','img/tourism/TR5.JPG').animate({opacity: 0});
+
             }
         //} else if (scroll > 360) {
             //$('.teacher-block-image.section-two').attr('src', 'img/tourism/T1.JPG');
         //}
-
     });
-
-
+     // Scroll image
     // Validate Form
     $('#submit_button').click(function () {
         var valid = true;
