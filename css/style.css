@@ -61,6 +61,7 @@ body {
 
 #particles-js {
   position: absolute;
+  min-height: 100vh;
   width: 100%;
   background-color: #161616;
   background-image: url("");
@@ -886,7 +887,6 @@ a.svg {
 
 #portfolio img:hover, #portfolio embed:hover {
   filter: brightness(25%);
-  transition: 0.3s linear ease-in-out;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .glyphicon:hover {
