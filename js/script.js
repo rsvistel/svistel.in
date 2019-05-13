@@ -7,7 +7,7 @@ $(document).ready(function() {
         isMobile = true
     }
     $('[data-toggle="popover"]').popover({ trigger: "hover" });
-    $('.section').each(function () {
+    $('.section, .section1').each(function () {
        sections.push($(this));
     });
     if (!isMobile) {

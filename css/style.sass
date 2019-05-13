@@ -43,7 +43,7 @@ body
 .portfolio-heading
   position: relative
 
-.section
+.section, .section1
   background: #161616
   background-size: cover
   height: 100vh
@@ -773,7 +773,7 @@ a.svg
   width: 700px
   border-radius: 20px
   margin-top: 20px
-  transition: 0.3s
+  transition: 0.4s ease-in-out
 
 .portfolio-section
   height: 100vh
@@ -926,8 +926,10 @@ a.svg
 #portfolio img
   width: 100%
   border-radius: 15px
-  transition: 0.2s
+  //transition: 0.2s
   z-index: 0
+  transition-duration: 0.3s
+  transition-timing-function: linear ease-in-out
 
 #portfolio embed
   z-index: 1
@@ -938,6 +940,7 @@ a.svg
   pointer-events: none
   opacity: 0.9
   text-align: center
+  transition: 0.3s linear ease-in-out
 
 .portfolio_block
   padding: 0 10px
@@ -950,7 +953,7 @@ a.svg
   //filter: blur(1px) contrast(120%) opacity(75%) drop-shadow(1px 2px 10px snow) brightness(0.4)
   //opacity: 0.2
   filter: brightness(25%)
-  //transition: 0.3s linear ease-in-out
+  transition: 0.3s linear ease-in-out
   background-color: rgba(0, 0, 0, 0.2)
 
 
@@ -1346,6 +1349,31 @@ a.tooltip span
   position: absolute
   transition: opacity 1s ease-in-out
   opacity: 0
+
+//pages
+.pages
+  position: relative
+.technology
+  color: white
+  font-family: "Fjalla One", sans-serif
+  font-size: 1.5vw
+  position: absolute
+  top: 25%
+  bottom: 50%
+  text-align: center
+  vertical-align: middle
+  padding: 0 15%
+.pages-feedback
+  text-align: center
+.pages-feedback-text
+  padding-right: 15%
+  padding-top: 5%
+.button-pages
+  text-align: start
+  padding-left: 25px
+  position: absolute
+  bottom: 6%
+//pages
 //Media Query
 @media (min-width: 768px)
   #portfolio-section
@@ -1370,7 +1398,7 @@ a.tooltip span
       top: 50vh
       transition: top 1s linear
 
-  .section.shownext #portfolio-section, .section.showprev #portfolio-section
+  .section.shownext #portfolio-section, .section1.shownext #portfolio-section, .section.showprev #portfolio-section, .section1.showprev #portfolio-section
     .yellow_circle
       left: 0
       transition: left 0.5s linear 1s
@@ -1395,7 +1423,7 @@ a.tooltip span
       &:nth-child(2)
         transition: transform 0.5s linear 0.2s
 
-  .section.shownext #hobby_activity, .section.showprev #hobby_activity
+  .section.shownext #hobby_activity, .section.showprev #hobby_activity, .section1.shownext #hobby_activity, .section1.showprev #hobby_activity
     .col-md-5
       transform: scale(1)
       &:nth-child(1)
@@ -1431,6 +1459,19 @@ a.tooltip span
     .col-xs-12
       transform: scale(1)
       transition: transform 0.5s linear 1s
+  .section1.shownext #section_vidhuku, .section1.showprev #section_vidhuku
+    .feedback-top-text-style
+      left: 0
+      transition: left 0.5s linear 1s
+    .feedback-bottom-text-style
+      opacity: 1
+      transition: opacity 0.5s linear 1s
+    .feedback-bottom-text-style2
+      opacity: 1
+      transition: opacity 0.5s linear 1.5s
+    .col-xs-12
+      transform: scale(1)
+      transition: transform 0.5s linear 1s
 
   .section_banner
     .top-text-style
@@ -1450,7 +1491,7 @@ a.tooltip span
         opacity: 0
         transition: opacity 1s linear
 
-  .section.shownext .section_banner, .section.showprev .section_banner
+  .section.shownext .section_banner, .section.showprev .section_banner, .section1.shownext .section_banner, .section1.showprev .section_banner
     .top-text-style
       opacity: 1
       transition: opacity 1s linear 1s
@@ -1528,7 +1569,7 @@ a.tooltip span
         //6
         transition: transform 0.07s linear 0.25s
 
-  .section.shownext #icons_block, .section.showprev #icons_block
+  .section.shownext #icons_block, .section.showprev #icons_block, .section1.shownext #icons_block, .section1.showprev #icons_block
     .col-md-3
       transform: scale(1)
     .row:nth-child(1)
@@ -1598,7 +1639,7 @@ a.tooltip span
         &:nth-child(3)
           top: -90vh
 
-  .section.shownext .block_information, .section.showprev .block_information
+  .section.shownext .block_information, .section.showprev .block_information, .section1.shownext .block_information, .section1.showprev .block_information
     .first_row .icon_block_information, .second_row .icon_block_information
       top: 0
       transition: top 0.5s linear 1s
@@ -2027,7 +2068,7 @@ a.tooltip span
   .block-in-center, .blocks-about
     pointer-events: none
 
-  .section.showprev, .shownext
+  .section.showprev, .shownext, .section1.showprev, .shownext
     margin-bottom: 0
 
   .icon_block_information
